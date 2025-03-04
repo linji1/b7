@@ -1,0 +1,1280 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="x-dns-prefetch-control" content="on">
+<!--                                                                                                                                                      
+<script data-fixed="true">
+	!function(){
+		var protocol = window.location.protocol;
+		if (protocol == "https:") {
+			window.location.href = window.location.href.replace("https","http");
+		}
+	}();
+</script>                                                                                                                                                      
+                                                                                                                   7WW2                               
+                                                                                                                  8MMMMM                              
+                                               :MMX                                             MM7               0M.MMMM                             
+                              ;B.              aMMMM@;                                          MMMMM:            iM @MMM7                            
+                              ,MMB.              rMMMMM                                        ZMMMMMM2            M.WMMMr                            
+                               WMMM@              @MMMM                                       MMMMMMMMMi           iS0MMM2ZM0i                        
+                               MMMMMM             MMMMM                                     SMMMMMMMMMMi             @MMM, MMMM7                      
+                              ,MMMMMM             MMMMM                                   XMMMMMMMMM0.             7@MMMM  MMMMM,                     
+                              ,MMMMM              MMMM0    ..                           7MMMMMMM0;          i,    @MMMMM0 XMMMMMr                     
+                              :MMMMM2             MMMMMMMMMMMM                       ;BMMMMMMMMB            MMMi8MMZrMMMX MMMMMX                      
+                             .WMMMMMMM,           MMMMMMMMMMMM2                     ZMMMMMMMMMMMM8         .MMMMMMM rMMMMMMMMX                        
+                          .SMMMMMMMMMMZ         i8MMMMMMMMM@Z.                      MMMMMMMMMMMMMMM        MMMMMMM, @MMMMMMM:                         
+                       .aMMMMMMMMMMMai       i8MMMMMMMMMS.                          MMMMMMMMMMMMMMM@       2MMMMMi  MMMMMM;                           
+                     2@MMMMMMMMMMMM       :8MMMMMMMMMM,                             7MM@7 BMMMMMMMM: MMMa   MMMMr   MMMM8.ZaWMM0:                     
+            ,2:  iZMMMMMMMMMMMMMMMZ    ,0MMMMMMMMMMMMM                                    MMMMMMMM.  8MMM8   Ba    MMMMMBZMMMMMMMX                    
+            :MMMMMMMMMMMMMMMWXMMMM0  XMMMMMMMMMMMMMMMW                                  7MMMMMMMZ   a MMMMa      aMMMMMMMMMMMMMBr                     
+              ;MMMMMMMMMMMB,  MMMMM8MMMZ.    SMMMWMMM8                                aMMMMMMM@    SM SMMMB    XMMMMMMMMMMZ                           
+                ,BMMMMMMZ    XMMMMMMMZ       MMMM ZMMMa                               MMMMMMMMMi   MS SMMM;  ZMMMMMMMMMMMMM                           
+                   0MMS     :MMMMMMM.       WMMM  ZMMMMMM7                           ,MMMMMMMMMMM BM  XMMMBWMMMMMMMMMMMMMMi                           
+                           SMMMMMMr        BMMM:  2MMMMMMMMB7                         MMMMMMMMMMMMM8  8MMMMMMMMMM@MMMMMMMi                            
+                          @MMMMMM         0MMM    aMMM.aMMMMMM8;                      0MMMZrMMMMMMM   @MMMMMMMM8 ,MMMMMMM@MMW2                        
+                       ,ZMMMMMMMS        BMMM:    BMMZ   XMMMMMMMMa.                   ,:   MMMMMMZ   MMM@      XMMMMMMMMMMMMMMMi                     
+                     8MMMMMMMMMM7      .MMMMi     WMM@     rMMMMMMMMMZ,                    iMMMMMM    MMMW    SMMMMMMMMMMMMMMMMMr                     
+                     aMMMMMMMMMMi   rSMMMMB       MMMM       BMMMMMMMMMMM7                 MMMMMMZ   ,MMM@   @MMMMMMMMMS ,;;Xr:.                      
+                      MMMMMM7WMM:   MMMMX         MMMM         XMMMMMMMMZr                rMMMMMM    :MMMM  iMMMMM,;MMMa                              
+                      BMMMMr MMM:                iMMMM                                    MMMMMMZ    :MMMS   0MM7   MMM7                              
+                       MMM.  MMMa                @MMMM                                   MMMMMMM      MMM0           MM  7a0000B2r                    
+                             MMM8                MMMMM.                                 MMMMMMM,      7MMMM2;;rX2Z0W@MMMMMMMMMMMMMMM;                 
+                             MMMW               7MMMMM                                  MMMMMM@        MMMMMMMMMMMMMMMMMMMMMMMMMMMMM0                 
+                             :MMM                MMMMM                                  MMMMMM.         rMMMMMMMMMM@ZSriii;i;;77X7;                   
+                               MM                .MMMZ                                   MMMMX            .WMMMXi,                                    
+                               .W                  MM                                     ;i                                                          
+                                                                                                                                                      
+                                                                                                                                                      
+
+-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<!--IE 8浏览器的页面渲染方式-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<!--默认使用极速内核：针对国内浏览器产商-->
+<meta name="renderer" content="webkit">
+<title>电脑使用技巧&nbsp;|&nbsp;老林笔记</title>
+<meta name="keywords" content="">
+<meta name="description" content="win10 家庭中文版打开本地组策略编辑器：解决方案　　新建一个txt文件-->将以下内容进行拷贝pushd %~dp0dir /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~3*.mum >List.txtdir /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~3*.mum >>List.txtfor /f %%i in ('findstr /i . List.txt 2^>nul') do dism /online /norestart /add-package:C:\Windows\servicing\Packages\%%i　　另存为bat文件，如：加入组策略.bat-->选中以管理员身份运行-->命令执行完毕重启；　　win+r-->输入gpedit.msc-->回车-->即可打开本地组策略； 　　将生成的bat文件和List.txt文件进行删除即可。">
+<link href="assets/qblog/style.css" rel="stylesheet" type="text/css">
+<link href="assets/js/highlightjs/dark.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" language="javascript" src="assets/js/jquery.min.js"></script>
+<link rel="stylesheet" href="assets/qblog/fontawesome.min.css">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<script defer="" src="assets/js/readmore.js" type="text/javascript"></script>
+<!-- fancyBox 5 -->
+<link rel="stylesheet" href="assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'">
+<script src="assets/js/fancybox/fancybox.umd.min.js"></script>
+<script>
+$(document).ready(function() {
+      Fancybox.bind('[data-fancybox]', {
+          Hash: false,
+          Thumbs: {
+            type: "classic",
+          showOnStart: false,
+          },
+          Images: {
+            Panzoom: {
+              maxScale: 4
+            }
+          },
+          Carousel: {
+            transition: 'slide'
+          },
+        Toolbar: {
+          display: {
+            left: ["infobar"],
+            middle: [
+              "zoomIn",
+              "zoomOut",
+              "toggle1to1",
+              "rotateCCW",
+              "rotateCW",
+              "flipX",
+              "flipY",
+            ],
+            right: ["slideshow", "fullscreen", "download", "thumbs", "close"],
+
+          },
+        },
+      });
+});
+</script>
+<style type="text/css">
+@media screen and (max-width: 950px) {
+  .fancybox__toolbar__column.is-middle {
+    display: none;
+  }
+}
+  </style>
+<!-- fancyBox 5 -->
+
+</head>
+<body>
+<script>
+    function openMenu() {
+        $('body').css('overflow', 'hidden');
+        $(".drawer-menu-plane").addClass("drawer-menu-plane-show");
+        $(".menu-plane").appendTo($(".drawer-menu-list"));
+        $(".user-menu-plane").appendTo($(".drawer-menu-list"));
+        //$(".menu-item-has-children").append('<div class="m-dropdown" onclick="mobile_menuclick(event,this)" ><i class="fa fa-angle-down"></i></div>')
+        $(".user-menu-main").not('.user-menu-main-notlogin').append('<div class="m-dropdown" onclick="mobile_menuclick(event,this)"><i class="fal fa-angle-down"></i></div>')
+    }
+    function closeMenu() {
+        $('body').css('overflow', 'auto');
+        $(".drawer-menu-plane").removeClass("drawer-menu-plane-show");
+        $(".user-menu-plane").prependTo($(".header-menu"));
+        $(".menu-plane").prependTo($(".header-menu"));
+        $(".m-dropdown").remove();
+    }
+
+    function openSubmenu() {
+        $(".dialog-Submenu-plane").addClass("dialog-Submenu-plane-show");
+    }
+
+    function closeSubmenu() {
+        $(".dialog-Submenu-plane").removeClass("dialog-Submenu-plane-show");
+    }
+
+    function openDropdown() {
+        $(".dialog-Dropdown-plane").addClass("dialog-Dropdown-plane-show");
+    }
+
+    function closeDropdown() {
+        $(".dialog-Dropdown-plane").removeClass("dialog-Dropdown-plane-show");
+    }
+
+    function openSearch() {
+        $(".dialog-search-plane").addClass("dialog-search-plane-show");
+    }
+
+    function closeSearch() {
+        $(".dialog-search-plane").removeClass("dialog-search-plane-show");
+    }
+	function openLogin1() {
+        $(".dialog-Login-plane1").addClass("dialog-Login-plane-show1");
+    }
+
+    function closeLogin1() {
+        $(".dialog-Login-plane1").removeClass("dialog-Login-plane-show1");
+    }
+</script>
+<!-- 登录框开始 -->
+<div class="dialog-Login-plane1">
+    <div class="dialog-mask1" onclick="closeLogin1()"></div>
+    <div class="dialog-plane1">
+        <h2>管理员登陆</h2>
+        <form class="search-form1" action="index.php?act=dologin" method="post">
+            <div class="search-form-input-plane1">
+                <input type="password" class="search-keyword1" name="pass" autocomplete="on" placeholder="输入密码..." required="required" value="">
+	   <input name="l" value="" type="hidden">
+            </div>
+            <div>
+                <button type="submit" class="search-submit1" alt="登 陆 " value="">登陆</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+<!-- 登录框结束 -->
+<div id="header">
+<div class="cback"><a href="JavaScript:history.back();" title=""><i class="fa" style="color: #888;font-size: 20px;position: absolute;left: 20px;top: 16px;z-index: 9999;font-weight: 600;cursor: pointer;">&#xf053</i></a></div><div id="menu_toggle1" onclick="openSearch()"><i class="fa fa-search" style="color: #888;font-size: 20px;position: absolute;right: 60px;top: 16px;z-index: 9999;font-weight: 600;cursor: pointer;"></i></div>
+<!-- 搜索框开始 -->
+<div class="dialog-search-plane">
+    <div class="dialog-mask" onclick="closeSearch()"></div>
+    <div class="dialog-plane">
+        <h2>搜索内容</h2>
+        <form class="search-form" action="https://linji.cn/index.php" method="get" role="search">
+            <div class="search-form-input-plane">
+                <input type="text" class="search-keyword" name="s" autocomplete="on" placeholder="搜索内容" required="required" value="">
+            </div>
+
+            <div>
+                <button type="submit" class="search-submit" value="">搜索</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+<!-- 搜索框结束 -->
+<div class="dropdown">
+<span class="dropbtn" onclick="openDropdown()"><i style="color: #888;font-size: 20px;position: absolute;right: 20px;top: 16px;z-index: 9999;height: 50px;font-weight: 300;cursor: pointer;" class="fa fa-user"></i></span>
+<div class="dialog-Dropdown-plane">
+    <div class="dialog-Dropdown-mask" onclick="closeDropdown()"></div>
+  <div class="dropdown-content">
+    <a href="comment.html"><i style="font-size: 20px;padding-right: 5px;" class="fa fa-comment"></i> 文章评论</a>
+    <a href="https://jz.linji.cn"><i style="font-size:20px;padding-right: 5px;" class="fa">&#xf157</i> 资金明细</a>
+</div>
+</div>
+</div>
+<div class="navbar-wrap">
+  <div class="box-m">
+    <div class="logo">
+      <h2 id="title"><a href="index.html">老林笔记</a></h2>   
+    </div>	   
+        <ul id="nav" class="collapse">
+          <li><a href="/b0/list-0.html">生活随笔</a></li>
+          <li><a href="/b1/list-1.html">荣誉证书</a></li>
+          <li><a href="/b2/list-2.html">继续教育</a></li>
+          <li><a href="/b3/list-3.html">小学教育</a></li>
+          <li><a href="/b4/list-4.html">小学校历</a></li>
+          <li><a href="/b5/list-5.html">毕业记忆</a></li>
+          <li><a href="/b6/list-6.html">相关通知</a></li>
+          <li><a href="/b7/list-7.html" class="on">信息科技</a></li>
+          <li><a href="/b8/list-8.html">闲说</a></li>
+          <li><a href="https://m.linji.cn/" target="_blank">朋友圈</a></li>
+          <li><a href="comment.html">评论</a></li>
+          <li><a href="archives.html">归档</a></li>
+          <li><a href="https://p.linji.cn" target="_blank">导航</a></li>
+          <li><a href="https://linji.cn/file/" target="_blank">网盘</a></li>
+          <li><a href="https://jz.linji.cn/" target="_blank">记帐</a></li>
+        </ul>
+      </div>
+</div>
+<div class="other-wrap collapse">
+	  <div class="other box-m">
+	   <div class="desc"><a href="i.php.html" target="_blank" title="旅游">路虽远，行则将至；事虽难，做则必成</a>
+
+<!-- activity-power-mode 打字效果 -->
+<script src='assets/js/activity-power-mode.min.js'></script>
+<script>
+POWERMODE.colorful = true;
+POWERMODE.shake = false;
+document.body.addEventListener('input', POWERMODE);
+</script>
+<!-- 打字效果End -->
+   
+        <!-- 距离 63 岁 -->
+<span style="float: right;" title="2042-9-8" alt="2042-9-8">
+<center>
+<div id="life60" style="text-align: left;border: 0px;margin-right: 21px;"></div>
+</center>
+</span>   
+        <script language="javascript">
+            startclock2()
+            var timerID = null;
+            var timerRunning = false;
+
+            // 判断是否为闰年的函数
+            function isLeapYear(year) {
+                return (year % 4 === 0 && year % 100!== 0) || year % 400 === 0;
+            }
+
+            function showtime3() {
+                // 获取当前时间并转换为东八区时间（北京时间）
+                var offset = new Date().getTimezoneOffset();
+                var now = new Date(Date.now() + offset * 60 * 1000 + 8 * 60 * 60 * 1000);
+                var NowHour = now.getHours();
+                var NowMinute = now.getMinutes();
+                var NowMonth = now.getMonth();
+                var NowDate = now.getDate();
+                var NowYear = now.getFullYear();
+                var NowSecond = now.getSeconds();
+
+                var targetYear = 2042;
+                var targetMonth = 9;
+                var targetDate = 8;
+
+                var Yearleft = targetYear - NowYear;
+                var Monthleft = targetMonth - NowMonth - 1;
+                var Dateleft = targetDate - NowDate;
+
+                // 处理时间差值计算，考虑各种边界情况以及闰年
+                if (Dateleft < 0) {
+                    Monthleft--;
+                    if (NowMonth === 1) {
+                        // 处理2月情况，区分闰年和平年
+                        if (isLeapYear(NowYear)) {
+                            Dateleft += 29;
+                        } else {
+                            Dateleft += 28;
+                        }
+                    } else {
+                        var monthDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+                        Dateleft += monthDays[NowMonth];
+                    }
+                }
+
+                if (Monthleft < 0) {
+                    Monthleft += 12;
+                    Yearleft--;
+                }
+
+                var Hourleft = 24 - NowHour;
+                var Minuteleft = 0 - NowMinute;
+                var Secondleft = 0 - NowSecond;
+
+                if (Secondleft < 0) {
+                    Secondleft = 60 + Secondleft;
+                    Minuteleft = Minuteleft - 1;
+                }
+                if (Minuteleft < 0) {
+                    Minuteleft = 60 + Minuteleft;
+                    Hourleft = Hourleft - 1;
+                }
+                if (Hourleft < 0) {
+                    Hourleft = 24 + Hourleft;
+                    Dateleft = Dateleft - 1;
+                    if (Dateleft < 0) {
+                        Dateleft += 31;
+                        Monthleft = Monthleft - 1;
+                        if (Monthleft < 0) {
+                            Monthleft += 12;
+                            Yearleft = Yearleft - 1;
+                        }
+                    }
+                }
+
+                var cc = document.getElementById('life60');
+                cc.innerHTML = '离 63 岁还有:'+Yearleft+'年 - '+Monthleft+'月 - '+Dateleft+'天 - '+Hourleft+'时 - '+Minuteleft+'分 - '+Secondleft+'秒' ; 
+                timerID = setTimeout("showtime3()", 1000);
+                timerRunning = true;
+            }
+
+            var timerID = null;
+            var timerRunning = false;
+
+            function stopclock2() {
+                if (timerRunning)
+                    clearTimeout(timerID);
+                timerRunning = false;
+            }
+
+            function startclock2() {
+                stopclock2();
+                showtime3();
+            }
+            // -->
+        </script>
+        <!-- 距离 63 岁 --></div>
+	   <form method="get" class="search-form" action="https://linji.cn/index.php"> <input class="search-text" name="s" autocomplete="on" placeholder="输入关键词搜索..." required="required" type="text" value=""> <button class="search-submit" alt="搜索" type="submit">搜索</button></form>
+	   </div>   
+</div>
+</div>
+<div id="wrap"> <!-- 引入layui库 -->
+<script defer="" src="assets/qblog/layui/layui.js"></script>
+<style type="text/css">
+	/** 图标字体 **/
+@font-face {
+  font-family: 'layui-icon';
+  src: url('assets/qblog/layui/font/iconfont.eot');
+  src: url('assets/qblog/layui/font/iconfont.eot') format('embedded-opentype'),
+       url('assets/qblog/layui/font/iconfont.woff2') format('woff2'),
+       url('assets/qblog/layui/font/iconfont.woff') format('woff'),
+       url('assets/qblog/layui/font/iconfont.ttf') format('truetype'),
+       url('assets/qblog/layui/font/iconfont.svg') format('svg');
+}
+
+.layui-icon{
+  font-family:"layui-icon" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* font-class */
+.layui-icon-leaf:before{content: "\e701";}
+.layui-icon-folder:before{content: "\eabe";}
+.layui-icon-folder-open:before{content: "\eac1";}
+.layui-icon-gitee:before{content: "\e69b";}
+.layui-icon-github:before{content:"\e6a7"}
+.layui-icon-disabled:before{content:"\e6cc"}
+.layui-icon-moon:before{content:"\e6c2"}
+.layui-icon-error:before{content:"\e693"}
+.layui-icon-success:before{content:"\e697"}
+.layui-icon-question:before{content:"\e699"}
+.layui-icon-lock:before{content:"\e69a"}
+.layui-icon-eye:before{content:"\e695"}
+.layui-icon-eye-invisible:before{content:"\e696"}
+.layui-icon-backspace:before{content:"\e694"}
+.layui-icon-tips-fill:before{content:"\eb2e"}
+.layui-icon-test:before{content:"\e692"}
+.layui-icon-clear:before{content:"\e788"}
+.layui-icon-heart-fill:before{content:"\e68f"}
+.layui-icon-light:before{content:"\e748"}
+.layui-icon-music:before{content:"\e690"}
+.layui-icon-time:before{content:"\e68d"}
+.layui-icon-ie:before{content:"\e7bb"}
+.layui-icon-firefox:before{content:"\e686"}
+.layui-icon-at:before{content:"\e687"}
+.layui-icon-bluetooth:before{content:"\e689"}
+.layui-icon-chrome:before{content:"\e68a"}
+.layui-icon-edge:before{content:"\e68b"}
+.layui-icon-heart:before{content:"\e68c"}
+.layui-icon-key:before{content:"\e683"}
+.layui-icon-android:before{content:"\e684"}
+.layui-icon-mike:before{content:"\e6dc"}
+.layui-icon-mute:before{content:"\e685"}
+.layui-icon-gift:before{content:"\e627"}
+.layui-icon-windows:before{content:"\e67f"}
+.layui-icon-ios:before{content:"\e680"}
+.layui-icon-logout:before{content:"\e682"}
+.layui-icon-wifi:before{content:"\e7e0"}
+.layui-icon-rss:before{content:"\e808"}
+.layui-icon-email:before{content:"\e618"}
+.layui-icon-reduce-circle:before{content:"\e616"}
+.layui-icon-transfer:before{content:"\e691"}
+.layui-icon-service:before{content:"\e626"}
+.layui-icon-addition:before{content:"\e624"}
+.layui-icon-subtraction:before{content:"\e67e"}
+.layui-icon-slider:before{content:"\e714"}
+.layui-icon-print:before{content:"\e66d"}
+.layui-icon-export:before{content:"\e67d"}
+.layui-icon-cols:before{content:"\e610"}
+.layui-icon-screen-full:before{content:"\e622"}
+.layui-icon-screen-restore:before{content:"\e758"}
+.layui-icon-rate-half:before{content:"\e6c9"}
+.layui-icon-rate-solid:before{content:"\e67a"}
+.layui-icon-rate:before{content:"\e67b"}
+.layui-icon-cellphone:before{content:"\e678"}
+.layui-icon-vercode:before{content:"\e679"}
+.layui-icon-login-weibo:before{content:"\e675"}
+.layui-icon-login-qq:before{content:"\e676"}
+.layui-icon-login-wechat:before{content:"\e677"}
+.layui-icon-username:before{content:"\e66f"}
+.layui-icon-password:before{content:"\e673"}
+.layui-icon-refresh-3:before{content:"\e9aa"}
+.layui-icon-auz:before{content:"\e672"}
+.layui-icon-shrink-right:before{content:"\e668"}
+.layui-icon-spread-left:before{content:"\e66b"}
+.layui-icon-snowflake:before{content:"\e6b1"}
+.layui-icon-tips:before{content:"\e702"}
+.layui-icon-note:before{content:"\e66e"}
+.layui-icon-senior:before{content:"\e674"}
+.layui-icon-refresh-1:before{content:"\e666"}
+.layui-icon-refresh:before{content:"\e669"}
+.layui-icon-flag:before{content:"\e66c"}
+.layui-icon-theme:before{content:"\e66a"}
+.layui-icon-notice:before{content:"\e667"}
+.layui-icon-console:before{content:"\e665"}
+.layui-icon-website:before{content:"\e7ae"}
+.layui-icon-face-surprised:before{content:"\e664"}
+.layui-icon-set:before{content:"\e716"}
+.layui-icon-template:before{content:"\e663"}
+.layui-icon-app:before{content:"\e653"}
+.layui-icon-template-1:before{content:"\e656"}
+.layui-icon-home:before{content:"\e68e"}
+.layui-icon-female:before{content:"\e661"}
+.layui-icon-male:before{content:"\e662"}
+.layui-icon-tread:before{content:"\e6c5"}
+.layui-icon-praise:before{content:"\e6c6"}
+.layui-icon-rmb:before{content:"\e65e"}
+.layui-icon-more:before{content:"\e65f"}
+.layui-icon-camera:before{content:"\e660"}
+.layui-icon-cart-simple:before{content:"\e698"}
+.layui-icon-face-cry:before{content:"\e69c"}
+.layui-icon-face-smile:before{content:"\e6af"}
+.layui-icon-survey:before{content:"\e6b2"}
+.layui-icon-read:before{content:"\e705"}
+.layui-icon-location:before{content:"\e715"}
+.layui-icon-dollar:before{content:"\e659"}
+.layui-icon-diamond:before{content:"\e735"}
+.layui-icon-return:before{content:"\e65c"}
+.layui-icon-camera-fill:before{content:"\e65d"}
+.layui-icon-fire:before{content:"\e756"}
+.layui-icon-more-vertical:before{content:"\e671"}
+.layui-icon-cart:before{content:"\e657"}
+.layui-icon-star-fill:before{content:"\e658"}
+.layui-icon-prev:before{content:"\e65a"}
+.layui-icon-next:before{content:"\e65b"}
+.layui-icon-upload:before{content:"\e67c"}
+.layui-icon-upload-drag:before{content:"\e681"}
+.layui-icon-user:before{content:"\e770"}
+.layui-icon-file-b:before{content:"\e655"}
+.layui-icon-component:before{content:"\e857"}
+.layui-icon-find-fill:before{content:"\e670"}
+.layui-icon-loading:before{content:"\e63d"}
+.layui-icon-loading-1:before{content:"\e63e"}
+.layui-icon-add-1:before{content:"\e654"}
+.layui-icon-pause:before{content:"\e651"}
+.layui-icon-play:before{content:"\e652"}
+.layui-icon-video:before{content:"\e6ed"}
+.layui-icon-headset:before{content:"\e6fc"}
+.layui-icon-voice:before{content:"\e688"}
+.layui-icon-speaker:before{content:"\e645"}
+.layui-icon-fonts-del:before{content:"\e64f"}
+.layui-icon-fonts-html:before{content:"\e64b"}
+.layui-icon-fonts-code:before{content:"\e64e"}
+.layui-icon-fonts-strong:before{content:"\e62b"}
+.layui-icon-unlink:before{content:"\e64d"}
+.layui-icon-picture:before{content:"\e64a"}
+.layui-icon-link:before{content:"\e64c"}
+.layui-icon-face-smile-b:before{content:"\e650"}
+.layui-icon-align-center:before{content:"\e647"}
+.layui-icon-align-right:before{content:"\e648"}
+.layui-icon-align-left:before{content:"\e649"}
+.layui-icon-fonts-u:before{content:"\e646"}
+.layui-icon-fonts-i:before{content:"\e644"}
+.layui-icon-tabs:before{content:"\e62a"}
+.layui-icon-circle:before{content:"\e63f"}
+.layui-icon-radio:before{content:"\e643"}
+.layui-icon-share:before{content:"\e641"}
+.layui-icon-edit:before{content:"\e642"}
+.layui-icon-delete:before{content:"\e640"}
+.layui-icon-engine:before{content:"\e628"}
+.layui-icon-chart-screen:before{content:"\e629"}
+.layui-icon-chart:before{content:"\e62c"}
+.layui-icon-table:before{content:"\e62d"}
+.layui-icon-tree:before{content:"\e62e"}
+.layui-icon-upload-circle:before{content:"\e62f"}
+.layui-icon-templeate-1:before{content:"\e630"}
+.layui-icon-util:before{content:"\e631"}
+.layui-icon-layouts:before{content:"\e632"}
+.layui-icon-prev-circle:before{content:"\e633"}
+.layui-icon-carousel:before{content:"\e634"}
+.layui-icon-code-circle:before{content:"\e635"}
+.layui-icon-water:before{content:"\e636"}
+.layui-icon-date:before{content:"\e637"}
+.layui-icon-layer:before{content:"\e638"}
+.layui-icon-fonts-clear:before{content:"\e639"}
+.layui-icon-dialogue:before{content:"\e63a"}
+.layui-icon-cellphone-fine:before{content:"\e63b"}
+.layui-icon-form:before{content:"\e63c"}
+.layui-icon-file:before{content:"\e621"}
+.layui-icon-triangle-r:before{content:"\e623"}
+.layui-icon-triangle-d:before{content:"\e625"}
+.layui-icon-set-sm:before{content:"\e620"}
+.layui-icon-add-circle:before{content:"\e61f"}
+.layui-icon-layim-download:before{content:"\e61e"}
+.layui-icon-layim-uploadfile:before{content:"\e61d"}
+.layui-icon-404:before{content:"\e61c"}
+.layui-icon-about:before{content:"\e60b"}
+.layui-icon-layim-theme:before{content:"\e61b"}
+.layui-icon-down:before{content:"\e61a"}
+.layui-icon-up:before{content:"\e619"}
+.layui-icon-circle-dot:before{content:"\e617"}
+.layui-icon-set-fill:before{content:"\e614"}
+.layui-icon-search:before{content:"\e615"}
+.layui-icon-friends:before{content:"\e612"}
+.layui-icon-group:before{content:"\e613"}
+.layui-icon-reply-fill:before{content:"\e611"}
+.layui-icon-menu-fill:before{content:"\e60f"}
+.layui-icon-face-smile-fine:before{content:"\e60c"}
+.layui-icon-picture-fine:before{content:"\e60d"}
+.layui-icon-log:before{content:"\e60e"}
+.layui-icon-list:before{content:"\e60a"}
+.layui-icon-release:before{content:"\e609"}
+.layui-icon-add-circle-fine:before{content:"\e608"}
+.layui-icon-ok:before{content:"\e605"}
+.layui-icon-help:before{content:"\e607"}
+.layui-icon-chat:before{content:"\e606"}
+.layui-icon-top:before{content:"\e604"}
+.layui-icon-right:before{content:"\e602"}
+.layui-icon-left:before{content:"\e603"}
+.layui-icon-star:before{content:"\e600"}
+.layui-icon-download-circle:before{content:"\e601"}
+.layui-icon-close:before{content:"\1006"}
+.layui-icon-close-fill:before{content:"\1007"}
+.layui-icon-ok-circle:before{content:"\1005"}
+</style>
+<script src="assets/js/translate.js"></script>
+  <div id="content" style="position: relative;">
+  <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
+"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="index.htm" style="padding-left: 5px;color: #7d8c8e;">首页</a>
+<span>/</span><a href="list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
+<audio id="audioPlayer" controls="" preload="" style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=电脑使用技巧。32，启用SMB10文件共享支持PowerShell 执行以下语句即可实现开启EnableWindowsOptionalFeature Online FeatureName SMB1Protocol31，微信不能直接拖拽图片和文件发送好友的解决方法1按键盘winR组合键，打开运行窗口，输入regedit，打开注册表。2定位到注册表HKEYLOCALMACHINESOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem3在右侧找到EnableLUA项，双击EnableLUA项，在弹出的窗口中，将数据数值 1 更改为 0，点击确定退出注">
+  您的浏览器不支持 audio 元素。
+</audio>
+<span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
+
+    <script>
+        const audioPlayer = document.getElementById('audioPlayer');
+        const audioFiles = [
+            'https://dict.youdao.com/dictvoice?le=zh&audio=电脑使用技巧。32，启用SMB10文件共享支持PowerShell 执行以下语句即可实现开启EnableWindowsOptionalFeature Online FeatureName SMB1Protocol31，微信不能直接拖拽图片和文件发送好友的解决方法1按键盘winR组合键，打开运行窗口，输入regedit，打开注册表。2定位到注册表HKEYLOCALMACHINESOFTWAREMicrosoftWindowsCurrentVersionPoliciesSystem3在右侧找到EnableLUA项，双击EnableLUA项，在弹出的窗口中，将数据数值 1 更改为 0，点击确定退出注','https://dict.youdao.com/dictvoice?le=zh&audio=册表编辑器。4重启电脑，文件等就可以直接拉入对话框中发送了。30，常用软件智能内存释放精灵免注册码版 V3803 绿色免费版智能内存释放精灵破解版是一款非常好用的内存释放工具，电脑开机久了，可用的内存便会越来越少，其中很大的一方面原因就是一些软件在退出的时候没有及时释放掉占用内存的一部分，它能够彻底释放软件退出时的内存，提高系统性能。联想电脑管家联想电脑管家专注联想设备健康，提供按需服务，建立联想与用户之间的紧密联系，持续不断为用户提供价值。联想电脑管家是由联想PC核心软件团队精心打造的一款专注联想设备健康和安全的软件。拥有电脑体检，优化加速，病毒查杀，网络加速，硬件诊断，原厂驱动管理，客户服','https://dict.youdao.com/dictvoice?le=zh&audio=务等功能。Lenovo one全新升级，支持各品牌安卓设备，一键投屏，跨设备融合安卓键鼠游戏模式，电脑玩游戏，自定义键位设置。29，Windows7电脑恢复出厂设置win7旗舰版电脑在使用一段时间后，难免会出现卡顿，或者中毒的现象。由于各种问题，希望将电脑恢复出厂设置，那么win7电脑要怎么恢复出厂设置呢下面跟着小编学习windows7电脑恢复出厂设置的方法吧。方法步骤windows7电脑恢复出厂设置方法一1，按下开机键，启动计算机2，按F8，进入Windows7的高级启动选项3，选择修复计算机。4，如果有管理员密码，需要输入如果没有设置密码，直接确定即可5，进入系统恢复选项后，选择Dell ','https://dict.youdao.com/dictvoice?le=zh&audio=DataSafe 还原和紧急备份6，然后选择其他系统备份和更多选项，点击下一步。7，选择还原我的计算机，点击下一步。8，选择正确的出厂映像后，点击下一步就可以开始恢复系统到出厂状态。windows7电脑恢复出厂设置方法二1，进入电脑桌面，在键盘上按WinR打开运行窗口，输入sysprep命令后按回车打开服务窗口即可看到CWindowsSystem32sysprep文件夹，双击其中的sysprepexe2，在出现的窗口，单击系统清理操作下拉列表框，选择进入系统全新体验OOBE，同时选中下方的通用复选框，再选择关机选项为重新启动，单击确定按钮即可3，完成之后电脑会对系统进行重置并重新启动Windo','https://dict.youdao.com/dictvoice?le=zh&audio=ws 10 电脑恢复出厂设置方法28，开启显卡加速功能设置，显示，图形设置，打开硬件加速GPU计划。27，关闭管理员批准提示打开运行，输入gpeditmsc，打开组策略，Windows设置，安全设置，本地策略，安全选项，双击 用户帐户控制以管理员批准模式运行所有管理员，选择已禁用。26，关闭电脑休眠模式powercfg h off25，免费网站1片库  全网高清影视聚合下载httpswwwpiankuli2真不卡影视httpzhengbukavip3追剧达人httpvipmvtv4你的远程桌面httpsrustdeskcomzh24，商品历史价格查询在电商网站商品详情页的网址域名后面加入vvv','https://dict.youdao.com/dictvoice?le=zh&audio=三个字母即可查询该商品的历史价格例如httpitemjdcom100004538398html添加vvv后变为httpitemjdvvvcom100004538398html支持京东，天猫，淘宝，一号店，苏宁易购，网易考拉，当当网，亚马逊中国，国美等电商商品的历史价格查询。  23，查看电脑使用历史1键盘按住WinR打开运行窗口2输入 recent 指令22，一招让旧电脑比新电脑还流畅1键盘按住WinR打开运行窗口2在运行窗口输入cmd管理员模式3在此输入 chkdsk ，回车4然后输入 sfc scannow ，回车5最后重启电脑就搞定了。21，清理电脑垃圾1键盘按住WinR打开运行窗口2输','https://dict.youdao.com/dictvoice?le=zh&audio=入 cleanmgr ，打开磁盘清理，选择要清理的驱动器，点击确定进行清理。另一方法Win  i ,打开设置，选择存储，将存储感知打开，选择每天清理，即可自动清理。20，电脑卡，可以尝试关闭这个设置1在桌面右键点击我的电脑，选择管理2在设备管理器中，打开磁盘驱动器3然后右键点击你的固态硬盘，选择属性4在策略这一栏中将启用设备的写入缓存取消勾选，这个功能会使固态盘将内存条作为自己的缓存，提高内存的占用19，如何提高电脑CPU处理器的性能按WinR打开运行窗口，输入msconfig打开系统配置，点击引导，进入高级选项，打勾处理器个数，选择最大数，点击确定，应用，确定。18，电脑磁盘占用 100 怎','https://dict.youdao.com/dictvoice?le=zh&audio=么解决解决方法禁用SysMain服务SysMain服务是什么SysMain服务是1809之后的版本才有的，原来这个服务之前叫superfetch服务，superfetch服务是超级预读取，这个服务是由XP系统中的Prefetch进化而来的。这个原理也很简单Superfetch 内存管理机制会将用户可能使用的应用程序页面利用内存可用空间进行预加载尽可能地避免系统发生从硬盘的页面调用，让应用程序最快速度开启。但实际上，superfetch服务很占内存，并且对固态硬盘优化速度几乎没有，所以我们可以禁用SysMain服务。SysMain服务禁用方法1按下WINR，然后输入servicesmsc 回车2','https://dict.youdao.com/dictvoice?le=zh&audio=找到sysmain服务，双击进行设置3把sysmain服务启动类型设置为禁用，然后点击应用保存。17，设置关机快捷键1在桌面空白处单击右键，点击新建，选择快捷方式。2内输入shutdown s t 0，也就是0秒关机，然后点击下一步，再点击完成。3桌面上刚建的快捷方式，单击右键，点击属性。在快捷键处设置一个你想要的关机快捷键，如CtrlAltS注意不要和常用的快捷键重复，然后点击应用和确定，就完成设置了。4设置完成后，需要关机时，同时按住CtrlAltS键就可以关机了，或者双击桌面上的关机快捷键图标也行。如果要取消该关机快捷键的话，直接在桌面删除该快捷键就可以了。16，这个javascript','https://dict.youdao.com/dictvoice?le=zh&audio= 可以让任何网页可编辑按 F12 ，然后在弹出的调试面板中点击 Console ,输入 documentbodycontentEditabletrue ， 可以让这个网页可编辑。15，微信不能传输大文件怎么办将文件名后缀改成 m4v，重新发送即可。14，电脑快捷键1WinM,全部窗口最小化就可以看到桌面2Win, 不需要全部最小化也可以看到桌面，放开按键，窗口又恢复回来3Win向左或向右键，窗口自动分屏。4Win i , 打开设置5wind显示桌面 f5刷新6看时间 winn 快捷键看看7恢复右下角日期时间音量 ，winr 输入 shell05d7b0f421214effbf6bed3f69b','https://dict.youdao.com/dictvoice?le=zh&audio=894d9 截图方法1Ctrl  Alt  A ，这是QQ截图的方法，完成后，在需要的地方粘贴就可以了。2浏览器自带的截图工具。3键盘上的截图键 PrtScprintscreen，按一下，可以将整个屏幕截图，Alt  PrtSc ，抓取当前窗口。4Ctrl  Shift  X ，浏览器自带的截图快捷键。5Win  Shift  S ，根据自己需要截图。6新建一个文件 截图bat ，输入 start snippingtool ,保存，双击。7截图的话按winshiftsAlt  Tab 切换窗口Ctrl  Alt  Tab 选择当前桌面所有运行程序Win  Tab 能打开任务视窗，看到你打开的所','https://dict.youdao.com/dictvoice?le=zh&audio=有窗口，最近打开的文件和新建的桌面如果电脑卡死，按 Ctrl  Shift  ESC 就能打开任务管理器，关闭卡死的软件，这样呢，就可以保护其他窗口，不会被电脑重启关闭画面不够大怎么办，按Win  加减号，就能快速放大整块屏幕当你用完电脑，按 Win  L ，就能快速上锁了。13，让U盘永远不中毒在U盘里建立一个文件 autoruninf，并将其属性设置成只读及隐藏。原理病毒在入侵前需要建立这个程序来传播，只要在入侵前创建好，病毒就无法再次创建相同的程序，也就无法传播，所以这就是走病毒的路，让病毒无路可走。12，U盘提示损坏无法读取怎么办1键盘按住WinR打开运行窗口2在运行窗口输入cmd管理','https://dict.youdao.com/dictvoice?le=zh&audio=员模式3在此输入 chkdsk F F ，回车，等完成之后，就可以打开U盘了，文件还在。11，电脑有网络，但无法上网，怎么办按WinR打开运行窗口，输入 netsh winsock reset 即可，重启电脑。10，更改电脑登录密码第一步重启电脑，连续按F8键，在出现的高级选项中，选择命令的安全模式。第二步在窗口中选择出现的administrator帐户，打开管理员，命令窗口。第三步输入命令etuserAA123456add，密码就会被改成 123456。第四步重启电脑用 123456 的密码登录就好了另一个方法Windows密码忘记，如何在无密码情况下进入系统的 解决方法。9，无法复制网页上','https://dict.youdao.com/dictvoice?le=zh&audio=的文字右键选择检查或审查元素进入开发者工具，点击设置，向下滑动，勾选Disable JavaScript或 禁用 JavaScript，然后就可以成功复制文字了。另一个方法按住CtrlP，进入打印预览内就可以直接复制。8，禁止弹窗广告打开控制面板点击Internet 选项再打开任务栏，选择稳私勾选启用弹出窗口阻止程序，打开设置，把阻止大多数自动弹出窗口修改为阻止所有弹出窗口，设置完，点击关闭，点击确定。另一个方法按WinR打开运行窗口，输入MRT打开Windows自带的恶意软件删除工具。7，让电脑在开机时说话打开记事本，复制下面的代码到记事本，然后保存编码ANSI到桌面。CreateObjec','https://dict.youdao.com/dictvoice?le=zh&audio=tSAPISpVoiceSpeak 输入自己想说的话将后缀名txt改为vbs。单击右键，打开方式，如图方式打开此文件。接下来，还可以让电脑开机就运行此脚本。按WindowsR，输入shellstartup将刚才的文件复制到这里就OK了。此后电脑开机就会说话。注意代码应该是英文输入，所以输入法需要切换。6，一句命令激活OFFICE首先你的OFFICE必须是VOL版本，否则无法激活。sethst参数就是指定kms服务器地址，一般osppvbs可以拖进去cmd窗口。cscript CProgram Files x86Microsoft OfficeOffice16OSPPVBS sethstkms0','https://dict.youdao.com/dictvoice?le=zh&audio=3korg一般来说，一句命令已经完成了，但一般office不会马上连接kms服务器进行激活，所以我们额外补充一条手动激活命令cscript osppvbs act如果提示看到successful的字样，那么就是激活成功了，重新打开office就好。5，激活操作系统1新建一个文本，将后缀名改为bat。2输入以下两行代码slmgr skms kms03korgslmgr ato3保存，然后打开，就可以激活。更加详细步骤https03korgkmshtml4，修复电脑装逼，没有作用新建文本文件，输入以下代码color 2tree cshutdown r t 0保存，退出，将文件名改成 修复电脑bat','https://dict.youdao.com/dictvoice?le=zh&audio= ，双击运行文件即可。3，上帝模式所谓上帝模式就是一个包含所有Win10设置的默认隐藏文件夹，可以看做是传统控制面板选项的完全展开。在Windows10中，设置取代了控制面板，但目前还并不完善，很多设置还是要靠传统方法进行。因此，上帝模式这种工具箱文件夹还是非常方便实用的，仅需三步就可以玩转这一模式。第一步，打开上帝模式由于该文件夹默认隐藏，因此我们需要特定的入口才能打开。在运行中执行如下命令shellED7BA4708E54465E825C99712043E01C可以看到所有任务文件夹被打开，你可以在这里看到所有Win10的设置。这里所说的文件夹其实和控制面板的形式相同，同样利用了文件资源管','https://dict.youdao.com/dictvoice?le=zh&audio=理器的形式。第二步，创建桌面快捷方式此时拖动红圈内地址栏的图标到桌面就可以创建快捷方式2，解除宽带限速提高上网速度1，打开运行，输入 gpeditmsc 2，本地组策略编辑器Windows 设置基于策略的QoS高级 QoS 设置入站 TCP 流量  指定入站 TCP 吞吐量级别S级别3最大吞吐量33，本地组策略编辑器管理模板网络QoS数据包计划程序限制可保留带宽已启用带宽限制 0 1，win10 家庭中文版打开本地组策略编辑器解决方案新建一个txt文件gt将以下内容进行拷贝pushd dp0dir b CWindowsservicingPackagesMicrosoftWindowsGroup','https://dict.youdao.com/dictvoice?le=zh&audio=PolicyClientExtensionsPackage3mum gtListtxtdir b CWindowsservicingPackagesMicrosoftWindowsGroupPolicyClientToolsPackage3mum gtgtListtxtfor f i in findstr i  Listtxt 2gtnul do dism online norestart addpackageCWindowsservicingPackagesi另存为bat文件，如加入组策略batgt选中以管理员身份运行gt命令执行完毕重启winrgt输入gpeditmscgt回车gt即可打开','https://dict.youdao.com/dictvoice?le=zh&audio=本地组策略 将生成的bat文件和Listtxt文件进行删除即可。',        ];
+        let currentTrack = 0;
+
+        // 点击播放按钮时开始播放
+        function playAudio() {
+            if (currentTrack < audioFiles.length) {
+                audioPlayer.src = audioFiles[currentTrack];
+                audioPlayer.play();
+            } else {
+                audioPlayer.pause();
+            }
+        }
+
+        // 绑定播放按钮的点击事件
+        audioPlayer.addEventListener('click', playAudio);
+
+        // 监听播放结束事件
+        audioPlayer.addEventListener('ended', () => {
+            currentTrack++;
+            if (currentTrack < audioFiles.length) {
+                playAudio(); // 自动播放下一首
+            }
+        });
+    </script>
+
+<style type="text/css">
+	span#translate select {
+    width: 80px;
+	padding-right:0px;
+}
+@media screen and (max-width: 950px) {
+	span#translate select {
+    display: none;
+  }
+}
+</style>
+    <div id="main1">         
+<div id="article">
+<div id="printview">
+<h1>电脑使用技巧</h1><div class="text">
+32、<strong>启用SMB1.0文件共享支持</strong><br>
+PowerShell 执行以下语句即可实现开启<br>
+<pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;" title="双击复制代码"><code class="bash hljs" codemark="1">Enable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol</code></pre>
+
+31、<strong>微信不能直接拖拽图片和文件发送好友的解决方法</strong><br>
+
+（1）按键盘win+R组合键，打开运行窗口，输入regedit，打开注册表。<br>
+
+（2）定位到注册表：HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System<br>
+
+（3）在右侧找到“EnableLUA”项，双击“EnableLUA”项，在弹出的窗口中，将数据数值 1 更改为 0，点击确定退出注册表编辑器。<br>
+
+（4）【重启电脑】，文件等就可以直接拉入对话框中发送了。<br>
+<a href="assets/file/2021/07/2021071401.webp" data-fancybox="gallery" data-caption=""><img src="assets/file/2021/07/2021071401.webp" style="max-width:100%;"></a>
+<br>
+<br>
+
+<strong>30、常用软件</strong><br>
+
+<a target="_blank" href="http://www.downxia.com/downinfo/248812.html" style="">智能内存释放精灵免注册码版 V3.8.0.3 绿色免费版</a><br>
+
+智能内存释放精灵破解版是一款非常好用的内存释放工具，电脑开机久了，可用的内存便会越来越少，其中很大的一方面原因就是一些软件在退出的时候没有及时释放掉占用内存的一部分，它能够彻底释放软件退出时的内存，提高系统性能。<br><br>
+
+<a target="_blank" href="https://guanjia.lenovo.com.cn/#page1" style="">联想电脑管家</a><br>
+
+联想电脑管家专注联想设备健康，提供按需服务，建立联想与用户之间的紧密联系，持续不断为用户提供价值。<br>
+
+联想电脑管家是由联想PC核心软件团队精心打造的一款专注联想设备健康和安全的软件。拥有电脑体检，优化加速，病毒查杀，网络加速，硬件诊断，原厂驱动管理，客户服务等功能。<br><br>
+
+<a target="_blank" href="https://one.lenovo.com/download.html" style="">Lenovo one</a><br>
+
+全新升级，支持各品牌安卓设备，一键投屏，跨设备融合安卓键鼠游戏模式，电脑玩游戏，自定义键位设置。<br><br>
+
+<strong>29、Windows7电脑恢复出厂设置</strong><br><br>
+
+　　win7旗舰版电脑在使用一段时间后，难免会出现卡顿，或者中毒的现象。由于各种问题，希望将电脑恢复出厂设置，那么win7电脑要怎么恢复出厂设置呢？下面跟着小编学习windows7电脑恢复出厂设置的方法吧。<br>
+
+方法/步骤：<br>
+‍
+　　<strong>windows7电脑恢复出厂设置方法一：</strong><br>
+
+　　1、按下开机键，启动计算机;<br>
+
+　　2、按F8，进入Windows7的高级启动选项;<br>
+
+　　3、选择“修复计算机”。<br>
+
+　　4、如果有管理员密码，需要输入;如果没有设置密码，直接“确定”即可;<br>
+
+　　5、进入系统恢复选项后，选择“Dell DataSafe 还原和紧急备份”;<br>
+
+　　6、然后“选择其他系统备份和更多选项”，点击“下一步”。<br>
+
+　　7、选择“还原我的计算机”，点击“下一步”。<br>
+
+　　8、选择正确的出厂映像后，点击“下一步”就可以开始恢复系统到出厂状态。<br><br>
+
+　　<strong>windows7电脑恢复出厂设置方法二：</strong><br>
+
+　　1、进入电脑桌面，在键盘上按“Win+R”打开“运行”窗口，输入“sysprep”命令后按回车打开服务窗口即可看到C:WindowsSystem32sysprep文件夹，双击其中的sysprep.exe;<br>
+
+　　2、在出现的窗口，单击“系统清理操作”下拉列表框，选择“进入系统全新体验(OOBE)”，同时选中下方的“通用”复选框，再选择“关机选项”为“重新启动”，单击“确定”按钮即可;<br>
+
+　　3、完成之后电脑会对系统进行重置并重新启动<br><br>
+<strong>　　Windows 10 电脑恢复出厂设置方法</strong><br>
+
+<a href="assets/file/2021/07/2021070701.webp" data-fancybox="gallery" data-caption=""><img src="assets/file/2021/07/2021070701.webp" style="max-width:100%;"></a>
+<br><br>
+
+<strong>28、开启显卡加速功能</strong><br><br>
+设置，显示，图形设置，打开硬件加速GPU计划。<br>
+
+<a href="assets/file/2021/07/2021070702.webp" data-fancybox="gallery" data-caption=""><img src="assets/file/2021/07/2021070702.webp" style="max-width:100%;"></a><br>
+
+<strong>27、关闭管理员批准提示</strong><br><br>
+打开运行，输入gpedit.msc，打开组策略，Windows设置，安全设置，本地策略，安全选项，双击 用户帐户控制：以管理员批准模式运行所有管理员，选择已禁用。<br>
+<a href="assets/file/2021/07/2021070701.webp" data-fancybox="gallery" data-caption=""><img src="assets/file/2021/07/2021070701.webp" style="max-width:100%;"></a>
+<br>
+
+<strong>26、关闭电脑休眠模式</strong><br><br>
+powercfg -h off<br><br>
+
+<strong>25、免费网站</strong><br><br>
+（1）片库 - 全网高清影视聚合下载：<a target="_blank" href="https://www.pianku.li/" style="">https://www.pianku.li/</a><br>
+（2）真不卡影视：<a target="_blank" href="http://zhengbuka.vip/" style="">http://zhengbuka.vip/</a><br>
+（3）追剧达人：<a target="_blank" href="http://vipmv.tv/" style="">http://vipmv.tv/</a><br>
+（4）你的远程桌面：<a target="_blank" href="https://rustdesk.com/zh/" style="">https://rustdesk.com/zh/</a><br><br>
+
+
+<strong>24、商品历史价格查询</strong><br><br>
+在电商网站商品详情页的网址域名后面加入vvv三个字母即可查询该商品的历史价格<br>
+例如<br>
+http://item.jd.com/100004538398.html<br>
+添加<strong>vvv</strong>后变为<br>
+http://item.jd<strong>vvv</strong>.com/100004538398.html<br>
+
+支持京东、天猫、淘宝、一号店、苏宁易购、网易考拉、当当网、亚马逊中国、国美等电商商品的历史价格查询。  <br><br>
+
+<strong>23、查看电脑使用历史</strong><br><br>
+
+（1）键盘按住“Win+R”打开运行窗口<br><br>
+（2）输入 recent 指令<br><br>
+
+<strong>22、一招让旧电脑比新电脑还流畅</strong><br><br>
+
+（1）键盘按住“Win+R”打开运行窗口<br>
+（2）在运行窗口输入“cmd”（管理员模式）<br>
+（3）在此输入“ chkdsk ”，回车<br>
+（4）然后输入“ sfc /scannow ”，回车<br>
+（5）最后重启电脑就搞定了。<br><br>
+
+<strong>21、清理电脑垃圾</strong><br><br>
+（1）键盘按住“Win+R”打开运行窗口<br>
+（2）输入 cleanmgr ，打开磁盘清理，选择要清理的驱动器，点击确定进行清理。<br>
+另一方法：Win + i ,打开设置，选择存储，将存储感知打开，选择每天清理，即可自动清理。<br><br>
+
+<strong>20、电脑卡，可以尝试关闭这个设置</strong><br><br>
+（1）在桌面右键点击我的电脑，选择管理<br>
+（2）在设备管理器中，打开磁盘驱动器<br>
+（3）然后右键点击你的固态硬盘，选择属性<br>
+（4）在策略这一栏中将启用设备的写入缓存取消勾选，这个功能会使固态盘将内存条作为自己的缓存，提高内存的占用<br><br>
+
+<strong>19、如何提高电脑CPU处理器的性能</strong><br><br>
+按Win+R打开运行窗口，输入msconfig打开系统配置，点击“引导”，进入“高级选项”，打勾“处理器个数”，选择最大数，点击确定，应用，确定。<br>
+
+<strong>18、电脑磁盘占用 100% 怎么解决</strong><br><br>
+解决方法：禁用SysMain服务<br>
+SysMain服务是什么？<br>
+SysMain服务是1809之后的版本才有的，原来这个服务之前叫superfetch服务，superfetch服务是“超级预读取”，这个服务是由XP系统中的Prefetch进化而来的。这个原理也很简单：Superfetch 内存管理机制会将用户可能使用的应用程序页面利用内存可用空间进行预加载；尽可能地避免系统发生从硬盘的页面调用，让应用程序最快速度开启。<br>
+但实际上，superfetch服务很占内存，并且对固态硬盘优化速度几乎没有，所以我们可以禁用SysMain服务。<br>
+SysMain服务禁用方法：<br>
+（1）按下WIN+R，然后输入services.msc 回车；<br>
+（2）找到sysmain服务，双击进行设置；<br>
+（3）把sysmain服务启动类型设置为禁用，然后点击应用保存。<br><br>
+
+<strong>17、设置关机快捷键</strong><br><br>
+
+（1）在桌面空白处单击右键，点击【新建】，选择【快捷方式】。<br>
+（2）内输入“shutdown –s –t 0”，也就是0秒关机，然后点击【下一步】，再点击【完成】。<br>
+（3）桌面上刚建的快捷方式，单击右键，点击【属性】。在“快捷键”处设置一个你想要的关机快捷键，如“Ctrl+Alt+S”（注意不要和常用的快捷键重复），然后点击【应用】和【确定】，就完成设置了。<br>
+（4）设置完成后，需要关机时，同时按住【Ctrl+Alt+S】键就可以关机了，或者双击桌面上的关机快捷键图标也行。如果要取消该关机快捷键的话，直接在桌面删除该快捷键就可以了。<br><br>
+
+<strong>16、这个javascript 可以让任何网页可编辑</strong><br><br>
+按 F12 ，然后在弹出的调试面板中点击 Console ,输入 document.body.contentEditable='true' ， 可以让这个网页可编辑。<br><br>
+
+<strong>15、微信不能传输大文件怎么办</strong><br><br>
+将文件名后缀改成 m4v，重新发送即可。<br><br>
+
+<strong>14、电脑快捷键</strong><br><br>
+（1）Win+M,全部窗口最小化就可以看到桌面；<br>
+（2）Win+, 不需要全部最小化也可以看到桌面，放开按键，窗口又恢复回来；<br>
+（3）Win+向左或向右键，窗口自动分屏。<br>
+（4）Win+ i , 打开设置<br>
+（5）win+d显示桌面 f5刷新<br>
+（6）看时间 win+n 快捷键看看<br>
+（7）恢复右下角日期时间音量 ，win+r 输入 shell:::{05d7b0f4-2121-4eff-bf6b-ed3f69b894d9} 
+<br><br>
+
+<strong>截图方法</strong><br><br>
+（1）Ctrl + Alt + A ，这是QQ截图的方法，完成后，在需要的地方粘贴就可以了。<br>
+（2）浏览器自带的截图工具。<br>
+（3）键盘上的截图键 PrtSc（printscreen），按一下，可以将整个屏幕截图，Alt + PrtSc ，抓取当前窗口。<br>
+（4）Ctrl + Shift + X ，浏览器自带的截图快捷键。<br>
+（5）Win + Shift + S ，根据自己需要截图。<br>
+（6）新建一个文件 截图.bat ，输入 start snippingtool ,保存，双击。<br>
+（7）截图的话按win+shift+s<br><br>
+
+Alt + Tab 切换窗口；<br>
+Ctrl + Alt + Tab 选择当前桌面所有运行程序；<br>
+Win + Tab 能打开任务视窗，看到你打开的所有窗口，最近打开的文件和新建的桌面；<br>
+如果电脑卡死，按 Ctrl + Shift + ESC 就能打开任务管理器，关闭卡死的软件，这样呢，就可以保护其他窗口，不会被电脑重启关闭；<br>
+画面不够大怎么办，按Win + 加减号，就能快速放大整块屏幕；<br>
+当你用完电脑，按 Win + L ，就能快速上锁了。<br><br>
+
+<strong>13、让U盘永远不中毒</strong><br><br>
+在U盘里建立一个文件 autorun.inf，并将其属性设置成只读及隐藏。<br>
+原理：病毒在入侵前需要建立这个程序来传播，只要在入侵前创建好，病毒就无法再次创建相同的程序，也就无法传播，所以这就是走病毒的路，让病毒无路可走。<br><br>
+
+<strong>12、U盘提示损坏无法读取怎么办</strong><br><br>
+（1）键盘按住“Win+R”打开运行窗口<br>
+（2）在运行窗口输入“cmd”（管理员模式）<br>
+（3）在此输入“ chkdsk F: /F ”，回车，等完成之后，就可以打开U盘了，文件还在。<br><br>
+
+<strong>11、电脑有网络，但无法上网，怎么办</strong><br><br>
+按Win+R打开运行窗口，输入 netsh winsock reset 即可，重启电脑。<br><br>
+
+<strong>10、更改电脑登录密码</strong><br><br>
+
+第一步：重启电脑，连续按F8键，在出现的高级选项中，选择命令的安全模式。<br>
+第二步：在窗口中选择出现的administrator帐户，打开管理员，命令窗口。<br>
+第三步：输入命令etuserAA123456/add，密码就会被改成 123456。<br>
+第四步：重启电脑用 123456 的密码登录就好了<br>
+
+<strong>另一个方法：</strong><a target="_blank" href="https://blog.csdn.net/qq_40927409/article/details/106554770?utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-8.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7Edefault-8.control" style="">Windows密码忘记，如何在无密码情况下进入系统的 解决方法。</a><br><br>
+
+<strong>9、无法复制网页上的文字</strong><br><br>
+
+右键选择“检查”或“审查元素”进入开发者工具，点击设置，向下滑动，勾选“Disable JavaScript”或 “禁用 JavaScript”，然后就可以成功复制文字了。<br><br>
+
+<strong>另一个方法：</strong>按住Ctrl+P，进入打印预览内就可以直接复制。<br><br>
+
+<strong>8、禁止弹窗广告</strong><br><br>
+
+打开控制面板；点击“Internet 选项”；再打开任务栏，选择稳私；勾选“启用弹出窗口阻止程序”，打开设置，把“阻止大多数自动弹出窗口”修改为“阻止所有弹出窗口”，设置完，点击关闭，点击确定。<br>
+
+<strong>另一个方法：</strong>按Win+R打开运行窗口，输入MRT打开Windows自带的恶意软件删除工具。<br><br>
+
+<strong>7、让电脑在开机时说话</strong><br><br>
+
+打开记事本，复制下面的代码到记事本，然后保存（编码：ANSI）到桌面。<br><br>
+
+CreateObject("SAPI.SpVoice").Speak "输入自己想说的话"<br><br>
+
+将后缀名txt改为vbs。<br>
+
+单击右键，打开方式，如图方式打开此文件。<br>
+
+接下来，还可以让电脑开机就运行此脚本。按Windows+R，输入shell:startup<br>
+
+将刚才的文件复制到这里就OK了。<br>
+
+此后电脑开机就会说话。<br>
+
+注意：代码应该是英文输入，所以输入法需要切换。<br><br>
+
+<strong>6、一句命令激活OFFICE</strong><br><br>
+
+首先你的OFFICE必须是VOL版本，否则无法激活。<br>
+
+/sethst参数就是指定kms服务器地址，一般ospp.vbs可以拖进去cmd窗口。<br><br>
+
+cscript "C:\Program Files (x86)\Microsoft Office\Office16\OSPP.VBS" /sethst:kms.03k.org<br><br>
+
+一般来说，“一句命令已经完成了”，但一般office不会马上连接kms服务器进行激活，所以我们额外补充一条手动激活命令：<br><br>
+
+cscript ospp.vbs /act<br><br>
+
+如果提示看到successful的字样，那么就是激活成功了，重新打开office就好。<br>
+
+<center><a href="assets/file/2021/07/office%E6%BF%80%E6%B4%BB%E6%89%8B%E5%8A%A8%E6%95%99%E7%A8%8B.png" data-fancybox="gallery" data-caption=""><img src="assets/file/2021/07/office%E6%BF%80%E6%B4%BB%E6%89%8B%E5%8A%A8%E6%95%99%E7%A8%8B.png" style="max-width:100%;"></a></center><br>
+
+<strong>5、激活操作系统</strong><br><br>
+
+（1）新建一个文本，将后缀名改为bat。<br>
+（2）输入以下两行代码<br>
+slmgr /skms kms.03k.org<br>
+slmgr /ato<br>
+（3）保存，然后打开，就可以激活。<br>
+
+更加详细步骤：<a target="_blank" href="https://03k.org/kms.html" style="">https://03k.org/kms.html</a><br><br>
+
+<strong>4、修复电脑（装逼，没有作用）</strong><br><br>
+
+新建文本文件，输入以下代码：<br><br>
+color 2<br>
+tree c:/<br>
+shutdown -r -t 0<br><br>
+保存，退出，将文件名改成“ 修复电脑.bat ”，双击运行文件即可。<br><br>
+
+<strong>3、上帝模式</strong><br><br>
+
+所谓“上帝模式”就是一个包含所有Win10设置的默认隐藏文件夹，可以看做是传统控制面板选项的完全展开。在Windows10中，“设置”取代了控制面板，但目前还并不完善，很多设置还是要靠传统方法进行。因此，“上帝模式”这种“工具箱”文件夹还是非常方便实用的，仅需三步就可以“玩转”这一模式。<br><br>
+
+第一步，打开“上帝模式”<br><br>
+
+由于该文件夹默认隐藏，因此我们需要特定的入口才能打开。在运行中执行如下命令：<br><br>
+
+shell:::{ED7BA470-8E54-465E-825C-99712043E01C}<br><br>
+
+可以看到“所有任务”文件夹被打开，你可以在这里看到所有Win10的设置。这里所说的“文件夹”其实和控制面板的形式相同，同样利用了文件资源管理器的形式。<br><br>
+
+第二步，创建桌面快捷方式<br><br>
+
+▼此时拖动红圈内地址栏的图标到桌面就可以创建快捷方式<br><br>
+
+<strong>2、解除宽带限速提高上网速度</strong><br><br>
+
+（1）、打开运行，输入 gpedit.msc <br>
+
+（2）、本地组策略编辑器--Windows 设置--基于策略的QoS--高级 QoS 设置--入站 TCP 流量 -- 指定入站 TCP 吞吐量级别(S)：级别3(最大吞吐量)(3)<br>
+
+（3）、本地组策略编辑器--管理模板--网络--QoS数据包计划程序--限制可保留带宽--已启用（带宽限制(%) 0 ）<br>
+
+<a href="assets/file/2020/10/b_122402_1652848876.png" data-fancybox="gallery" data-caption=""><img src="assets/file/2020/10/b_122402_1652848876.png" style="max-width:100%;"></a><a href="assets/file/2020/10/b_122402_1754750012.png" data-fancybox="gallery" data-caption=""><img src="assets/file/2020/10/b_122402_1754750012.png" style="max-width:100%;"></a><a href="assets/file/2020/10/b_122402_1246413800.png" data-fancybox="gallery" data-caption=""><img src="assets/file/2020/10/b_122402_1246413800.png" style="max-width:100%;"></a>
+
+<strong>1、win10 家庭中文版打开本地组策略编辑器：解决方案</strong><br><br>
+
+　　新建一个txt文件--&gt;将以下内容进行拷贝<br><br>
+
+pushd "%~dp0"<br>
+dir /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~3*.mum &gt;List.txt<br>
+dir /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~3*.mum &gt;&gt;List.txt<br>
+for /f %%i in ('findstr /i . List.txt 2^&gt;nul') do dism /online /norestart /add-package:"C:\Windows\servicing\Packages\%%i"<br>
+　　另存为bat文件，如：加入组策略.bat--&gt;选中以管理员身份运行--&gt;命令执行完毕重启；<br><br>
+
+　　win+r--&gt;输入gpedit.msc--&gt;回车--&gt;即可打开本地组策略； <br><br>
+
+　　将生成的bat文件和List.txt文件进行删除即可。</div>
+<div class="readall_box">
+          <div class="read_more_mask"></div>
+          <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
+      </div>
+<p class="time clb">信息科技 2020-10-22 12:13:23 通过 网页 <i class="iconfont icon-view"></i> 浏览(7139) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="navPost">  
+	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
+<!-- 上一篇 下一篇开始 -->
+<div style="overflow: hidden;margin-bottom: 10px;">
+
+<div id="preup">
+<p style="color: #999;"><i class="fa fa-angle-left em12" style="color: #d0d0d0;"></i>
+<i class="fa fa-angle-left em12 mr6" style="margin-right: 6px;color: #d0d0d0;"></i>
+上一篇</p>
+<a class="pre" href="625.html"><div style="height: 3.2em;overflow: hidden;">让指定的div层在网页打开几秒后自动隐藏关闭</div></a></div>
+
+<div id="predown">
+<p style="color: #999;">下一篇
+<i class="fa fa-angle-right em12 ml6" style="margin-left: 6px;color: #d0d0d0;"></i>
+<i class="fa fa-angle-right em12" style="color: #d0d0d0;"></i></p>
+<a class="next" href="627.html"><div style="height: 3.2em;overflow: hidden;">PHP数据类型转换(字符转数字,数字转字符)</div></a></div>
+</div>
+<!-- 上一篇 下一篇 结束-->
+   <div id="comments">
+   <h3>共有0条评论！</h3>
+        <ol class="comment_list">
+               </ol>
+	   <div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">发表评论</h3>
+ <form id="formpl">
+<div class="s_e mt10"><textarea tabindex="1" placeholder="发言要文明，评论有水平..." name="pcontent" rows="3" id="pcontent" class="input_textarea"></textarea></div>
+<div id="pl_other" class="hide"><div class="s_e"><input name="pname" tabindex="2" placeholder="昵称(选填)" id="pname" type="text" class="input_narrow" value="" maxlength="10"></div>
+<div class="s_e"><input name="pmail" tabindex="2" placeholder="邮箱(选填)" id="pmail" type="email" class="input_narrow" value="" maxlength="30"></div>
+<div class="s_e"><input name="purl" tabindex="3" placeholder="网址(选填)" id="purl" type="url" class="input_narrow" value="" maxlength="50"></div>
+</div>
+	 	 <div class="s_e"><button type="button" onclick="addpl('626','0')" id="add" class="btn"> 提 交 </button> <button type="button" onclick="history.back();" id="bck" class="btn"> 返 回 </button><span id="errmsg"></span></div>
+     </form></div>	
+        </div>	
+    </div>
+  </div>
+<div id="footer" alt="（linji.cn）域名注册时间：2004-04-02 14:50:54" title="（linji.cn）域名注册时间：2004-04-02 14:50:54"><p><i class="far fa-copyright"></i> 2004–2025&nbsp;&nbsp;|&nbsp;&nbsp;博主稳定运行<span id="divClock" style="color: red;"></span>
+<!--计时功能代码-->
+    <script language="javascript">
+        // 判断是否为闰年的函数
+        function isLeapYear(year) {
+            return (year % 4 === 0 && year % 100!== 0) || year % 400 === 0;
+        }
+
+        // 计算两个日期之间时间差，并精确计算月份差的函数
+        function calculateTimeDifference(startDate, endDate) {
+            const diffInMilliseconds = endDate - startDate;
+
+            // 先计算完整的年份差
+            const years = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24 * 365));
+            // 扣除已计算的年份对应的毫秒数，得到剩余毫秒数用于后续计算
+            let remainingMilliseconds = diffInMilliseconds % (1000 * 60 * 60 * 24 * 365);
+
+            // 计算月份差，通过逐月递减剩余毫秒数并统计月份
+            let months = 0;
+            const monthsInYear = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+            const startYear = startDate.getFullYear();
+            for (let i = 0; i < 12; i++) {
+                const daysInMonth = i === 1 && isLeapYear(startYear + years)? 29 : monthsInYear[i];
+                const millisecondsInMonth = 1000 * 60 * 60 * 24 * daysInMonth;
+                if (remainingMilliseconds >= millisecondsInMonth) {
+                    months++;
+                    remainingMilliseconds -= millisecondsInMonth;
+                } else {
+                    break;
+                }
+            }
+
+            // 计算天数差
+            const days = Math.floor(remainingMilliseconds / (1000 * 60 * 60 * 24));
+            remainingMilliseconds %= (1000 * 60 * 60 * 24);
+
+            // 计算小时差
+            const hours = Math.floor(remainingMilliseconds / (1000 * 60 * 60));
+            remainingMilliseconds %= (1000 * 60 * 60);
+
+            // 计算分钟差
+            const minutes = Math.floor(remainingMilliseconds / (1000 * 60));
+            remainingMilliseconds %= (1000 * 60);
+
+            // 计算秒数差
+            const seconds = Math.floor(remainingMilliseconds / 1000);
+
+            return {
+                years,
+                months,
+                days,
+                hours,
+                minutes,
+                seconds
+            };
+        }
+
+        function updateClock1(elementId, startDateStr) {
+            const startDate = new Date(startDateStr);
+            startDate.setTime(startDate.getTime() + 8 * 60 * 60 * 1000); // 转换为北京时间
+
+            function updateTimeDisplayF() {
+                const endDate = new Date();
+                endDate.setTime(endDate.getTime() + 8 * 60 * 60 * 1000); // 转换为北京时间
+
+                const { years, months, days, hours, minutes, seconds } = calculateTimeDifference(startDate, endDate);
+
+                document.getElementById(elementId).innerHTML = `${years} 年 ${months} 月 ${days} 天 ${hours} 时 ${minutes} 分 ${seconds} 秒`;
+            }
+
+            // 每隔1秒更新一次时间差显示
+            setInterval(updateTimeDisplayF, 1000);
+        }
+        updateClock1("divClock", "1977-10-26T00:00:00");
+    </script>
+<!--计时功能代码-->
+&nbsp;|&nbsp;&nbsp;<a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank" style="color: #000;">粤ICP备20022961号</a>
+</p></div>
+<script type="text/javascript" async="" language="javascript" src="assets/js/layer.js"></script>
+<script type="text/javascript" async="" language="javascript" src="assets/js/ajax.js"></script>
+
+<!--手机端底部导航开始-->
+<div class="layout-footer">
+    <div class="bottom_nav">
+          <a href="index.html"><i class="fa fa-book" style="font-size: 20px;font-style: oblique;"></i><div style="font-size:14px;text-decoration:none;">老林笔记</div></a> 
+    </div>
+<div class="bottom_nav">
+	<span style="cursor: pointer;" onclick="openSubmenu()">
+		<i class="fa fa-bars" style="font-size: 22px;"></i>
+		<div style="font-size:14px;text-decoration:none;">文章分类</div>
+	</span>
+	<div class="dialog-Submenu-plane">
+		<div class="dialog-Submenu-mask" onclick="closeSubmenu()"></div>
+		<div class="layout-submenu">
+			<div class="sub_menu" style="border-bottom:1.5px solid #F2F2F2">
+				<a href="/b3/list-3.html">小学教育</a>
+			</div>
+			<div class="sub_menu" style="border-bottom:1.5px solid #F2F2F2">
+				<a href="/b4/list-4.html">小学校历</a>
+			</div>
+			<div class="sub_menu" style="border-bottom:1.5px solid #F2F2F2">
+				<a href="/b5/list-5.html">毕业记忆</a>
+			</div>
+			<div class="sub_menu" style="border-bottom:1.5px solid #F2F2F2">
+				<a href="/b6/list-6.html">相关通知</a>
+			</div>
+			<div class="sub_menu" style="border-bottom:1.5px solid #F2F2F2">
+				<a href="/b7/list-7.html">信息科技</a>
+			</div>
+			<div class="sub_menu" style="border-bottom:1.5px solid #F2F2F2">
+				<a href="/b0/list-0.html">生活随笔</a>
+			</div>
+			<div class="sub_menu" style="border-bottom:1.5px solid #F2F2F2">
+				<a href="/b8/list-8.html">闲说人生</a>
+			</div>
+            <div class="sub_menu" style="border-bottom:1.5px solid #F2F2F2">
+				<a href="https://linji.cn/i.php">人在旅途</a>
+			</div>
+            <div class="sub_menu" style="border-bottom:1.5px solid #F2F2F2">
+				<a href="index-1.htm">仿朋友圈</a>
+			</div>
+			<div class="sub_menu" style="border-bottom:1.5px solid #F2F2F2">
+				<a href="archives.html">文章归档</a>
+			</div>
+			<div class="sub_menu" style="border-bottom:1.5px solid #F2F2F2">
+				<a href="https://linji.cn/file/">老林网盘</a>
+			</div>
+			</div>
+	</div>
+</div>
+    <div class="bottom_nav">
+        <a href="list-2.html"><i class="fa fa-laptop" style="font-size:20px;"></i><div style="font-size:14px;text-decoration:none;">继续教育</div></a>
+    </div>
+    <div class="bottom_nav">
+       <a href="list-1.html"><i class="fa fa-trophy" style="font-size:20px;"></i><div style="font-size:14px;text-decoration:none;">荣誉证书</div></a>
+</div>
+    <div class="bottom_nav">
+       <a href="https://p.linji.cn"><i class="fa fa-link" style="font-size:20px;"></i><div style="font-size:14px;text-decoration:none;">老林导航</div></a>
+</div>
+</div>
+<!--手机端底部导航结束-->
+<!-- 给博客顶部加一个浏览进度条，表示浏览当面页面的进度 -->
+<script language="javascript">
+	document.addEventListener('DOMContentLoaded', function () {
+      var winHeight = window.innerHeight,
+            docHeight = document.documentElement.scrollHeight,
+            progressBar = document.querySelector('#content_progress');
+      progressBar.max = docHeight - winHeight;
+      progressBar.value = window.scrollY;
+
+      document.addEventListener('scroll', function () {
+            progressBar.max = document.documentElement.scrollHeight - window.innerHeight;
+            progressBar.value = window.scrollY;
+            // 显示进度条
+            if (window.scrollY > 0) {
+                progressBar.style.display = 'block';
+            } else {
+                progressBar.style.display = 'none';
+            }
+      });
+});
+</script>
+
+<progress id="content_progress" value="0" style="display: none;"></progress>
+<!-- 给博客顶部加一个浏览进度条，表示浏览当面页面的进度 --><!--  统计鸟  -->
+<script type="text/javascript" src="c?_=613193407680258048" async=""></script>
+<!--  统计鸟  -->
+
+<!--  回顶部  -->
+<style type="text/css">
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    right: 5%;
+    bottom: 152px;
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    background: #fff url(assets/qblog/images/up.svg) no-repeat center center;
+    background-size: 20px 20px;
+    border: 1px solid #666;
+    opacity: .8;
+    text-indent: -99999px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.scroll-to-top:hover {
+  opacity: .8;
+}
+
+.fancybox__backdrop {
+opacity: 1;
+}
+</style>
+
+<script type="text/javascript" charset="utf-8">   
+jQuery(document).ready(function($){
+	if ($(window).scrollTop() != "0")
+		$(".scroll-to-top").fadeIn(1200) //如果距离顶部的距离不为20，显示.scroll-to-top
+	var scrollDiv = $(".scroll-to-top");
+	$(window).scroll(function()
+	{
+		if ($(window).scrollTop() == "0")
+			$(scrollDiv).fadeOut(350)//如果距离顶部的距离为20，隐藏scrollDiv
+		else
+			$(scrollDiv).fadeIn(1200)//其他情况下，显示scrollDiv
+	});
+	$(".scroll-to-top").click(function(){
+		$("html, body").animate({
+			scrollTop: 0 //点击按钮，滚动回到顶部
+		}, 600)
+	})
+
+});  
+</script>
+
+<div class="scroll-to-top" style="display: none;"><i class="fa fa-chevron-up"></i></div>
+<!-- 返回顶部 -->
+
+<script>
+    // 当文档内容完全加载后执行指定函数
+    document.addEventListener("DOMContentLoaded", function() {
+        // 获取页面上所有的img元素
+        const images = document.querySelectorAll('img');
+        // 遍历所有img元素，为它们设置lazy加载属性
+        images.forEach(img => {
+            img.setAttribute('loading', 'lazy');
+        });
+    });
+</script></div>
+<!--打印功能代码-->
+<script type="text/javascript">
+var global_Html = "";
+	function printme() {
+	global_Html = document.body.innerHTML;
+	document.body.innerHTML = document.getElementById('printview').innerHTML;　　　　　　　　　　　　　　
+	window.print();
+	window.setTimeout(function() {
+	document.body.innerHTML = global_Html;
+	}, 1500);
+}
+</script>
+<!--打印功能代码-->
+
+<!--translate.js 两行js实现html全自动翻译。无需改动页面、无语言配置文件、无API Key、对SEO友好！-->
+
+
+<script>
+//translate.ignore.tag.push('img'); //翻译时追加上自己想指定忽略的tag标签，凡是在这里面的，都不进行翻译。
+//translate.ignore.class.push('test');	//翻译时指定忽略的class name，凡是class name 在这里面的，都不进行翻译。如果不设置默认只有 ignore 这一个
+var documents = [];
+documents.push(document.getElementsByClassName("box-m"));
+documents.push(document.getElementsByClassName("search-form"));
+documents.push(document.getElementById('main1'));
+translate.setDocuments(documents); //指定要翻译的元素的集合,可传入一个或多个元素。如果不设置，默认翻译整个网页
+//指定tag标签
+//translate.whole.tag.push('h3');
+//指定id
+//translate.whole.id.push('main1');
+//指定 class 属性
+//translate.whole.class.push('box-m');
+//translate.whole.class.push('search-form');
+
+translate.setAutoDiscriminateLocalLanguage();	//设置用户第一次用时，自动识别其所在国家的语种进行切换
+//translate.language.setLocal('chinese_simplified'); //设置本地语种（当前网页的语种）。如果不设置，默认就是 'chinese_simplified' 简体中文。 可填写如 'english'、'chinese_simplified' 等，具体参见文档下方关于此的说明
+translate.selectLanguageTag.languages = 'chinese_simplified,chinese_traditional,english,korean,corsican,guarani,kinyarwanda,hausa,norwegian,dutch,yoruba,gongen,latin,nepali,french,czech,hawaiian,georgian,russian,persian,bhojpuri,hindi,belarusian,swahili,icelandic,yiddish,twi,irish,gujarati,khmer,slovak,hebrew,kannada,hungarian,tamil,arabic,bengali,azerbaijani,samoan,afrikaans,indonesian,danish,shona,bambara,lithuanian,vietnamese,maltese,turkmen,assamese,catalan,singapore,cebuano,nskrit,polish,galician,latvian,ukrainian,tatar,scottish_gaelic,welsh,filipino,aymara,lao,telugu,romanian,haitian_creole,dogrid,swedish,maithili,thai,armenian,burmese,pashto,hmong,dhivehi,luxembourgish,sindhi,kurdish,turkish,macedonian,bulgarian,malay,luganda,marathi,estonian,malayalam,deutsch,slovene,urdu,portuguese,igbo,kurdish_sorani,oromo,greek,spanish,frisian,somali,amharic,nyanja,punjabi,basque,italian,albanian,tajik,finnish,kyrgyz,ewe,croatian,creole,quechua,bosnian,maori';
+translate.language.setUrlParamControl(); //url参数后可以加get方式传递 language 参数的方式控制当前网页以什么语种显示
+translate.selectLanguageTag.refreshRender();
+//translate.language.setDefaultTo('english'); //先设置默认翻译为的什么语言
+//translate.selectionTranslate.start(); //开启鼠标划词翻译能力
+translate.listener.start();	//开启html页面变化的监控，对变化部分会进行自动翻译。注意，这里变化区域，是指使用 translate.setDocuments(...) 设置的区域。如果未设置，那么为监控整个网页的变化
+//translate.service.use('client.edge');//由微软直接提供翻译支持，不在依赖翻译服务器
+translate.execute(); //执行翻译初始化操作，显示出select语言选择
+</script>
+<!-- 为代码块加上双击复制功能 -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // 确保Layui库加载完成后再执行
+    layui.use(['layer'], function () {
+        var layer = layui.layer;
+
+        // 获取页面中所有的<div class="text">元素
+        var textDivs = document.getElementsByClassName('text');
+        for (var j = 0; j < textDivs.length; j++) {
+            // 获取每个<div class="text">元素内部的所有<pre>标签
+            var preTags = textDivs[j].getElementsByTagName('pre');
+            for (var i = 0; i < preTags.length; i++) {
+                // 为每个pre标签绑定双击事件
+                preTags[i].addEventListener('dblclick', function () {
+                    var codeContent = this.textContent;
+                    var textarea = document.createElement('textarea');
+                    textarea.value = codeContent;
+                    document.body.appendChild(textarea);
+                    textarea.select();
+                    
+                    try {
+                        document.execCommand('copy');
+                        layer.msg('代码已复制成功！', {icon: 1});  // 设置成功提示图标
+                        console.log('尝试复制代码...');
+                    } catch (err) {
+                        layer.msg('复制代码失败，请手动复制。', {icon: 2});  // 设置失败提示图标
+                        console.log('复制代码结果:', err);  // 在catch块中   
+                    } finally {
+                        // 确保无论是否成功，都移除textarea元素
+                        document.body.removeChild(textarea);
+                    }
+                });
+
+                // 为每个pre标签添加title属性
+                preTags[i].setAttribute('title', '双击复制代码');
+            }
+        }
+    });
+});
+</script>
+<!-- 为代码块加上双击复制功能 -->
+</body>
+</html>

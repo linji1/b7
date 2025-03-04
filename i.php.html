@@ -1,0 +1,44 @@
+﻿  <!doctype html><!-- www.files.gallery -->
+  <html class="page-login" data-theme="contrast">
+    <script>
+    let theme = (() => {
+      try {
+        return localStorage.getItem('files:theme');
+      } catch (e) {
+        return false;
+      };
+    })() || (matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'contrast');
+    if(theme !== 'contrast') document.documentElement.dataset.theme = theme;
+    </script>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="robots" content="noindex, nofollow">
+      <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADABAMAAACg8nE0AAAAD1BMVEUui1f///9jqYHr9O+fyrIM/O8AAAABIklEQVR42u3awRGCQBBE0ZY1ABUCADQAoEwAzT8nz1CyLLszB6p+B8CrZuDWujtHAAAAAAAAAAAAAAAAAACOQPPp/2Y0AiZtJNgAjTYzmgDtNhAsgEkyrqDkApkVlsBDsq6wBIY4EIqBVuYVFkC98/ycCkr8CbIr6MCNsyosgJvsKxwFQhEw7APqY3mN5cBOnt6AZm/g6g2o8wYqb2B1BQcgeANXb0DuwOwNdKcHLgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeA20mArmB6Ugg0NsCcP/9JS8GAKSlVZMBk8p1GRgM2R4jMHu51a/2G1ju7wfoNrYHyCtUY3zpOthc4MgdNy3N/0PruC/JlVAwAAAAAAAAAAAAAAABwZuAHuVX4tWbMpKYAAAAASUVORK5CYII=">
+      <meta name="mobile-web-app-capable" content="yes">
+      <title>Login</title>
+      <script>
+localStorage.setItem("files:ned",btoa(location.hostname))
+</script>
+      <link href="npm/files.photo.gallery%400.10.3/css/files.css" rel="stylesheet">
+          </head>
+  <body class="page-login-body">
+      <article class="login-container"></article>
+    </body>
+    <script>
+      document.querySelector('.login-container').innerHTML = '\
+      <h1>Login</h1>\
+            <form class="login-form">\
+        <input type="text" class="input" name="fusername" placeholder="Username" required autofocus spellcheck="false" autocorrect="off" autocapitalize="off" autocomplete="off">\
+        <input type="password" class="input" name="fpassword" placeholder="Password" required spellcheck="false" autocomplete="off">\
+        <input type="hidden" name="client_hash" value="45cb54bfdeab13246eca88c75383f11f">\
+        <input type="hidden" name="sidmd5" value="34327dd98cbdb3376449045158ae7398">\
+        <button type="submit" class="button">Login</button>\
+      </form>';
+      document.querySelector('.login-form').addEventListener('submit', (e) => {
+        document.body.classList.add('form-loading');
+        e.currentTarget.action = '/i.php';
+        e.currentTarget.method = 'post';
+      }, false);
+    </script>
+    </html>

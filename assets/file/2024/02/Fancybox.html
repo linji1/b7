@@ -1,0 +1,65 @@
+﻿<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
+  <title>老林笔记</title>
+
+<!-- fancyBox 5 
+文章来自：https://www.yydnas.cn/2023/04/2023.04.10-Fancybox%20v5%20%E4%BD%BF%E7%94%A8%E4%BD%93%E9%AA%8C/index.html
+-->
+<link rel="stylesheet" href="../../../../npm/%40fancyapps/ui/dist/fancybox/fancybox.min.css" media="all" onload="this.media='all'">
+<script src="../../../../npm/%40fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script>
+<style type="text/css">
+@media screen and (max-width: 950px) {
+  .fancybox__toolbar__column.is-middle {
+    display: none;
+  }
+}
+  </style>
+  <!-- fancyBox 5 -->
+  
+ </head>
+
+ <body>
+
+<a href="https://linji.cn/bg.php" data-fancybox="gallery"><img src="https://linji.cn/bg.php" class="zhiche" style="width: 100%;height: auto;"></a><br>
+<a href="https://linji.cn/bg.php" data-fancybox="gallery"><img src="https://linji.cn/bg.php" class="zhiche" style="width: 100%;height: auto;"></a>
+
+<!-- fancyBox 5 -->
+<script>
+      Fancybox.bind('[data-fancybox]', {
+          Hash: false,
+          Thumbs: {
+            showOnStart: false
+          },
+          Images: {
+            Panzoom: {
+              maxScale: 4
+            }
+          },
+          Carousel: {
+            transition: 'slide'
+          },
+        Toolbar: {
+          display: {
+            left: ["infobar"],
+            middle: [
+              "zoomIn",
+              "zoomOut",
+              "toggle1to1",
+              "rotateCCW",
+              "rotateCW",
+              "flipX",
+              "flipY",
+            ],
+            right: ["slideshow", "fullscreen", "download", "thumbs", "close"],
+
+          },
+        },
+      });
+
+    </script>
+<!-- fancyBox 5 -->
+
+ </body>
+</html>
