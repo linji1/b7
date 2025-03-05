@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 /*
 Theme Name: QStyle
 Version: 1.0
@@ -20,7 +20,7 @@ body {
 	cursor: default;
 	color: #212529;
 	-webkit-font-smoothing: antialiased;
-    background: url(../../bing/1920.php) center center no-repeat no-repeat fixed #6A6B6F;
+    background: url(https://api.dujin.org/bing/1920.php) center center no-repeat no-repeat fixed #6A6B6F;
     background-size: cover;
 }
 h2#title {
