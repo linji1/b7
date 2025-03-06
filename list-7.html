@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
  <meta http-equiv="x-dns-prefetch-control" content="on">
@@ -47,24 +47,24 @@
                                                                                                                                                       
 
 -->
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <!--IE 8浏览器的页面渲染方式-->
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <!--默认使用极速内核：针对国内浏览器产商-->
 <meta name="renderer" content="webkit">
 <title>信息科技&nbsp;|&nbsp;老林笔记</title>
-<meta name="keywords" content="林继,小学,数学,语文,继续教育,公需课,专业课,选修课">
-<meta name="description" content="本人是一位农村教师，2001年从韶关学院毕业，一直在本村教书。在教书的同时，一直在自学计算机技术，略有所成，在镇里经常帮助教办处理各类事务，给老师们代学各类学时培训。在广东范围内，需要代学的同行们可以找我。微信：15816122881">
-<link href="assets/qblog/style.css" rel="stylesheet" type="text/css">
-<link href="assets/js/highlightjs/dark.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" language="javascript" src="assets/js/jquery.min.js"></script>
-<link rel="stylesheet" href="assets/qblog/fontawesome.min.css">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<script defer="" src="assets/js/readmore.js" type="text/javascript"></script>
+<meta name="keywords" content="林继,小学,数学,语文,继续教育,公需课,专业课,选修课" />
+<meta name="description" content="本人是一位农村教师，2001年从韶关学院毕业，一直在本村教书。在教书的同时，一直在自学计算机技术，略有所成，在镇里经常帮助教办处理各类事务，给老师们代学各类学时培训。在广东范围内，需要代学的同行们可以找我。微信：15816122881" />
+<link href="/assets/qblog/style.css" rel="stylesheet" type="text/css" />
+<link href="/assets/js/highlightjs/dark.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
+<link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
-<link rel="stylesheet" href="assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'">
-<script src="assets/js/fancybox/fancybox.umd.min.js"></script>
+<link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
+<script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
 <script>
 $(document).ready(function() {
       Fancybox.bind('[data-fancybox]', {
@@ -164,7 +164,7 @@ $(document).ready(function() {
     <div class="dialog-mask1" onclick="closeLogin1()"></div>
     <div class="dialog-plane1">
         <h2>管理员登陆</h2>
-        <form class="search-form1" action="index.php?act=dologin" method="post">
+        <form class="search-form1" action="/index.php?act=dologin" method="post">
             <div class="search-form-input-plane1">
                 <input type="password" class="search-keyword1" name="pass" autocomplete="on" placeholder="输入密码..." required="required" value="">
 	   <input name="l" value="" type="hidden">
@@ -184,7 +184,7 @@ $(document).ready(function() {
     <div class="dialog-mask" onclick="closeSearch()"></div>
     <div class="dialog-plane">
         <h2>搜索内容</h2>
-        <form class="search-form" action="https://linji.cn/index.php" method="get" role="search">
+        <form class="search-form" action="/index.php" method="get" role="search">
             <div class="search-form-input-plane">
                 <input type="text" class="search-keyword" name="s" autocomplete="on" placeholder="搜索内容" required="required" value="">
             </div>
@@ -197,46 +197,27 @@ $(document).ready(function() {
     </div>
 </div>
 <!-- 搜索框结束 -->
-<div class="dropdown">
-<span class="dropbtn" onclick="openDropdown()"><i style="color: #888;font-size: 20px;position: absolute;right: 20px;top: 16px;z-index: 9999;height: 50px;font-weight: 300;cursor: pointer;" class="fa fa-user"></i></span>
-<div class="dialog-Dropdown-plane">
-    <div class="dialog-Dropdown-mask" onclick="closeDropdown()"></div>
-  <div class="dropdown-content">
-    <a href="comment.html"><i style="font-size: 20px;padding-right: 5px;" class="fa fa-comment"></i> 文章评论</a>
-    <a href="https://jz.linji.cn"><i style="font-size:20px;padding-right: 5px;" class="fa">&#xf157</i> 资金明细</a>
-</div>
-</div>
-</div>
-<div class="navbar-wrap">
+<div id="menu_toggle1" onclick="openLogin1()"><i style="color: #888;font-size: 20px;position: absolute;right: 20px;top: 16px;z-index: 9999;height: 50px;font-weight: 300;cursor: pointer;" class="fa fa-user"></i></div><div class="navbar-wrap">
   <div class="box-m">
     <div class="logo">
-      <h2 id="title"><a href="index.html">老林笔记</a></h2>   
+      <h2 id="title"><a href="/">老林笔记</a></h2>   
     </div>	   
-        <ul id="nav" class="collapse">
-          <li><a href="/b0/list-0.html">生活随笔</a></li>
-          <li><a href="/b1/list-1.html">荣誉证书</a></li>
-          <li><a href="/b2/list-2.html">继续教育</a></li>
-          <li><a href="/b3/list-3.html">小学教育</a></li>
-          <li><a href="/b4/list-4.html">小学校历</a></li>
-          <li><a href="/b5/list-5.html">毕业记忆</a></li>
-          <li><a href="/b6/list-6.html">相关通知</a></li>
-          <li><a href="/b7/list-7.html" class="on">信息科技</a></li>
-          <li><a href="/b8/list-8.html">闲说</a></li>
-          <li><a href="https://m.linji.cn/" target="_blank">朋友圈</a></li>
-          <li><a href="comment.html">评论</a></li>
-          <li><a href="archives.html">归档</a></li>
-          <li><a href="https://p.linji.cn" target="_blank">导航</a></li>
-          <li><a href="https://linji.cn/file/" target="_blank">网盘</a></li>
-          <li><a href="https://jz.linji.cn/" target="_blank">记帐</a></li>
-        </ul>
+      <ul id="nav" class="collapse"> 
+		<li><a href="/">首页</a></li><li><a href="/b0/list-0.html">生活随笔</a></li><li><a href="/b1/list-1.html">荣誉证书</a></li><li><a href="/b2/list-2.html">继续教育</a></li><li><a href="/b3/list-3.html">小学教育</a></li><li><a href="/b4/list-4.html">小学校历</a></li><li><a href="/b5/list-5.html">毕业记忆</a></li><li><a href="/b6/list-6.html">相关通知</a></li><li><a href="/b7/list-7.html">信息科技</a></li><li><a href="/b8/list-8.html">闲说</a></li>
+<li><a href="/comment.html">评论</a></li>
+<li><a href="/archives.html">归档</a></li>
+<li><a href="https://p.linji.cn" target="_blank">导航</a></li>
+<li><a href="/file/" target="_blank">网盘</a></li>
+<li><a href="https://jz.linji.cn/" target="_blank">记帐</a></li>
+<li><a href="https://m.linji.cn/" target="_blank">朋友圈</a></li><li><a href="javascript:void(0);" onclick="openLogin1()">登录</a></li>      </ul>   
       </div>
 </div>
 <div class="other-wrap collapse">
 	  <div class="other box-m">
-	   <div class="desc"><a href="https://linji.cn/i.php" target="_blank" title="旅游">路虽远，行则将至；事虽难，做则必成</a>
+	   <div class="desc"><a href="/i.php" target="_blank" title="旅游">路虽远，行则将至；事虽难，做则必成</a>
 
 <!-- activity-power-mode 打字效果 -->
-<script src='assets/js/activity-power-mode.min.js'></script>
+<script src='/assets/js/activity-power-mode.min.js' ></script>
 <script>
 POWERMODE.colorful = true;
 POWERMODE.shake = false;
@@ -347,7 +328,7 @@ document.body.addEventListener('input', POWERMODE);
             // -->
         </script>
         <!-- 距离 63 岁 --></div>
-	   <form method="get" class="search-form" action="https://linji.cn/index.php"> <input class="search-text" name="s" autocomplete="on" placeholder="输入关键词搜索..." required="required" type="text" value=""> <button class="search-submit" alt="搜索" type="submit">搜索</button></form>
+	   <form method="get" class="search-form" action="/index.php"> <input class="search-text" name="s" autocomplete="on" placeholder="输入关键词搜索..." required="required" type="text" value=""> <button class="search-submit" alt="搜索" type="submit">搜索</button></form>
 	   </div>   
 </div>
 </div>
@@ -355,8 +336,8 @@ document.body.addEventListener('input', POWERMODE);
     <div id="main">
 	<div class="class"><i class="fa fa-folder-open"></i><span style="padding-left: 10px;">信息科技</span><span style="padding-left: 10px;">共 102 篇</span></div>	    	 
       <div id="log-1045" class="post_list">
-	  <a href="1045.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">windows开机启动项配置</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="1045.html"><p>1.win+R启动控制台</p>
+	  <a href="/b7/1045.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">windows开机启动项配置</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/1045.html"><p>1.win+R启动控制台</p>
 <p>2.键入 shell:startup</p>
 <p>3.找到需要开机启动的程序</p>
 <p>4.创建快捷方式拖入刚才打开的窗口</p></div>	  
@@ -364,13 +345,13 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-11 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(406) <a href="1045.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(427) <a href="/b7/1045.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
       <div id="log-1044" class="post_list">
-	  <a href="1044.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">Docker-Compose配置文件结构详解及命令</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="1044.html"><p><strong>yaml文件结构</strong></p>
+	  <a href="/b7/1044.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">Docker-Compose配置文件结构详解及命令</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/1044.html"><p><strong>yaml文件结构</strong></p>
 <p>在项目名目录下创建docker-compose.yaml文件，文件结构如下</p>
 <p>version: '3' # 版本号</p>
 <p>services: # 服务类</p>
@@ -394,13 +375,13 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-11 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(416) <a href="1044.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(447) <a href="/b7/1044.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
       <div id="log-1043" class="post_list">
-	  <a href="1043.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">WPS OFFICE免登录注册码</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="1043.html">新版WPS OFFICE 需要登陆后才可以使用基础功能，用以下方法解除这个限制。<br>
+	  <a href="/b7/1043.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">WPS OFFICE免登录注册码</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/1043.html">新版WPS OFFICE 需要登陆后才可以使用基础功能，用以下方法解除这个限制。<br>
 按Windows键，输入cmd，选择管理员身份运行命令提示符，粘贴以下内容按回车也可以实现免登录
 <pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;" title="双击复制代码"><code class="bash hljs" codemark="1">REG ADD <span class="hljs-string">"HKEY_CURRENT_USER\Software\kingsoft\Office\6.0\plugins\officespace\flogin"</span> /v <span class="hljs-string">"enableForceLoginForFirstInstallDevice"</span> /t REG_SZ /d <span class="hljs-string">"false"</span> /f</code></pre>
 如果需要恢复登录可以把上面命令中后面的false改为true</div>	  
@@ -408,13 +389,13 @@ document.body.addEventListener('input', POWERMODE);
 	  <div class="meta">
 	  <p class="time">2025-01-10 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(411) <a href="1043.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(435) <a href="/b7/1043.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
       <div id="log-1011" class="post_list">
-	  <a href="1011.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">LOOKUP函数依据区间对照表进行数据查询！</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="1011.html">如何根据分数区间等级对照表，查找对应具体分数所处于的等级情况。<br>
+	  <a href="/b7/1011.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">LOOKUP函数依据区间对照表进行数据查询！</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/1011.html">如何根据分数区间等级对照表，查找对应具体分数所处于的等级情况。<br>
 
 如下图所示：<br>
 
@@ -423,24 +404,24 @@ D1:F7单元格区域是学生的成绩表，A1:B5单元格区域是学生成绩�
 	  <div class="meta">
 	  <p class="time">2024-12-29 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(245) <a href="1011.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(261) <a href="/b7/1011.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
       <div id="log-1010" class="post_list">
-	  <a href="1010.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">10个Excel函数</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="1010.html">Excel专门做过统计，有10个Excel函数经常被大家使用到，且使用的频率非常高，而且这10个Excel函数要是学会了，效率至少提高1倍，玩转最近本的Excel还是没问题的，这10个函数包含了：sum函数、if函数、lookup函数、vlookup函数、match函数、choose函数、date函数、days函数、find函数、index函数。</div>	  
+	  <a href="/b7/1010.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">10个Excel函数</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/1010.html">Excel专门做过统计，有10个Excel函数经常被大家使用到，且使用的频率非常高，而且这10个Excel函数要是学会了，效率至少提高1倍，玩转最近本的Excel还是没问题的，这10个函数包含了：sum函数、if函数、lookup函数、vlookup函数、match函数、choose函数、date函数、days函数、find函数、index函数。</div>	  
 	  </div>	
 	  <div class="meta">
 	  <p class="time">2024-12-28 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(255) <a href="1010.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(268) <a href="/b7/1010.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
       <div id="log-1005" class="post_list">
-	  <a href="1005.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">鸿蒙系统，有你不知道的小秘密！</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="1005.html"><p>1、隔空手势</p>
+	  <a href="/b7/1005.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">鸿蒙系统，有你不知道的小秘密！</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/1005.html"><p>1、隔空手势</p>
 <p>打开设置&gt;辅助功能&gt;智慧感知，开启隔空滑动屏幕和隔空截屏，实现不用触碰屏幕就可以翻页、截屏</p>
 
 <p>2、分屏模式</p>
@@ -449,13 +430,13 @@ D1:F7单元格区域是学生的成绩表，A1:B5单元格区域是学生成绩�
 	  <div class="meta">
 	  <p class="time">2024-12-25 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(292) <a href="1005.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(305) <a href="/b7/1005.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
       <div id="log-1002" class="post_list">
-	  <a href="1002.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">Moments 开源朋友圈在Windows上的使用</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="1002.html"><strong>一、moments 功能表</strong><br>
+	  <a href="/b7/1002.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">Moments 开源朋友圈在Windows上的使用</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/1002.html"><strong>一、moments 功能表</strong><br>
 1、默认用户名和密码是 admin/a123456，登录后可以在后台修改<br>
 2、多用户模式，可以在后台打开或关闭用户注册功能<br>
 3、支持设置标签<br>
@@ -469,13 +450,13 @@ D1:F7单元格区域是学生的成绩表，A1:B5单元格区域是学生成绩�
 	  <div class="meta">
 	  <p class="time">2024-12-23 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(413) <a href="1002.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(433) <a href="/b7/1002.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
       <div id="log-1001" class="post_list">
-	  <a href="1001.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">使用宝塔 Docker Compose 安装 Moments</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="1001.html"><strong>极简朋友圈 Moments 介绍：</strong><br>
+	  <a href="/b7/1001.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">使用宝塔 Docker Compose 安装 Moments</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/1001.html"><strong>极简朋友圈 Moments 介绍：</strong><br>
 <p>1、支持设置标签</p>
 <p>2、支持上传图片，可以上传到服务器，也可以在后台开启上传到 S3</p>
 <p>3、支持生成缩略图，但是目前只支持直接上传到服务器时生成缩略图，将在后续版本中支持上传到 S3 时生成缩略图</p>
@@ -492,31 +473,31 @@ D1:F7单元格区域是学生的成绩表，A1:B5单元格区域是学生成绩�
 	  <div class="meta">
 	  <p class="time">2024-12-20 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(601) <a href="1001.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(643) <a href="/b7/1001.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
       <div id="log-1000" class="post_list">
-	  <a href="1000.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">简洁的目录浏览程序 Files Gallery 去弹窗方法</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="1000.html">一款非常不错的图片管理php源码，单文件index.php，未授权每次打开会弹出窗口。<br>
+	  <a href="/b7/1000.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">简洁的目录浏览程序 Files Gallery 去弹窗方法</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/1000.html">一款非常不错的图片管理php源码，单文件index.php，未授权每次打开会弹出窗口。<br>
 
-<img src="assets/file/2024/12/2024122001.webp" style="width: 100%;"></div>	  
+<img src="/assets/file/2024/12/2024122001.webp" style="width: 100%;"></div>	  
 	  </div>	
 	  <div class="meta">
 	  <p class="time">2024-12-20 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(347) <a href="1000.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(369) <a href="/b7/1000.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
       <div id="log-987" class="post_list">
 	        <div class="excerpt">
-	  	  <div class="textPost" data-url="987.html"><p>关于继续教育管理平台人员的调动，请转入学校登陆广东省教师继续教育信息管理平台https://jsglpt.gdedu.gov.cn/login.jsp，点击教师管理->教师信息管理->教师调入，填写身份证号码，查询，保存即可。以上调动建议转入学校调入，不用转出学校操作。</p></div>	  
+	  	  <div class="textPost" data-url="/b7/987.html"><p>关于继续教育管理平台人员的调动，请转入学校登陆广东省教师继续教育信息管理平台https://jsglpt.gdedu.gov.cn/login.jsp，点击教师管理->教师信息管理->教师调入，填写身份证号码，查询，保存即可。以上调动建议转入学校调入，不用转出学校操作。</p></div>	  
 	  </div>	
 	  <div class="meta">
 	  <p class="time">2024-11-14 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(453) <a href="987.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(477) <a href="/b7/987.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	<div class="pagination">
@@ -527,59 +508,104 @@ D1:F7单元格区域是学生的成绩表，A1:B5单元格区域是学生成绩�
 	        <div class="widget">
         <h3>关于博主</h3>     
 				  <ul><center>
-<a href="assets/file/2020/02/head.webp" data-fancybox="gallery" data-caption="教导主任 | 林继"><img src="avatar.svg" alt="教导主任 | 林继" style="border: 0px;border-radius: 50%;width:75%;" loading="lazy"></a>
+<a href="/assets/file/2020/02/head.webp" data-fancybox="gallery" data-caption="教导主任 | 林继"><img src="/avatar.svg" alt="教导主任 | 林继" style="border: 0px;border-radius: 50%;width:75%;"></a>
 
-<img src="assets/file/2024/03/20240307124855.jpg" data-fancybox="gallery" alt="榕树头像" data-caption="榕树头像" style="display: none;" loading="lazy">
+<img src="/assets/file/2024/03/20240307124855.jpg" data-fancybox="gallery" alt="榕树头像" data-caption="榕树头像" style="display: none;">
 
-<img src="assets/file/2024/03/20240310.png" data-fancybox="gallery" data-caption="常用头像" alt="常用头像" style="display: none;" loading="lazy">
+<img src="/assets/file/2024/03/20240310.png" data-fancybox="gallery" data-caption="常用头像" alt="常用头像" style="display: none;">
 
-
-<p style="text-align: center;font-size: 16px;font-weight: 600;color: mediumvioletred;margin: 10px 0 0;" title="老同学教师资格定期注册信息">人生仿若一场修行</p>
+<a href="/b0/780.html" title="老同学教师资格定期注册信息" target="_blank">
+<p style="text-align: center;font-size: 16px;font-weight: 600;color: mediumvioletred;margin: 10px 0 0;" title="老同学教师资格定期注册信息">人生仿若一场修行</p></a>
 </center>
 
-<center><img src="images/logo.webp" alt="教导主任 | 林继" style="border: 0px;padding: 8px 0;" width="80%" title="教导主任 | 林继" loading="lazy"></center>
+<center><a href="/b0/943.html" target="_blank"><img src="/images/logo.webp" alt="教导主任 | 林继" style="border: 0px;padding: 8px 0;" width="80%" title="教导主任 | 林继"></a></center>
+
+<li>
+<!-- 学时显示开始 -->
+<div class="hourst item-3" style="padding: 0 0 10px 0;display: block;text-align: center;color: #353a55;font-size: 16px;font-weight: 600;width: 124%;margin-left: -12%;">
+
+<strong class="ttst" style="padding:0;display: block;">
+<a target="_blank" href="https://ggfw.hrss.gd.gov.cn/isso/login.html?service=https%3A%2F%2Fggfw.hrss.gd.gov.cn%2Fzjjyweb%2Fuser%2Findex.do" title="专技网（广东省人力资源和社会保障厅网上服务平台）">2025年度继教学时</a><br>
+
+<span style="font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;color: #b2afaf;">（<a target="_blank" href="/pdf/web/viewer.html?file=/assets/file/2022/10/20221025教师资格定期注册/2015-2022广东省专业技术人员继续教育证书.pdf" title="林继学时证书" style="display: none;">本年</a><a target="_blank" href="/pdf/web/viewer.html?file=/assets/file/2022/10/20221025教师资格定期注册/（肖）2010-2022广东省专业技术人员继续教育证书.pdf" title="肖兰琴学时证书" style="display: none;">度未</a><a target="_blank" href="https://www.gdhrss.gov.cn/jxjy/index.html" title="发布广东省专业技术人员继续教育相关资讯" style="
+    color: #555;
+">查询</a><a target="_blank" href="https://ggfw.hrss.gd.gov.cn/zjjyweb/hisInfoCK/to.do" title="继续教育证书查询，只需要姓名与身份证号码。" style="
+    color: #555;
+">继续教育证书</a>）</span></strong>
 
 
+<div style="color: #fff;font-size: 14px;" title="">已完成：2022 | 23 | 24|未完成：25|26</div>
+
+<div class="dataBl" style="display: inline-block;text-align: center;width: 28%;border-right: 1px solid rgba(0, 0, 0, 0.15);" title="">
+
+<a target="_blank" href="https://v3.dconline.net.cn" title=""><strong style="font-size: 18px;font-weight: 600;color: #ff7505;" title="">
+
+<span class="unget" title="">0</span></strong><strong style="font-size: 18px;font-weight: 600;" title="">/42</strong>
+</a><p style="font-weight: 100;font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;color: #353a55;" title=""><a target="_blank" href="https://v3.dconline.net.cn" title="">专业课</a></p>
+
+</div>
+
+<div class="dataBl" style="display: inline-block;width: 28%;border-right: 1px solid rgba(0, 0, 0, 0.15);" title="">
+
+<a target="_blank" href="https://jsglpt.gdedu.gov.cn/" title=""><strong style="font-size: 18px;font-weight: 600;color: #ff7505;" title="">
+
+<span class="unget" title="">0</span></strong><strong style="font-size: 18px;font-weight: 600;" title="">/30</strong>
+</a><p style="font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;color: #353a55;font-weight: 100;" title=""><a target="_blank" href="https://jsglpt.gdedu.gov.cn/" title="">公需课</a></p>
+
+</div>
+
+<div class="dataBl" style="display: inline-block;text-align: center;width: 28%;" title="">
+
+<a target="_blank" href="https://v3.lt-edu.net" title=""><strong style="font-size: 18px;font-weight: 600;color: #ff7505;" title="">
+
+<span class="unget" title="">0</span></strong><strong style="font-size: 18px;font-weight: 600;" title="">/18</strong>
+</a><p style="font: 14px Helvetica Neue,Helvetica,PingFang SC,Tahoma,Arial,sans-serif;color: #353a55;font-weight: 100;" title=""><a target="_blank" href="https://v3.lt-edu.net" title="">选修课</a></p>
+
+</div>
+</div>
+<!-- 学时显示结束 -->
+</li>
 
 
 <li>
-姓名：
+<a href="/b0/561.html" target="_blank">姓名：</a>
 
-林继
+<a href="/b0/724.html" target="_blank" title="粤省事：查询五险一金">林继</a>
 
 <span style="float: right;padding-right: 30px;">
-职务：一级教师
+<a href="/b7/520.html" target="_blank" title="URLOS 使用笔记">职务：</a><a href="/b0/377.html" target="_blank" title="旅游">一级教师</a>
 </span></li>
 
 <li>
-源码：
+<a href="/b7/559.html" target="_blank" title="无名轻博客修改笔记">源码：</a>
+
 <a href="https://github.com/linji1" target="_blank">GitHub</a>
 
 <span style="float: right;padding-right: 35px;">
-微博：
+<a href="/b7/626.html" target="_blank" title="电脑使用技巧">微博：</a>
 
 <a href="https://weibo.com/linji" target="_blank">Saboha</a>
 </span></li>
 
 <li>
-QQ：
+<a href="/b7/672.html" target="_blank" title="phpmyadmin 导入csv时 CSV 输入的第 1 行字段数有错。">QQ：</a>
 
 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=444161476&site=qq&menu=yes">444161476</a>
 
 <span style="float: right;padding-right: 10px;"> 
-Q群：
+<a href="/b7/693.html" target="_blank" title="Excel 使用技巧">Q群：</a>
 <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=4e12409411ea49e5fbf9ee5446a6ab8fd141aeee5a023f5bbbb15c5f0fd4443e" alt="杨家镇教师交流平台" title="杨家镇教师交流平台">316241789</a>
 </span></li></ul>
 		      </div>	  
 	       <div class="widget">
         <h3>信用卡</h3>     
 				  <ul><ul class="topic">
-<li>招商全币 免年费√ | 招商金卡 6次√
-<li>平安银行 免年费√ | 招商白金 3次√
-<li>建设银行 免年费√ | 农业银行 5次√
-<li>邮政银行 免年费√ | 工商银行 5次√
-<li>中国银行 免年费√ | 广发银行 12次
-</li></ul></ul>
+<li>招商全币 免年费√ | 招商金卡 6次√</i>
+<li>平安银行 免年费√ | 招商白金 3次√</i>
+<li>建设银行 免年费√ | 农业银行 5次√</i>
+<li>邮政银行 免年费√ | 工商银行 5次√</i>
+<li>中国银行 免年费√ | 广发银行 12次</i>
+</ul></ul>
 		      </div>	  
 	       <div class="widget">
         <h3>关键计时</h3>     
@@ -711,7 +737,7 @@ Q群：
         网站运行：<br><center><span id="WebClocks" style="color: green;"></span></center>
     </li>
 
-    <li title="1977-10-26" alt="1977-10-26">
+    <li  title="1977-10-26" alt="1977-10-26">
         博主运行：<br><center><span id="divClocks" style="color: green;"></span></center>
     </li>
 
@@ -802,17 +828,18 @@ Q群：
         updateClock("divClocks", "1977-10-26T00:00:00");
     </script>
 
-<li style="display: none;"><center>赞赏博主：<a href="assets/file/2023/04/2023040701.webp" data-fancybox="gallery" data-caption="微信：15816122881"><img src="assets/file/2023/04/2023040701.webp" alt="微信：15816122881" style="border: 0px;" width="90%"></a></center>
+<li style="display: none;"><center>赞赏博主：<a href="/assets/file/2023/04/2023040701.webp"" data-fancybox="gallery" data-caption="微信：15816122881"><img src="/assets/file/2023/04/2023040701.webp" alt="微信：15816122881" style="border: 0px;" width="90%"></a></center>
 </li></ul></ul>
 		      </div>	  
 	       <div class="widget">
         <h3>热评文章</h3>     
 			 
-           <ul class="topic"><li><a href="924.html">[SQLite] 用layui设计了管理后台</a> <i class="iconfont icon-comm"></i> 1</li><li><a href="3.html">关于SQl添加、删除、修改语句</a> <i class="iconfont icon-comm"></i> 0</li><li><a href="4.html">phpMyadmin的有关配置</a> <i class="iconfont icon-comm"></i> 0</li><li><a href="5.html">让照片更清晰</a> <i class="iconfont icon-comm"></i> 0</li><li><a href="7.html">网线的做法</a> <i class="iconfont icon-comm"></i> 0</li><li><a href="8.html">在局域网隐藏本台电脑</a> <i class="iconfont icon-comm"></i> 0</li><li><a href="9.html">解决无法删除文件的烦恼</a> <i class="iconfont icon-comm"></i> 0</li><li><a href="12.html">小学乘法表</a> <i class="iconfont icon-comm"></i> 0</li><li><a href="13.html">php计算页面执行时间</a> <i class="iconfont icon-comm"></i> 0</li><li><a href="34.html">PHP执行速度的获取</a> <i class="iconfont icon-comm"></i> 0</li> </ul>
+           <ul class="topic"><li><a href="587.html">2024年广东公需课学习指引及答案</a> <i class="iconfont icon-comm"></i> 10</li><li><a href="828.html">盛世华诞    举国同庆
+</a> <i class="iconfont icon-comm"></i> 7</li><li><a href="683.html">（小考全部试卷）雷州市2021年小学六年级教学质量监测</a> <i class="iconfont icon-comm"></i> 6</li><li><a href="652.html">2021届毕业班集体照</a> <i class="iconfont icon-comm"></i> 3</li><li><a href="19.html">现在正在想办法给空间续费</a> <i class="iconfont icon-comm"></i> 2</li><li><a href="753.html">记录第五轮全员核酸检测——在店前山尾当采样志愿者</a> <i class="iconfont icon-comm"></i> 2</li><li><a href="1032.html">雷州各镇的村庄简史及姓氏来源（调风篇）</a> <i class="iconfont icon-comm"></i> 2</li><li><a href="1.html">博客面前 人人可以是记者</a> <i class="iconfont icon-comm"></i> 1</li><li><a href="425.html">2013届毕业班集体照</a> <i class="iconfont icon-comm"></i> 1</li><li><a href="697.html">2021年雷州市林氏优秀学子报名具体事项</a> <i class="iconfont icon-comm"></i> 1</li> </ul>
 	          </div>	  
 	       <div class="widget">
         <h3>最新评论</h3>     
-		           <ul class="comment"><li><a href="828.html#Com-47">徐建伟 : 哈哈，刚过完年就开始暑假</a> <i class="iconfont icon-reply"></i></li><li><a href="1032.html#Com-46">穿拖鞋的广东人 : 本人看过调风镇各村庄基本</a></li><li><a href="1032.html#Com-45">穿拖鞋的广东人 : 东平村委会东坡南村有误，</a></li><li><a href="827.html#Com-44">徐建伟 : 你们可放假了？？？</a> <i class="iconfont icon-reply"></i></li><li><a href="827.html#Com-43">林继 : 现在，我知是怎么回事了，</a></li><li><a href="827.html#Com-42">徐建伟 : 建议你调整下倒计时的尺寸</a> <i class="iconfont icon-reply"></i></li><li><a href="984.html#Com-38">徐建伟 : 你是一名很优秀的共产党员</a></li><li><a href="587.html#Com-32">匿名网友 : 谢谢您的答案</a></li><li><a href="587.html#Com-31">匿名网友 : 谢谢你的答案</a></li><li><a href="587.html#Com-30">匿名网友 : 谢谢你的答案</a></li></ul>	 
+		           <ul class="comment"><li><a href="828.html#Com-47">徐建伟 : 哈哈，刚过完年就开始暑假</a> <i class="iconfont icon-reply"></i></li><li><a href="1032.html#Com-46">穿拖鞋的广东人 : 本人看过调风镇各村庄基本</a></li><li><a href="1032.html#Com-45">穿拖鞋的广东人 : 东平村委会东坡南村有误，</a></li><li><a href="828.html#Com-44">徐建伟 : 你们可放假了？？？</a> <i class="iconfont icon-reply"></i></li><li><a href="828.html#Com-43">林继 : 现在，我知是怎么回事了，</a></li><li><a href="828.html#Com-42">徐建伟 : 建议你调整下倒计时的尺寸</a> <i class="iconfont icon-reply"></i></li><li><a href="935.html#Com-38">徐建伟 : 你是一名很优秀的共产党员</a></li><li><a href="587.html#Com-32">匿名网友 : 谢谢您的答案</a></li><li><a href="587.html#Com-31">匿名网友 : 谢谢你的答案</a></li><li><a href="587.html#Com-30">匿名网友 : 谢谢你的答案</a></li></ul>	 
               </div>	  
 	       <div class="widget">
         <h3>友情链接</h3>     
@@ -828,7 +855,7 @@ Q群：
 <li><a href="https://www.zhanjiang.gov.cn/zjsfw/bmdh/jyj/zwgk/tzgg/index.html" target="_blank">湛江教育局</a></li>
 <li><a href="http://zk.jyj.zhanjiang.gov.cn/" target="_blank">湛江招考办</a></li>
 <li><a href="https://www.xdf.cn/zhuanti/suyang_pinyin/index.html" target="_blank">汉语拼音表</a></li>
-<li><a href="index-1.htm" target="_blank">荣耀查找设备</a></li>
+<li><a href="https://cloud.hihonor.com/" target="_blank">荣耀查找设备</a></li>
 <li><a href="https://cloud.huawei.com" target="_blank">华为云空间</a></li>
 <li><a href="https://i.mi.com/#/" target="_blank">小米云空间</a></li>
 <li><a href="https://layui.dev/" target="_blank">Layui 组件库</a></li>
@@ -918,14 +945,14 @@ Q群：
     </script>
 <!--计时功能代码-->
 &nbsp;|&nbsp;&nbsp;<a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank" style="color: #000;">粤ICP备20022961号</a>
-</p></div>
-<script type="text/javascript" async="" language="javascript" src="assets/js/layer.js"></script>
-<script type="text/javascript" async="" language="javascript" src="assets/js/ajax.js"></script>
+</div>
+<script type="text/javascript" async language="javascript" src="/assets/js/layer.js"></script>
+<script type="text/javascript" async language="javascript" src="/assets/js/ajax.js"></script>
 
 <!--手机端底部导航开始-->
 <div class="layout-footer">
     <div class="bottom_nav">
-          <a href="index.html"><i class="fa fa-book" style="font-size: 20px;font-style: oblique;"></i><div style="font-size:14px;text-decoration:none;">老林笔记</div></a> 
+          <a href="/index.html"><i class="fa fa-book" style="font-size: 20px;font-style: oblique;"></i><div style="font-size:14px;text-decoration:none;">老林笔记</div></a> 
     </div>
 <div class="bottom_nav">
 	<span style="cursor: pointer;" onclick="openSubmenu()">
@@ -960,10 +987,10 @@ Q群：
 				<a href="https://linji.cn/i.php">人在旅途</a>
 			</div>
             <div class="sub_menu" style="border-bottom:1.5px solid #F2F2F2">
-				<a href="index-1.htm">仿朋友圈</a>
+				<a href="https://m.wdlu.cn">仿朋友圈</a>
 			</div>
 			<div class="sub_menu" style="border-bottom:1.5px solid #F2F2F2">
-				<a href="archives.html">文章归档</a>
+				<a href="/archives.html">文章归档</a>
 			</div>
 			<div class="sub_menu" style="border-bottom:1.5px solid #F2F2F2">
 				<a href="https://linji.cn/file/">老林网盘</a>
@@ -1005,7 +1032,11 @@ Q群：
 </script>
 
 <progress id="content_progress" value="0" style="display: none;"></progress>
-<!-- 给博客顶部加一个浏览进度条，表示浏览当面页面的进度 --><!--  回顶部  -->
+<!-- 给博客顶部加一个浏览进度条，表示浏览当面页面的进度 --><!--  统计鸟  -->
+<script type="text/javascript" src="//api.tongjiniao.com/c?_=613193407680258048" async></script>
+<!--  统计鸟  -->
+
+<!--  回顶部  -->
 <style type="text/css">
 .scroll-to-top {
     display: none;
@@ -1015,7 +1046,7 @@ Q群：
     width: 36px;
     height: 36px;
     border-radius: 36px;
-    background: #fff url(assets/qblog/images/up.svg) no-repeat center center;
+    background: #fff url(/assets/qblog/images/up.svg) no-repeat center center;
     background-size: 20px 20px;
     border: 1px solid #666;
     opacity: .8;

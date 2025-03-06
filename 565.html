@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
  <meta http-equiv="x-dns-prefetch-control" content="on">
@@ -47,24 +47,24 @@
                                                                                                                                                       
 
 -->
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <!--IE 8浏览器的页面渲染方式-->
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <!--默认使用极速内核：针对国内浏览器产商-->
 <meta name="renderer" content="webkit">
 <title>轻博客程序目录结构&nbsp;|&nbsp;老林笔记</title>
-<meta name="keywords" content="">
-<meta name="description" content="轻博客程序目录结构，帮助大家修改二次开发及模板制作。│&nbsp; index.php 程序入口文件├─app 动态文件目录│&nbsp; ├─class 功能目录│&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; api.php ajax管理操作文件│&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; codes.php 验证码│&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; config.php 配置/密码公用函数类│&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; page.php 分页类│&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; upload.php 上传类">
-<link href="assets/qblog/style.css" rel="stylesheet" type="text/css">
-<link href="assets/js/highlightjs/dark.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" language="javascript" src="assets/js/jquery.min.js"></script>
-<link rel="stylesheet" href="assets/qblog/fontawesome.min.css">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<script defer="" src="assets/js/readmore.js" type="text/javascript"></script>
+<meta name="keywords" content="" />
+<meta name="description" content="轻博客程序目录结构，帮助大家修改二次开发及模板制作。│&nbsp; index.php 程序入口文件├─app 动态文件目录│&nbsp; ├─class 功能目录│&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; api.php ajax管理操作文件│&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; codes.php 验证码│&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; config.php 配置/密码公用函数类│&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; page.php 分页类│&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; upload.php 上传类" />
+<link href="/assets/qblog/style.css" rel="stylesheet" type="text/css" />
+<link href="/assets/js/highlightjs/dark.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
+<link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
-<link rel="stylesheet" href="assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'">
-<script src="assets/js/fancybox/fancybox.umd.min.js"></script>
+<link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
+<script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
 <script>
 $(document).ready(function() {
       Fancybox.bind('[data-fancybox]', {
@@ -164,7 +164,7 @@ $(document).ready(function() {
     <div class="dialog-mask1" onclick="closeLogin1()"></div>
     <div class="dialog-plane1">
         <h2>管理员登陆</h2>
-        <form class="search-form1" action="index.php?act=dologin" method="post">
+        <form class="search-form1" action="/index.php?act=dologin" method="post">
             <div class="search-form-input-plane1">
                 <input type="password" class="search-keyword1" name="pass" autocomplete="on" placeholder="输入密码..." required="required" value="">
 	   <input name="l" value="" type="hidden">
@@ -184,7 +184,7 @@ $(document).ready(function() {
     <div class="dialog-mask" onclick="closeSearch()"></div>
     <div class="dialog-plane">
         <h2>搜索内容</h2>
-        <form class="search-form" action="https://linji.cn/index.php" method="get" role="search">
+        <form class="search-form" action="/index.php" method="get" role="search">
             <div class="search-form-input-plane">
                 <input type="text" class="search-keyword" name="s" autocomplete="on" placeholder="搜索内容" required="required" value="">
             </div>
@@ -197,46 +197,27 @@ $(document).ready(function() {
     </div>
 </div>
 <!-- 搜索框结束 -->
-<div class="dropdown">
-<span class="dropbtn" onclick="openDropdown()"><i style="color: #888;font-size: 20px;position: absolute;right: 20px;top: 16px;z-index: 9999;height: 50px;font-weight: 300;cursor: pointer;" class="fa fa-user"></i></span>
-<div class="dialog-Dropdown-plane">
-    <div class="dialog-Dropdown-mask" onclick="closeDropdown()"></div>
-  <div class="dropdown-content">
-    <a href="comment.html"><i style="font-size: 20px;padding-right: 5px;" class="fa fa-comment"></i> 文章评论</a>
-    <a href="https://jz.linji.cn"><i style="font-size:20px;padding-right: 5px;" class="fa">&#xf157</i> 资金明细</a>
-</div>
-</div>
-</div>
-<div class="navbar-wrap">
+<div id="menu_toggle1" onclick="openLogin1()"><i style="color: #888;font-size: 20px;position: absolute;right: 20px;top: 16px;z-index: 9999;height: 50px;font-weight: 300;cursor: pointer;" class="fa fa-user"></i></div><div class="navbar-wrap">
   <div class="box-m">
     <div class="logo">
-      <h2 id="title"><a href="index.html">老林笔记</a></h2>   
+      <h2 id="title"><a href="/">老林笔记</a></h2>   
     </div>	   
-        <ul id="nav" class="collapse">
-          <li><a href="/b0/list-0.html">生活随笔</a></li>
-          <li><a href="/b1/list-1.html">荣誉证书</a></li>
-          <li><a href="/b2/list-2.html">继续教育</a></li>
-          <li><a href="/b3/list-3.html">小学教育</a></li>
-          <li><a href="/b4/list-4.html">小学校历</a></li>
-          <li><a href="/b5/list-5.html">毕业记忆</a></li>
-          <li><a href="/b6/list-6.html">相关通知</a></li>
-          <li><a href="/b7/list-7.html" class="on">信息科技</a></li>
-          <li><a href="/b8/list-8.html">闲说</a></li>
-          <li><a href="https://m.linji.cn/" target="_blank">朋友圈</a></li>
-          <li><a href="comment.html">评论</a></li>
-          <li><a href="archives.html">归档</a></li>
-          <li><a href="https://p.linji.cn" target="_blank">导航</a></li>
-          <li><a href="https://linji.cn/file/" target="_blank">网盘</a></li>
-          <li><a href="https://jz.linji.cn/" target="_blank">记帐</a></li>
-        </ul>
+      <ul id="nav" class="collapse"> 
+		<li><a href="/">首页</a></li><li><a href="/b0/list-0.html">生活随笔</a></li><li><a href="/b1/list-1.html">荣誉证书</a></li><li><a href="/b2/list-2.html">继续教育</a></li><li><a href="/b3/list-3.html">小学教育</a></li><li><a href="/b4/list-4.html">小学校历</a></li><li><a href="/b5/list-5.html">毕业记忆</a></li><li><a href="/b6/list-6.html">相关通知</a></li><li><a href="/b7/list-7.html">信息科技</a></li><li><a href="/b8/list-8.html">闲说</a></li>
+<li><a href="/comment.html">评论</a></li>
+<li><a href="/archives.html">归档</a></li>
+<li><a href="https://p.linji.cn" target="_blank">导航</a></li>
+<li><a href="/file/" target="_blank">网盘</a></li>
+<li><a href="https://jz.linji.cn/" target="_blank">记帐</a></li>
+<li><a href="https://m.linji.cn/" target="_blank">朋友圈</a></li><li><a href="javascript:void(0);" onclick="openLogin1()">登录</a></li>      </ul>   
       </div>
 </div>
 <div class="other-wrap collapse">
 	  <div class="other box-m">
-	   <div class="desc"><a href="https://linji.cn/i.php" target="_blank" title="旅游">路虽远，行则将至；事虽难，做则必成</a>
+	   <div class="desc"><a href="/i.php" target="_blank" title="旅游">路虽远，行则将至；事虽难，做则必成</a>
 
 <!-- activity-power-mode 打字效果 -->
-<script src='assets/js/activity-power-mode.min.js'></script>
+<script src='/assets/js/activity-power-mode.min.js' ></script>
 <script>
 POWERMODE.colorful = true;
 POWERMODE.shake = false;
@@ -347,22 +328,22 @@ document.body.addEventListener('input', POWERMODE);
             // -->
         </script>
         <!-- 距离 63 岁 --></div>
-	   <form method="get" class="search-form" action="https://linji.cn/index.php"> <input class="search-text" name="s" autocomplete="on" placeholder="输入关键词搜索..." required="required" type="text" value=""> <button class="search-submit" alt="搜索" type="submit">搜索</button></form>
+	   <form method="get" class="search-form" action="/index.php"> <input class="search-text" name="s" autocomplete="on" placeholder="输入关键词搜索..." required="required" type="text" value=""> <button class="search-submit" alt="搜索" type="submit">搜索</button></form>
 	   </div>   
 </div>
 </div>
 <div id="wrap"> <!-- 引入layui库 -->
-<script defer="" src="assets/qblog/layui/layui.js"></script>
+<script defer src="/assets/qblog/layui/layui.js"></script>
 <style type="text/css">
 	/** 图标字体 **/
 @font-face {
   font-family: 'layui-icon';
-  src: url('assets/qblog/layui/font/iconfont.eot');
-  src: url('assets/qblog/layui/font/iconfont.eot') format('embedded-opentype'),
-       url('assets/qblog/layui/font/iconfont.woff2') format('woff2'),
-       url('assets/qblog/layui/font/iconfont.woff') format('woff'),
-       url('assets/qblog/layui/font/iconfont.ttf') format('truetype'),
-       url('assets/qblog/layui/font/iconfont.svg') format('svg');
+  src: url('/assets/qblog/layui/font/iconfont.eot?v=282');
+  src: url('/assets/qblog/layui/font/iconfont.eot?v=282#iefix') format('embedded-opentype'),
+       url('/assets/qblog/layui/font/iconfont.woff2?v=282') format('woff2'),
+       url('/assets/qblog/layui/font/iconfont.woff?v=282') format('woff'),
+       url('/assets/qblog/layui/font/iconfont.ttf?v=282') format('truetype'),
+       url('/assets/qblog/layui/font/iconfont.svg?v=282#layui-icon') format('svg');
 }
 
 .layui-icon{
@@ -568,12 +549,12 @@ document.body.addEventListener('input', POWERMODE);
 .layui-icon-close-fill:before{content:"\1007"}
 .layui-icon-ok-circle:before{content:"\1005"}
 </style>
-<script src="assets/js/translate.js"></script>
+<script src="/assets/js/translate.js"></script>
   <div id="content" style="position: relative;">
-  <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
-"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="index.htm" style="padding-left: 5px;color: #7d8c8e;">首页</a>
-<span>/</span><a href="list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
-<audio id="audioPlayer" controls="" preload="" style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=轻博客程序目录结构。轻博客程序目录结构，帮助大家修改二次开发及模板制作。nbsp indexphp 程序入口文件app 动态文件目录nbsp class 功能目录nbsp nbspnbspnbspnbspnbsp apiphp ajax管理操作文件nbsp nbspnbspnbspnbspnbsp codesphp 验证码nbsp nbspnbspnbspnbspnbsp configphp 配置密码公用函数类nbsp nbspnbspnbspnbspnbsp pagephp 分页类nbsp nbspnbspnbspnbspnbsp uploadphp 上传类nbsp nbspnbspnbsp">
+  <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
+"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
+<span>/</span><a href="/b7/list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
+<audio id="audioPlayer" controls preload style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=轻博客程序目录结构。轻博客程序目录结构，帮助大家修改二次开发及模板制作。nbsp indexphp 程序入口文件app 动态文件目录nbsp class 功能目录nbsp nbspnbspnbspnbspnbsp apiphp ajax管理操作文件nbsp nbspnbspnbspnbspnbsp codesphp 验证码nbsp nbspnbspnbspnbspnbsp configphp 配置密码公用函数类nbsp nbspnbspnbspnbspnbsp pagephp 分页类nbsp nbspnbspnbspnbspnbsp uploadphp 上传类nbsp nbspnbspnbsp">
   您的浏览器不支持 audio 元素。
 </audio>
 <span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
@@ -619,14 +600,14 @@ document.body.addEventListener('input', POWERMODE);
 </style>
     <div id="main1">         
 <div id="article">
-<div id="printview">
+<div  id="printview">
 <h1>轻博客程序目录结构</h1><div class="text">
 轻博客程序目录结构，帮助大家修改二次开发及模板制作。<br><p>│&nbsp; index.php 程序入口文件</p>├─app 动态文件目录<br>│&nbsp; ├─class 功能目录<br>│&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; api.php ajax管理操作文件<br>│&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; codes.php 验证码<br>│&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; config.php 配置/密码公用函数类<br>│&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; page.php 分页类<br>│&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; upload.php 上传类<br>│&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>│&nbsp; └─db 数据库<br>│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; log.db<br>│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>└─assets 静态文件目录<br>&nbsp;&nbsp;&nbsp; ├─file 图片上传目录<br>&nbsp;&nbsp;&nbsp; ├─js&nbsp;&nbsp; js目录<br>&nbsp;&nbsp;&nbsp; │&nbsp; │&nbsp; ajax.js&nbsp; ajax操作js文件<br>&nbsp;&nbsp;&nbsp; │&nbsp; │&nbsp; jquery.min.js jquery库<br>&nbsp;&nbsp;&nbsp; │&nbsp; │ &nbsp;<br>&nbsp;&nbsp;&nbsp; │&nbsp; ├─edit 编辑器目录<br>&nbsp;&nbsp;&nbsp; │&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nicEdit.js<br>&nbsp;&nbsp;&nbsp; │&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nicEditorIcons.gif<br>&nbsp;&nbsp;&nbsp; │&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp; │&nbsp; └─laydate 日期插件目录<br>&nbsp;&nbsp;&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp; └─qblog&nbsp; 模板目录<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; foot.php&nbsp; 底部<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; head.php 头部<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; index.php 首页<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; login.php&nbsp; 登陆<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; plist.php&nbsp; 评论列表<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; post.php&nbsp; 发布/编辑<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; right.php&nbsp; 右侧边栏<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; setting.php 设置<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; style.css&nbsp; 样式文件<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; theme.php 模板配置文件<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; view.php 文章页<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; widget.php 边栏设置<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │ &nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; └─images&nbsp;&nbsp; 字体图标目录<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iconfont.eot<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iconfont.svg<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iconfont.ttf<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iconfont.woff&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</div>
 <div class="readall_box">
           <div class="read_more_mask"></div>
           <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
       </div>
-<p class="time clb">信息科技 2020-03-20 15:33:39 通过 网页 <i class="iconfont icon-view"></i> 浏览(3169) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">信息科技 2020-03-20 15:33:39 通过 网页 <i class="iconfont icon-view"></i> 浏览(3177) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->
@@ -636,13 +617,13 @@ document.body.addEventListener('input', POWERMODE);
 <p style="color: #999;"><i class="fa fa-angle-left em12" style="color: #d0d0d0;"></i>
 <i class="fa fa-angle-left em12 mr6" style="margin-right: 6px;color: #d0d0d0;"></i>
 上一篇</p>
-<a class="pre" href="562.html"><div style="height: 3.2em;overflow: hidden;">上一篇文章</div></a></div>
+<a class="pre" href="/b1/564.html"><div style="height: 3.2em;overflow: hidden;">关于2019年度雷州市中小学教师教学论文评选结果的通报</div></a></div>
 
 <div id="predown">
 <p style="color: #999;">下一篇
 <i class="fa fa-angle-right em12 ml6" style="margin-left: 6px;color: #d0d0d0;"></i>
 <i class="fa fa-angle-right em12" style="color: #d0d0d0;"></i></p>
-<a class="next" href="572.html"><div style="height: 3.2em;overflow: hidden;">用layui设计了管理后台</div></a></div>
+<a class="next" href="/b6/566.html"><div style="height: 3.2em;overflow: hidden;">下一篇文章</div></a></div>
 </div>
 <!-- 上一篇 下一篇 结束-->
    <div id="comments">
@@ -653,11 +634,11 @@ document.body.addEventListener('input', POWERMODE);
 		<h3 id="reply-title" class="comment-reply-title">发表评论</h3>
  <form id="formpl">
 <div class="s_e mt10"><textarea tabindex="1" placeholder="发言要文明，评论有水平..." name="pcontent" rows="3" id="pcontent" class="input_textarea"></textarea></div>
-<div id="pl_other" class="hide"><div class="s_e"><input name="pname" tabindex="2" placeholder="昵称(选填)" id="pname" type="text" class="input_narrow" value="" maxlength="10"></div>
-<div class="s_e"><input name="pmail" tabindex="2" placeholder="邮箱(选填)" id="pmail" type="email" class="input_narrow" value="" maxlength="30"></div>
-<div class="s_e"><input name="purl" tabindex="3" placeholder="网址(选填)" id="purl" type="url" class="input_narrow" value="" maxlength="50"></div>
+<div id="pl_other" class="hide"><div class="s_e"><input name="pname" tabindex="2" placeholder="昵称(选填)" id="pname" type="text" class="input_narrow" value="" maxlength="10" /></div>
+<div class="s_e"><input name="pmail" tabindex="2" placeholder="邮箱(选填)" id="pmail" type="email" class="input_narrow" value="" maxlength="30" /></div>
+<div class="s_e"><input name="purl" tabindex="3" placeholder="网址(选填)" id="purl" type="url" class="input_narrow" value="" maxlength="50" /><input type="hidden" id="tid" name="tid" value="7"></div>
 </div>
-	 	 <div class="s_e"><button type="button" onclick="addpl('565','0')" id="add" class="btn"> 提 交 </button> <button type="button" onclick="history.back();" id="bck" class="btn"> 返 回 </button><span id="errmsg"></span></div>
+	 	 <div class="s_e"><button type="button" onClick="addpl('565','0')" id="add" class="btn"> 提 交 </button> <button type="button" onClick="history.back();" id="bck" class="btn"> 返 回 </button><span id="errmsg"></span></div>
      </form></div>	
         </div>	
     </div>
@@ -740,14 +721,14 @@ document.body.addEventListener('input', POWERMODE);
     </script>
 <!--计时功能代码-->
 &nbsp;|&nbsp;&nbsp;<a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank" style="color: #000;">粤ICP备20022961号</a>
-</p></div>
-<script type="text/javascript" async="" language="javascript" src="assets/js/layer.js"></script>
-<script type="text/javascript" async="" language="javascript" src="assets/js/ajax.js"></script>
+</div>
+<script type="text/javascript" async language="javascript" src="/assets/js/layer.js"></script>
+<script type="text/javascript" async language="javascript" src="/assets/js/ajax.js"></script>
 
 <!--手机端底部导航开始-->
 <div class="layout-footer">
     <div class="bottom_nav">
-          <a href="index.html"><i class="fa fa-book" style="font-size: 20px;font-style: oblique;"></i><div style="font-size:14px;text-decoration:none;">老林笔记</div></a> 
+          <a href="/index.html"><i class="fa fa-book" style="font-size: 20px;font-style: oblique;"></i><div style="font-size:14px;text-decoration:none;">老林笔记</div></a> 
     </div>
 <div class="bottom_nav">
 	<span style="cursor: pointer;" onclick="openSubmenu()">
@@ -782,10 +763,10 @@ document.body.addEventListener('input', POWERMODE);
 				<a href="https://linji.cn/i.php">人在旅途</a>
 			</div>
             <div class="sub_menu" style="border-bottom:1.5px solid #F2F2F2">
-				<a href="index-1.htm">仿朋友圈</a>
+				<a href="https://m.wdlu.cn">仿朋友圈</a>
 			</div>
 			<div class="sub_menu" style="border-bottom:1.5px solid #F2F2F2">
-				<a href="archives.html">文章归档</a>
+				<a href="/archives.html">文章归档</a>
 			</div>
 			<div class="sub_menu" style="border-bottom:1.5px solid #F2F2F2">
 				<a href="https://linji.cn/file/">老林网盘</a>
@@ -827,7 +808,11 @@ document.body.addEventListener('input', POWERMODE);
 </script>
 
 <progress id="content_progress" value="0" style="display: none;"></progress>
-<!-- 给博客顶部加一个浏览进度条，表示浏览当面页面的进度 --><!--  回顶部  -->
+<!-- 给博客顶部加一个浏览进度条，表示浏览当面页面的进度 --><!--  统计鸟  -->
+<script type="text/javascript" src="//api.tongjiniao.com/c?_=613193407680258048" async></script>
+<!--  统计鸟  -->
+
+<!--  回顶部  -->
 <style type="text/css">
 .scroll-to-top {
     display: none;
@@ -837,7 +822,7 @@ document.body.addEventListener('input', POWERMODE);
     width: 36px;
     height: 36px;
     border-radius: 36px;
-    background: #fff url(assets/qblog/images/up.svg) no-repeat center center;
+    background: #fff url(/assets/qblog/images/up.svg) no-repeat center center;
     background-size: 20px 20px;
     border: 1px solid #666;
     opacity: .8;

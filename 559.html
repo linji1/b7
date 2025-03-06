@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
  <meta http-equiv="x-dns-prefetch-control" content="on">
@@ -47,24 +47,24 @@
                                                                                                                                                       
 
 -->
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <!--IE 8浏览器的页面渲染方式-->
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <!--默认使用极速内核：针对国内浏览器产商-->
 <meta name="renderer" content="webkit">
 <title>无名轻博客修改笔记&nbsp;|&nbsp;老林笔记</title>
-<meta name="keywords" content="">
-<meta name="description" content="一、下载模板样式 下载文件 林继-自我总结.doc">
-<link href="assets/qblog/style.css" rel="stylesheet" type="text/css">
-<link href="assets/js/highlightjs/dark.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" language="javascript" src="assets/js/jquery.min.js"></script>
-<link rel="stylesheet" href="assets/qblog/fontawesome.min.css">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<script defer="" src="assets/js/readmore.js" type="text/javascript"></script>
+<meta name="keywords" content="" />
+<meta name="description" content="一、下载模板样式 下载文件 林继-自我总结.doc" />
+<link href="/assets/qblog/style.css" rel="stylesheet" type="text/css" />
+<link href="/assets/js/highlightjs/dark.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
+<link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
-<link rel="stylesheet" href="assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'">
-<script src="assets/js/fancybox/fancybox.umd.min.js"></script>
+<link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
+<script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
 <script>
 $(document).ready(function() {
       Fancybox.bind('[data-fancybox]', {
@@ -164,7 +164,7 @@ $(document).ready(function() {
     <div class="dialog-mask1" onclick="closeLogin1()"></div>
     <div class="dialog-plane1">
         <h2>管理员登陆</h2>
-        <form class="search-form1" action="index.php?act=dologin" method="post">
+        <form class="search-form1" action="/index.php?act=dologin" method="post">
             <div class="search-form-input-plane1">
                 <input type="password" class="search-keyword1" name="pass" autocomplete="on" placeholder="输入密码..." required="required" value="">
 	   <input name="l" value="" type="hidden">
@@ -184,7 +184,7 @@ $(document).ready(function() {
     <div class="dialog-mask" onclick="closeSearch()"></div>
     <div class="dialog-plane">
         <h2>搜索内容</h2>
-        <form class="search-form" action="https://linji.cn/index.php" method="get" role="search">
+        <form class="search-form" action="/index.php" method="get" role="search">
             <div class="search-form-input-plane">
                 <input type="text" class="search-keyword" name="s" autocomplete="on" placeholder="搜索内容" required="required" value="">
             </div>
@@ -197,46 +197,27 @@ $(document).ready(function() {
     </div>
 </div>
 <!-- 搜索框结束 -->
-<div class="dropdown">
-<span class="dropbtn" onclick="openDropdown()"><i style="color: #888;font-size: 20px;position: absolute;right: 20px;top: 16px;z-index: 9999;height: 50px;font-weight: 300;cursor: pointer;" class="fa fa-user"></i></span>
-<div class="dialog-Dropdown-plane">
-    <div class="dialog-Dropdown-mask" onclick="closeDropdown()"></div>
-  <div class="dropdown-content">
-    <a href="comment.html"><i style="font-size: 20px;padding-right: 5px;" class="fa fa-comment"></i> 文章评论</a>
-    <a href="https://jz.linji.cn"><i style="font-size:20px;padding-right: 5px;" class="fa">&#xf157</i> 资金明细</a>
-</div>
-</div>
-</div>
-<div class="navbar-wrap">
+<div id="menu_toggle1" onclick="openLogin1()"><i style="color: #888;font-size: 20px;position: absolute;right: 20px;top: 16px;z-index: 9999;height: 50px;font-weight: 300;cursor: pointer;" class="fa fa-user"></i></div><div class="navbar-wrap">
   <div class="box-m">
     <div class="logo">
-      <h2 id="title"><a href="index.html">老林笔记</a></h2>   
+      <h2 id="title"><a href="/">老林笔记</a></h2>   
     </div>	   
-        <ul id="nav" class="collapse">
-          <li><a href="/b0/list-0.html">生活随笔</a></li>
-          <li><a href="/b1/list-1.html">荣誉证书</a></li>
-          <li><a href="/b2/list-2.html">继续教育</a></li>
-          <li><a href="/b3/list-3.html">小学教育</a></li>
-          <li><a href="/b4/list-4.html">小学校历</a></li>
-          <li><a href="/b5/list-5.html">毕业记忆</a></li>
-          <li><a href="/b6/list-6.html">相关通知</a></li>
-          <li><a href="/b7/list-7.html" class="on">信息科技</a></li>
-          <li><a href="/b8/list-8.html">闲说</a></li>
-          <li><a href="https://m.linji.cn/" target="_blank">朋友圈</a></li>
-          <li><a href="comment.html">评论</a></li>
-          <li><a href="archives.html">归档</a></li>
-          <li><a href="https://p.linji.cn" target="_blank">导航</a></li>
-          <li><a href="https://linji.cn/file/" target="_blank">网盘</a></li>
-          <li><a href="https://jz.linji.cn/" target="_blank">记帐</a></li>
-        </ul>
+      <ul id="nav" class="collapse"> 
+		<li><a href="/">首页</a></li><li><a href="/b0/list-0.html">生活随笔</a></li><li><a href="/b1/list-1.html">荣誉证书</a></li><li><a href="/b2/list-2.html">继续教育</a></li><li><a href="/b3/list-3.html">小学教育</a></li><li><a href="/b4/list-4.html">小学校历</a></li><li><a href="/b5/list-5.html">毕业记忆</a></li><li><a href="/b6/list-6.html">相关通知</a></li><li><a href="/b7/list-7.html">信息科技</a></li><li><a href="/b8/list-8.html">闲说</a></li>
+<li><a href="/comment.html">评论</a></li>
+<li><a href="/archives.html">归档</a></li>
+<li><a href="https://p.linji.cn" target="_blank">导航</a></li>
+<li><a href="/file/" target="_blank">网盘</a></li>
+<li><a href="https://jz.linji.cn/" target="_blank">记帐</a></li>
+<li><a href="https://m.linji.cn/" target="_blank">朋友圈</a></li><li><a href="javascript:void(0);" onclick="openLogin1()">登录</a></li>      </ul>   
       </div>
 </div>
 <div class="other-wrap collapse">
 	  <div class="other box-m">
-	   <div class="desc"><a href="https://linji.cn/i.php" target="_blank" title="旅游">路虽远，行则将至；事虽难，做则必成</a>
+	   <div class="desc"><a href="/i.php" target="_blank" title="旅游">路虽远，行则将至；事虽难，做则必成</a>
 
 <!-- activity-power-mode 打字效果 -->
-<script src='assets/js/activity-power-mode.min.js'></script>
+<script src='/assets/js/activity-power-mode.min.js' ></script>
 <script>
 POWERMODE.colorful = true;
 POWERMODE.shake = false;
@@ -347,22 +328,22 @@ document.body.addEventListener('input', POWERMODE);
             // -->
         </script>
         <!-- 距离 63 岁 --></div>
-	   <form method="get" class="search-form" action="https://linji.cn/index.php"> <input class="search-text" name="s" autocomplete="on" placeholder="输入关键词搜索..." required="required" type="text" value=""> <button class="search-submit" alt="搜索" type="submit">搜索</button></form>
+	   <form method="get" class="search-form" action="/index.php"> <input class="search-text" name="s" autocomplete="on" placeholder="输入关键词搜索..." required="required" type="text" value=""> <button class="search-submit" alt="搜索" type="submit">搜索</button></form>
 	   </div>   
 </div>
 </div>
 <div id="wrap"> <!-- 引入layui库 -->
-<script defer="" src="assets/qblog/layui/layui.js"></script>
+<script defer src="/assets/qblog/layui/layui.js"></script>
 <style type="text/css">
 	/** 图标字体 **/
 @font-face {
   font-family: 'layui-icon';
-  src: url('assets/qblog/layui/font/iconfont.eot');
-  src: url('assets/qblog/layui/font/iconfont.eot') format('embedded-opentype'),
-       url('assets/qblog/layui/font/iconfont.woff2') format('woff2'),
-       url('assets/qblog/layui/font/iconfont.woff') format('woff'),
-       url('assets/qblog/layui/font/iconfont.ttf') format('truetype'),
-       url('assets/qblog/layui/font/iconfont.svg') format('svg');
+  src: url('/assets/qblog/layui/font/iconfont.eot?v=282');
+  src: url('/assets/qblog/layui/font/iconfont.eot?v=282#iefix') format('embedded-opentype'),
+       url('/assets/qblog/layui/font/iconfont.woff2?v=282') format('woff2'),
+       url('/assets/qblog/layui/font/iconfont.woff?v=282') format('woff'),
+       url('/assets/qblog/layui/font/iconfont.ttf?v=282') format('truetype'),
+       url('/assets/qblog/layui/font/iconfont.svg?v=282#layui-icon') format('svg');
 }
 
 .layui-icon{
@@ -568,12 +549,12 @@ document.body.addEventListener('input', POWERMODE);
 .layui-icon-close-fill:before{content:"\1007"}
 .layui-icon-ok-circle:before{content:"\1005"}
 </style>
-<script src="assets/js/translate.js"></script>
+<script src="/assets/js/translate.js"></script>
   <div id="content" style="position: relative;">
-  <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
-"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="index.htm" style="padding-left: 5px;color: #7d8c8e;">首页</a>
-<span>/</span><a href="list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
-<audio id="audioPlayer" controls="" preload="" style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=无名轻博客修改笔记。加入dns预解析提升访问速度网站的加载顺序都是从head开始nbsp那么我们直接把dns预解析的代码放在头部即可，当然其他位置你也可以测试。ltdns预解析自动代码gtltmeta httpequivxdnsprefetchcontrol contentongtlt手动dns预解析gtltlink reldnsprefetch hrefwwwnmssbcn gtltlink reldnsprefetch hrefhttpspannmssbcngtltlink reldnsprefetch hrefwwwnmsbbcom gt手动设置需要dns预解析的网站域名，最好是你站点使">
+  <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
+"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
+<span>/</span><a href="/b7/list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
+<audio id="audioPlayer" controls preload style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=无名轻博客修改笔记。加入dns预解析提升访问速度网站的加载顺序都是从head开始nbsp那么我们直接把dns预解析的代码放在头部即可，当然其他位置你也可以测试。ltdns预解析自动代码gtltmeta httpequivxdnsprefetchcontrol contentongtlt手动dns预解析gtltlink reldnsprefetch hrefwwwnmssbcn gtltlink reldnsprefetch hrefhttpspannmssbcngtltlink reldnsprefetch hrefwwwnmsbbcom gt手动设置需要dns预解析的网站域名，最好是你站点使">
   您的浏览器不支持 audio 元素。
 </audio>
 <span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
@@ -581,7 +562,7 @@ document.body.addEventListener('input', POWERMODE);
     <script>
         const audioPlayer = document.getElementById('audioPlayer');
         const audioFiles = [
-            'https://dict.youdao.com/dictvoice?le=zh&audio=无名轻博客修改笔记。加入dns预解析提升访问速度网站的加载顺序都是从head开始nbsp那么我们直接把dns预解析的代码放在头部即可，当然其他位置你也可以测试。ltdns预解析自动代码gtltmeta httpequivxdnsprefetchcontrol contentongtlt手动dns预解析gtltlink reldnsprefetch hrefwwwnmssbcn gtltlink reldnsprefetch hrefhttpspannmssbcngtltlink reldnsprefetch hrefwwwnmsbbcom gt手动设置需要dns预解析的网站域名，最好是你站点使','https://dict.youdao.com/dictvoice?le=zh&audio=用域名，如图床域名，静态资源域名等。手动设置代码。请把以上代码中的 httpspannmssbcn 和 wwwnmssbcn wwwnmsbbcom 改为你站点用到的域名即可，有用到的域名你都可以加上，不限制代码为三个，如果你有10个域名，link标签你弄十个即可，但是rel后面必须要dnsprefetch才有效，还是少用这个代码，原因百度吧。限制摘要高度ltdiv styleheight 412pxoverflow hiddengtltcentergtltimg srcassetsfileaawebp stylemaxwidth100gtltcentergtltdivgt图集代码ltstyl','https://dict.youdao.com/dictvoice?le=zh&audio=e typetextcssgtlayuicolspace15gt     padding 75pxlayuicolspace15     margin 75pxzhiche       height 205pxmedia screen and minwidth 992pxlayuicolmd6     width 50float leftposition relative    display block    boxsizing borderboxmedia screen and maxwidth650pxzhiche       height autoltstylegtltdiv clas','https://dict.youdao.com/dictvoice?le=zh&audio=slayuibggray stylepadding 10px 0pxgt  ltdiv classlayuirow layuicolspace15gt    ltdiv classlayuicolmd6gtlta hrefassetsfile2022052022052102webp datafancyboxgallerygtltimg srcassetsfile2022052022052102webp stylewidth 100gtltagt    ltdivgt    ltdiv classlayuicolmd6gtlta hrefassetsfile2022052022052101web','https://dict.youdao.com/dictvoice?le=zh&audio=p datafancyboxgallerygtltimg srcassetsfile2022052022052101webp classzhichegtltagt    ltdivgt  ltdivgt ltdivgt在线查看PDF文件lta hrefpdfwebviewerhtmlfileassetsfile202201创维光电一体常见问题及解决办法pdf targetblankgtltstronggt创维光电一体常见问题及解决办法pdfltstronggtltagt在线查看Word，xlsx，PPT文件lta hrefplayhtmlv44mp4 targetblankgt观看视频ltag','https://dict.youdao.com/dictvoice?le=zh&audio=t123docampwdAccPdf1123docampwdEmbedFS1httpsviewofficeappslivecomopviewaspxsrclinjicn123docltiframe srchttpsviewofficeappslivecomopembedaspxsrclinjiorgassetsfile20200212374695642386e534docampwdStartOn1 width100 height1030px frameborder0gt这是嵌入 lta targetblank hrefhttpsofficecom relnoopener noreferrerg','https://dict.youdao.com/dictvoice?le=zh&audio=tMicrosoft Officeltagt 文档，由 lta targetblank hrefhttpsofficecomwebapps relnoopener noreferrergtOffice Onlineltagt 支持。ltiframegt段落缩进两格ltdiv stylefontfamily Microsoft YaHei lineheight30pxgtltpgtltpgtltp styletextindent40pxgt内容ltpgtltbrgtltp styletextalign rightgtltbrgtltpgtltdivgt页首导航栏设置导航菜单ltligtlta h','https://dict.youdao.com/dictvoice?le=zh&audio=refindexgt首页ltagtltligt一，下载模板样式ltdiv styleclear both borderleft 0pt solid rgb214, 192, 148 width 100gtltdiv stylebackgroundcolor rgb230, 238, 247 borderbottom 1px dashed rgb64, 138, 183  important color rgb63, 103, 165 fontweight bold padding 5pxgtlti classfas fadownloadgtltigt 下载文件 ltdivgtltdiv sty','https://dict.youdao.com/dictvoice?le=zh&audio=lebordercolor mozusetextcolor rgb230, 238, 247 rgb230, 238, 247 borderstyle none solid solid borderwidth 0pt 1px 1px color E6EEF7 padding 10pxgtlta targetblank hrefassetsfile202002lin1doc stylegt林继自我总结docltagtltdivgtltdivgt二，视频播放直接播放playhtmlvbeijingvideoDSCF7489mp4调用ckplayer播放视频ltscript typetextjava','https://dict.youdao.com/dictvoice?le=zh&audio=script srcassetsjsckplayerckplayerjsgtltscriptgtltdiv classvideo stylewidth 100height 529pxgtltdivgtltscript typetextjavascriptgtvar videoObject  container video,代表容器的ID，或代表容器的classvariable player,该属性必需设置，值等于下面的new chplayer的对象poster,封面图片videolinjicnassetsfile20200220130816111444flv视频地址var playernew ','https://dict.youdao.com/dictvoice?le=zh&audio=ckplayervideoObjectltscriptgtckplayer去掉修改右上角logo位置在查阅该文之前需要了解的内容如下配置文件ckplayerjs文件功能说明配置文件ckplayerxml文件功能说明配置功能介绍ckplayerjs中搜索logockplayerxml中搜索ltlogogt去掉的方法是修改成logonullckplayerxml中修改成ltlogogtnullltlogogt调用内置播放器ltiframe width100 height529px srcassetsfile20200220130816111444mp4 frameborder0 allowfull','https://dict.youdao.com/dictvoice?le=zh&audio=screengtltiframegt三，相册功能ltdiv idgallery1 classgallerygtltdl classgalleryitemgtltdt classgalleryicon landscapegtlta hrefassetsfile202002image241webp datafancyboxgallerygtltimg srcassetsfile202002image241webp stylemaxwidth100gtltagtltdtgtltdlgtltbr styleclear bothgtltdivgtltstyle typetextcssgtgallery1','https://dict.youdao.com/dictvoice?le=zh&audio= margin autogallery1 galleryitem float leftmargintop 10pxtextalign centerwidth 20gallery1 img border 2px solid cfcfcfgallery1 gallerycaption marginleft 0ltstylegt四，URLOS面板设置无名轻博客伪静态rewrite post09html indexphpactplampid1 last rewrite comment09html indexphpactplistampp1 lastrewrite index09html indexph','https://dict.youdao.com/dictvoice?le=zh&audio=pp1 lastrewrite list09html indexphptid1 lastrewrite list0909html indexphptid1ampp2 lastrewrite indexhtml indexphp lastrewrite commenthtml indexphpactplist lastserver块扩展内容if d requestfilename            rewrite  httpshost12 permanent      servername wwwlinjicnreturn 301 httpslinjicnrequesturiWordpres','https://dict.youdao.com/dictvoice?le=zh&audio=s设置server块扩展内容servername wwwwdlucnreturn 301 schemewdlucnrequesturiif httpuseragent  YandexBotAhrefsBotDotbotbingbotqihoobotBaiduspiderGooglebotGooglebotMobileGooglebotImageMediapartnersGoogleAdsbotGoogleFeedfetcherGoogleYahoo SlurpYahoo Slurp ChinaYoudaoBotSosospiderSogou spiderSogou web spiderMSNB','https://dict.youdao.com/dictvoice?le=zh&audio=otiaarchiverTomato Bot       return 403             if d requestfilename            rewrite  httpshost12 permanent      伪静态nbsptryfiles uri uri indexphpargs Add trailing slash to wpadmin requestsrewrite wpadmin schemehosturi permanent五，wangEditor2关闭过滤javascripthttpswwwkancloudcnwangfupengwangeditor2','https://dict.youdao.com/dictvoice?le=zh&audio=113983默认情况下，用户编辑源码之后，编辑器会过滤掉源码中的ltscriptgt标签记起内容，防止用户输入一些攻击性的脚本。你如果不想要这个过滤功能，可以通过nbspeditorconfigjsFilternbspnbspfalsenbsp来关闭。该操作要在editorcreate之前进行。ltdiv iddiv1gt    ltpgt请输入内容ltpgtltdivgtlt这里引用jquery和wangEditorjsgtltscript typetextjavascriptgt    var editor  new wangEditordiv1      关闭js过滤    editor','https://dict.youdao.com/dictvoice?le=zh&audio=configjsFilter  false      editorcreateltscriptgt六，以下代码放在nbsp设置微博座右铭人生苦短，珍惜当下 lt倒功能代码gtltscript srchttpszzbdstaticcomlinksubmitpushjsgtltscriptgtltscript languagejavascript typetextjavascriptgtltCDATAvar interval  1000 function ShowCountDownyear,month,day,divname  var now  new Date var endDate  new ','https://dict.youdao.com/dictvoice?le=zh&audio=Dateyear, month1, day var leftTimeendDategetTimenowgetTime var leftsecond  parseIntleftTime1000 var day1parseIntleftsecond2460606 var day1Mathfloorleftsecond606024 var hourMathfloorleftsecondday12460603600 var minuteMathfloorleftsecondday1246060hour360060 var secondMathfloorleftsecondday1246060hour3','https://dict.youdao.com/dictvoice?le=zh&audio=600minute60 var cc  documentgetElementByIddivname ccinnerHTML  暑假时间year年month月day日ltbrgt距今day1天hour小时minute分second秒  windowsetIntervalfunctionShowCountDown2020,7,5,divdown2, intervalgtltscriptgtlt倒功能代码gtlt计时功能代码gt            ltscript languagejavascriptgt            function tick                 var ','https://dict.youdao.com/dictvoice?le=zh&audio=years,days,hours, minutes, seconds                var openday  new Date19771026 0000    这里填写建站时间 20050103                var today  new Date 获取系统当前时间                var total  todaygetTimeopendaygetTime1000                yearsMathfloortotal31536000                totaltotalyears31536000            ','https://dict.youdao.com/dictvoice?le=zh&audio=    daysMathfloortotal86400                totaltotaldays86400                hoursMathfloortotal3600                totaltotalhours3600                minutesMathfloortotal60                totaltotalminutes60                secondsMathfloortotal                timeString  years 年 days 天 hours 时 mi','https://dict.youdao.com/dictvoice?le=zh&audio=nutes 分 seconds 秒                documentgetElementByIdClockinnerHTML  timeString                windowsetTimeouttick, 1000                        windowonload  tick            ltscriptgtlt计时功能代码gtlt 复制文字提示 gtltlink relstylesheet typetextcss targetblank hrefassetsjssweetalertsweetalertmincssgtltscri','https://dict.youdao.com/dictvoice?le=zh&audio=pt srcassetsjssweetalertsweetalertminjsgtltscriptgtltscriptgtdocumentbodyoncopy  function  swal复制成功, 转载请务必保留原文链接，申明来源，谢谢合作,successltscriptgtlt 复制文字提示 gtlt  回顶部  gtltstyle typetextcssgtscrolltotop   display none  width 30px  height 30px  lineheight 0px  color fff  textalign center  backgroundcolor 33','https://dict.youdao.com/dictvoice?le=zh&audio=3  boxshadow 0 1px 3px rgba0, 0, 0, 02  cursor pointer  bottom 5  position fixed  right 0px  padding 7px  zindex 999scrolltotophover   opacity 8ltstylegtltscript typetextjavascript charsetutf8gt   jQuerydocumentreadyfunctionif windowscrollTop  0scrolltotopfadeIn1200 如果距离顶部的距离不为20，显示scrolltotopvar sc','https://dict.youdao.com/dictvoice?le=zh&audio=rollDiv  scrolltotopwindowscrollfunctionif windowscrollTop  0scrollDivfadeOut350如果距离顶部的距离为20，隐藏scrollDivelsescrollDivfadeIn1200其他情况下，显示scrollDivscrolltotopclickfunctionhtml, bodyanimatescrollTop 0 点击按钮，滚动回到顶部, 600  ltscriptgtltdiv classscrolltotop styledisplay nonegtlti classfa fachevronupgtltigtltd','https://dict.youdao.com/dictvoice?le=zh&audio=ivgtlt 返回顶部 gtlt activitypowermode 打字效果 gtltscript srchttpswwwazimiaocomwpcontentthemespurelovejsactivitypowermodeminjs gtltscriptgtltscriptgtPOWERMODEcolorful  truePOWERMODEshake  falsedocumentbodyaddEventListenerinput, POWERMODEltscriptgtlt 打字效果End gtlt 标题变化 gtltscriptgtevalfunctionp,a,c,k,e,defun','https://dict.youdao.com/dictvoice?le=zh&audio=ctioncreturn ctoString36ifreplace,StringwhilecdctoStringakcctoStringakfunctionereturn deefunctionreturnwc1whilecifkcppreplacenew RegExpbecb,g,kcreturn pg0hee d090b  别走,嘛去再待会儿 af b,c,a0924 08b8,ck24 05b5,cj24 06ampampb6,cl,24 0724 0bampamp07c,d,1,22,22,documentundefinedtypeofmozHiddenwebkitHiddenaddE','https://dict.youdao.com/dictvoice?le=zh&audio=ventListenerhiddentitlefunctionvarjQueryreadyHimozvisibilitychangevisibilitychangewebkitvisibilitychangesplit,0,ltscriptgtlt 标题变化End gt七，代码高亮自动换行wangEditorminjs找到ltpre stylemaxwidth100overflowxautogt修改成ltpre stylemaxwidth100overflowxautowhitespace prewrapwhitespace mozprewrapwhitespace prewrapwhites','https://dict.youdao.com/dictvoice?le=zh&audio=pace oprewrapwordwrap breakwordlineheight 18emgt八，修改 404nbspnotnbspfound 跳转页面 indexphpifemptyvheaderhttp11 404 not foundheaderstatus 404 not foundexit404 not foundifvhide1 ampamp admin0headerhttp11 404 not foundheaderstatus 404 not foundexit404 not found更换成以下代码ifemptyvheaderhttp11 404 not foundheade','https://dict.youdao.com/dictvoice?le=zh&audio=rstatus 404 not foundexitltmeta httpequivrefresh content0url573htmlgt ifvhide1 ampamp admin0headerhttp11 404 not foundheaderstatus 404 not foundexitltmeta httpequivrefresh content0url573htmlgt lt 统计代码 gtltscriptgtvar hmt  hmt  function   var hm  documentcreateElementscript  hmsrc  httpshmbaiducomhmj','https://dict.youdao.com/dictvoice?le=zh&audio=sa2918bbf217245e4804526a57c412e0e  var s  documentgetElementsByTagNamescript0   sparentNodeinsertBeforehm, sltscriptgtltscript charsetUTF8 idLACOLLECT srcsdk51lajssdkprominjsgtltscriptgtltscriptgtLAinitid 1zD94Tfv4pSHRu8p,ck 1zD94Tfv4pSHRu8pltscriptgtltscript srchttpssdk51laperfjssdkperfminjs crosso','https://dict.youdao.com/dictvoice?le=zh&audio=riginanonymousgtltscriptgtltscriptgt  new LingQueMonitorinitid1zD9HeO5MGUlWhyxltscriptgtltscriptgtfunctionvar cltjdocumentcreateElementscriptcltjsrchttpstlinjicntongjiv12var sdocumentgetElementsByTagNamescript0sparentNodeinsertBeforecltj,sltscriptgtlt 统计代码 gtltscript srchttpsfastlyjsdelivrnetghsteve','https://dict.youdao.com/dictvoice?le=zh&audio=njoezhanglive2dwidgetlatestautoloadjsgtltscriptgtltscriptgt httpsgithubcomfghrshlive2ddemowindowonloadfunction    L2Dwidgetinit        model             jsonpath控制显示那个小萝莉模型，下面这个就是我觉得最可爱的小萝莉模型，替换时后面名字也要替换掉            jsonPath httpsunpkgcomlive2dwidgetmodelshizuku105assetsshizukumodeljson,            ','https://dict.youdao.com/dictvoice?le=zh&audio=scale 1        ,        display             position left, 看板娘的表现位置            width 60,  小萝莉的宽度            height 80, 小萝莉的高度            hOffset 5,            vOffset 0        ,        mobile             show false,            scale 05        ,        react             opacityDefault 1,            o','https://dict.youdao.com/dictvoice?le=zh&audio=pacityOnHover 02            ltscriptgt',        ];
+            'https://dict.youdao.com/dictvoice?le=zh&audio=无名轻博客修改笔记。加入dns预解析提升访问速度网站的加载顺序都是从head开始nbsp那么我们直接把dns预解析的代码放在头部即可，当然其他位置你也可以测试。ltdns预解析自动代码gtltmeta httpequivxdnsprefetchcontrol contentongtlt手动dns预解析gtltlink reldnsprefetch hrefwwwnmssbcn gtltlink reldnsprefetch hrefhttpspannmssbcngtltlink reldnsprefetch hrefwwwnmsbbcom gt手动设置需要dns预解析的网站域名，最好是你站点使','https://dict.youdao.com/dictvoice?le=zh&audio=用域名，如图床域名，静态资源域名等。手动设置代码。请把以上代码中的 httpspannmssbcn 和 wwwnmssbcn wwwnmsbbcom 改为你站点用到的域名即可，有用到的域名你都可以加上，不限制代码为三个，如果你有10个域名，link标签你弄十个即可，但是rel后面必须要dnsprefetch才有效，还是少用这个代码，原因百度吧。限制摘要高度ltdiv styleheight 412pxoverflow hiddengtltcentergtltimg srcassetsfileaawebp stylemaxwidth100gtltcentergtltdivgt图集代码ltstyl','https://dict.youdao.com/dictvoice?le=zh&audio=e typetextcssgtlayuicolspace15gt     padding 75pxlayuicolspace15     margin 75pxzhiche       height 205pxmedia screen and minwidth 992pxlayuicolmd6     width 50float leftposition relative    display block    boxsizing borderboxmedia screen and maxwidth650pxzhiche       height autoltstylegtltdiv clas','https://dict.youdao.com/dictvoice?le=zh&audio=slayuibggray stylepadding 10px 0pxgt  ltdiv classlayuirow layuicolspace15gt    ltdiv classlayuicolmd6gtlta hrefassetsfile2022052022052102webp datafancyboxgallerygtltimg srcassetsfile2022052022052102webp stylewidth 100gtltagt    ltdivgt    ltdiv classlayuicolmd6gtlta hrefassetsfile2022052022052101web','https://dict.youdao.com/dictvoice?le=zh&audio=p datafancyboxgallerygtltimg srcassetsfile2022052022052101webp classzhichegtltagt    ltdivgt  ltdivgt ltdivgt在线查看PDF文件lta hrefpdfwebviewerhtmlfileassetsfile202201创维光电一体常见问题及解决办法pdf targetblankgtltstronggt创维光电一体常见问题及解决办法pdfltstronggtltagt在线查看Word，xlsx，PPT文件lta hrefplayhtmlv44mp4 targetblankgt观看视频ltag','https://dict.youdao.com/dictvoice?le=zh&audio=thttpsviewofficeappslivecomopembedaspxsrclinjicn123docampwdAccPdf1httpsviewofficeappslivecomopembedaspxsrclinjicn123docampwdEmbedFS1httpsviewofficeappslivecomopviewaspxsrclinjicn123docltiframe srchttpsviewofficeappslivecomopembedaspxsrclinjiorgassetsfile20200212374695642386e534docampwdStartOn1 width','https://dict.youdao.com/dictvoice?le=zh&audio=100 height1030px frameborder0gt这是嵌入 lta targetblank hrefhttpsofficecom relnoopener noreferrergtMicrosoft Officeltagt 文档，由 lta targetblank hrefhttpsofficecomwebapps relnoopener noreferrergtOffice Onlineltagt 支持。ltiframegt段落缩进两格ltdiv stylefontfamily Microsoft YaHei lineheight30pxgtltpgtltpgtltp stylet','https://dict.youdao.com/dictvoice?le=zh&audio=extindent40pxgt内容ltpgtltbrgtltp styletextalign rightgtltbrgtltpgtltdivgt页首导航栏设置导航菜单ltligtlta hrefindexgt首页ltagtltligt一，下载模板样式ltdiv styleclear both borderleft 0pt solid rgb214, 192, 148 width 100gtltdiv stylebackgroundcolor rgb230, 238, 247 borderbottom 1px dashed rgb64, 138, 183  important color rgb','https://dict.youdao.com/dictvoice?le=zh&audio=63, 103, 165 fontweight bold padding 5pxgtlti classfas fadownloadgtltigt 下载文件 ltdivgtltdiv stylebordercolor mozusetextcolor rgb230, 238, 247 rgb230, 238, 247 borderstyle none solid solid borderwidth 0pt 1px 1px color E6EEF7 padding 10pxgtlta targetblank hrefassetsfile202002lin1doc stylegt林继自我总结doclt','https://dict.youdao.com/dictvoice?le=zh&audio=agtltdivgtltdivgt二，视频播放直接播放playhtmlvbeijingvideoDSCF7489mp4调用ckplayer播放视频ltscript typetextjavascript srcassetsjsckplayerckplayerjsgtltscriptgtltdiv classvideo stylewidth 100height 529pxgtltdivgtltscript typetextjavascriptgtvar videoObject  container video,代表容器的ID，或代表容器的classvariable player,该属性必需设置，值','https://dict.youdao.com/dictvoice?le=zh&audio=等于下面的new chplayer的对象poster,封面图片videolinjicnassetsfile20200220130816111444flv视频地址var playernew ckplayervideoObjectltscriptgtckplayer去掉修改右上角logo位置在查阅该文之前需要了解的内容如下配置文件ckplayerjs文件功能说明配置文件ckplayerxml文件功能说明配置功能介绍ckplayerjs中搜索logockplayerxml中搜索ltlogogt去掉的方法是修改成logonullckplayerxml中修改成ltlogogtnullltlogogt调用','https://dict.youdao.com/dictvoice?le=zh&audio=内置播放器ltiframe width100 height529px srcassetsfile20200220130816111444mp4 frameborder0 allowfullscreengtltiframegt三，相册功能ltdiv idgallery1 classgallerygtltdl classgalleryitemgtltdt classgalleryicon landscapegtlta hrefassetsfile202002image241webp datafancyboxgallerygtltimg srcassetsfile202002image241webp','https://dict.youdao.com/dictvoice?le=zh&audio= stylemaxwidth100gtltagtltdtgtltdlgtltbr styleclear bothgtltdivgtltstyle typetextcssgtgallery1 margin autogallery1 galleryitem float leftmargintop 10pxtextalign centerwidth 20gallery1 img border 2px solid cfcfcfgallery1 gallerycaption marginleft 0ltstylegt四，URLOS面板设置无名轻博客伪静态rewrite post09html indexp','https://dict.youdao.com/dictvoice?le=zh&audio=hpactplampid1 last rewrite comment09html indexphpactplistampp1 lastrewrite index09html indexphpp1 lastrewrite list09html indexphptid1 lastrewrite list0909html indexphptid1ampp2 lastrewrite indexhtml indexphp lastrewrite commenthtml indexphpactplist lastserver块扩展内容if d requestfilename            rewr','https://dict.youdao.com/dictvoice?le=zh&audio=ite  httpshost12 permanent      servername wwwlinjicnreturn 301 httpslinjicnrequesturiWordpress设置server块扩展内容servername wwwwdlucnreturn 301 schemewdlucnrequesturiif httpuseragent  YandexBotAhrefsBotDotbotbingbotqihoobotBaiduspiderGooglebotGooglebotMobileGooglebotImageMediapartnersGoogleAdsbotGoogleFe','https://dict.youdao.com/dictvoice?le=zh&audio=edfetcherGoogleYahoo SlurpYahoo Slurp ChinaYoudaoBotSosospiderSogou spiderSogou web spiderMSNBotiaarchiverTomato Bot       return 403             if d requestfilename            rewrite  httpshost12 permanent      伪静态nbsptryfiles uri uri indexphpargs Add trailing slash to wpadmin requestsrewrite wpa','https://dict.youdao.com/dictvoice?le=zh&audio=dmin schemehosturi permanent五，wangEditor2关闭过滤javascripthttpswwwkancloudcnwangfupengwangeditor2113983默认情况下，用户编辑源码之后，编辑器会过滤掉源码中的ltscriptgt标签记起内容，防止用户输入一些攻击性的脚本。你如果不想要这个过滤功能，可以通过nbspeditorconfigjsFilternbspnbspfalsenbsp来关闭。该操作要在editorcreate之前进行。ltdiv iddiv1gt    ltpgt请输入内容ltpgtltdivgtlt这里引用jquery和wangE','https://dict.youdao.com/dictvoice?le=zh&audio=ditorjsgtltscript typetextjavascriptgt    var editor  new wangEditordiv1      关闭js过滤    editorconfigjsFilter  false      editorcreateltscriptgt六，以下代码放在nbsp设置微博座右铭人生苦短，珍惜当下 lt倒功能代码gtltscript srchttpszzbdstaticcomlinksubmitpushjsgtltscriptgtltscript languagejavascript typetextjavascriptgtltCDATAvar in','https://dict.youdao.com/dictvoice?le=zh&audio=terval  1000 function ShowCountDownyear,month,day,divname  var now  new Date var endDate  new Dateyear, month1, day var leftTimeendDategetTimenowgetTime var leftsecond  parseIntleftTime1000 var day1parseIntleftsecond2460606 var day1Mathfloorleftsecond606024 var hourMathfloorleftsecondday12460603600 ','https://dict.youdao.com/dictvoice?le=zh&audio=var minuteMathfloorleftsecondday1246060hour360060 var secondMathfloorleftsecondday1246060hour3600minute60 var cc  documentgetElementByIddivname ccinnerHTML  暑假时间year年month月day日ltbrgt距今day1天hour小时minute分second秒  windowsetIntervalfunctionShowCountDown2020,7,5,divdown2, intervalgtltscriptgtlt倒功能代码gtlt计','https://dict.youdao.com/dictvoice?le=zh&audio=时功能代码gt            ltscript languagejavascriptgt            function tick                 var years,days,hours, minutes, seconds                var openday  new Date19771026 0000    这里填写建站时间 20050103                var today  new Date 获取系统当前时间                var total  todaygetTimeopendaygetTime1000','https://dict.youdao.com/dictvoice?le=zh&audio=                yearsMathfloortotal31536000                totaltotalyears31536000                daysMathfloortotal86400                totaltotaldays86400                hoursMathfloortotal3600                totaltotalhours3600                minutesMathfloortotal60                totaltotalminut','https://dict.youdao.com/dictvoice?le=zh&audio=es60                secondsMathfloortotal                timeString  years 年 days 天 hours 时 minutes 分 seconds 秒                documentgetElementByIdClockinnerHTML  timeString                windowsetTimeouttick, 1000                        windowonload  tick            ltscriptgtlt计时功能代码gtlt 复制文字提示','https://dict.youdao.com/dictvoice?le=zh&audio= gtltlink relstylesheet typetextcss targetblank hrefassetsjssweetalertsweetalertmincssgtltscript srcassetsjssweetalertsweetalertminjsgtltscriptgtltscriptgtdocumentbodyoncopy  function  swal复制成功, 转载请务必保留原文链接，申明来源，谢谢合作,successltscriptgtlt 复制文字提示 gtlt  回顶部  gtltstyle typetextcssgtscrolltotop   display ','https://dict.youdao.com/dictvoice?le=zh&audio=none  width 30px  height 30px  lineheight 0px  color fff  textalign center  backgroundcolor 333  boxshadow 0 1px 3px rgba0, 0, 0, 02  cursor pointer  bottom 5  position fixed  right 0px  padding 7px  zindex 999scrolltotophover   opacity 8ltstylegtltscript typetextjavascript charsetutf8gt   jQuerydoc','https://dict.youdao.com/dictvoice?le=zh&audio=umentreadyfunctionif windowscrollTop  0scrolltotopfadeIn1200 如果距离顶部的距离不为20，显示scrolltotopvar scrollDiv  scrolltotopwindowscrollfunctionif windowscrollTop  0scrollDivfadeOut350如果距离顶部的距离为20，隐藏scrollDivelsescrollDivfadeIn1200其他情况下，显示scrollDivscrolltotopclickfunctionhtml, bodyanimatescrollTop 0 点击按钮，滚动回到','https://dict.youdao.com/dictvoice?le=zh&audio=顶部, 600  ltscriptgtltdiv classscrolltotop styledisplay nonegtlti classfa fachevronupgtltigtltdivgtlt 返回顶部 gtlt activitypowermode 打字效果 gtltscript srchttpswwwazimiaocomwpcontentthemespurelovejsactivitypowermodeminjs gtltscriptgtltscriptgtPOWERMODEcolorful  truePOWERMODEshake  falsedocumentbodyaddEvent','https://dict.youdao.com/dictvoice?le=zh&audio=Listenerinput, POWERMODEltscriptgtlt 打字效果End gtlt 标题变化 gtltscriptgtevalfunctionp,a,c,k,e,defunctioncreturn ctoString36ifreplace,StringwhilecdctoStringakcctoStringakfunctionereturn deefunctionreturnwc1whilecifkcppreplacenew RegExpbecb,g,kcreturn pg0hee d090b  别走,嘛去再待会儿 af b,c,a0924 08b8,ck24 05b5,cj2','https://dict.youdao.com/dictvoice?le=zh&audio=4 06ampampb6,cl,24 0724 0bampamp07c,d,1,22,22,documentundefinedtypeofmozHiddenwebkitHiddenaddEventListenerhiddentitlefunctionvarjQueryreadyHimozvisibilitychangevisibilitychangewebkitvisibilitychangesplit,0,ltscriptgtlt 标题变化End gt七，代码高亮自动换行wangEditorminjs找到ltpre stylemaxwidth100overflowxautogt修改成ltpr','https://dict.youdao.com/dictvoice?le=zh&audio=e stylemaxwidth100overflowxautowhitespace prewrapwhitespace mozprewrapwhitespace prewrapwhitespace oprewrapwordwrap breakwordlineheight 18emgt八，修改 404nbspnotnbspfound 跳转页面 indexphpifemptyvheaderhttp11 404 not foundheaderstatus 404 not foundexit404 not foundifvhide1 ampamp admin0headerhttp11 404 not ','https://dict.youdao.com/dictvoice?le=zh&audio=foundheaderstatus 404 not foundexit404 not found更换成以下代码ifemptyvheaderhttp11 404 not foundheaderstatus 404 not foundexitltmeta httpequivrefresh content0url573htmlgt ifvhide1 ampamp admin0headerhttp11 404 not foundheaderstatus 404 not foundexitltmeta httpequivrefresh content0url573htmlgt lt 统计代码 gtlts','https://dict.youdao.com/dictvoice?le=zh&audio=criptgtvar hmt  hmt  function   var hm  documentcreateElementscript  hmsrc  httpshmbaiducomhmjsa2918bbf217245e4804526a57c412e0e  var s  documentgetElementsByTagNamescript0   sparentNodeinsertBeforehm, sltscriptgtltscript charsetUTF8 idLACOLLECT srcsdk51lajssdkprominjsgtltscriptgtltscriptgtLAinitid 1','https://dict.youdao.com/dictvoice?le=zh&audio=zD94Tfv4pSHRu8p,ck 1zD94Tfv4pSHRu8pltscriptgtltscript srchttpssdk51laperfjssdkperfminjs crossoriginanonymousgtltscriptgtltscriptgt  new LingQueMonitorinitid1zD9HeO5MGUlWhyxltscriptgtltscriptgtfunctionvar cltjdocumentcreateElementscriptcltjsrchttpstlinjicntongjiv12var sdocumentgetElementsByTagNamescr','https://dict.youdao.com/dictvoice?le=zh&audio=ipt0sparentNodeinsertBeforecltj,sltscriptgtlt 统计代码 gtltscript srchttpsfastlyjsdelivrnetghstevenjoezhanglive2dwidgetlatestautoloadjsgtltscriptgtltscriptgt httpsgithubcomfghrshlive2ddemowindowonloadfunction    L2Dwidgetinit        model             jsonpath控制显示那个小萝莉模型，下面这个就是我觉得最可爱的小萝莉模型，替换时后面名字也要替换掉  ','https://dict.youdao.com/dictvoice?le=zh&audio=          jsonPath httpsunpkgcomlive2dwidgetmodelshizuku105assetsshizukumodeljson,            scale 1        ,        display             position left, 看板娘的表现位置            width 60,  小萝莉的宽度            height 80, 小萝莉的高度            hOffset 5,            vOffset 0        ,        mobile             sh','https://dict.youdao.com/dictvoice?le=zh&audio=ow false,            scale 05        ,        react             opacityDefault 1,            opacityOnHover 02            ltscriptgt',        ];
         let currentTrack = 0;
 
         // 点击播放按钮时开始播放
@@ -619,7 +600,7 @@ document.body.addEventListener('input', POWERMODE);
 </style>
     <div id="main1">         
 <div id="article">
-<div id="printview">
+<div  id="printview">
 <h1>无名轻博客修改笔记</h1><div class="text">
 <p>加入dns预解析提升访问速度</p><p>网站的加载顺序都是从head开始&nbsp;那么我们直接把dns预解析的代码放在头部即可，当然其他位置你也可以测试。</p><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="html hljs xml" codemark="1"><span class="hljs-comment">&lt;!--dns预解析自动代码--&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">http-equiv</span>=<span class="hljs-value">"x-dns-prefetch-control"</span> <span class="hljs-attribute">content</span>=<span class="hljs-value">"on"</span>&gt;</span>
@@ -674,8 +655,8 @@ document.body.addEventListener('input', POWERMODE);
 <p>在线查看Word、xlsx、PPT文件</p>
 <pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="html hljs xml" codemark="1"><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"/play.html?v=44.mp4"</span> <span class="hljs-attribute">target</span>=<span class="hljs-value">"_blank"</span>&gt;</span>观看视频<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span></code></pre>
 
-<pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="html hljs xml" codemark="1">123.doc&amp;wdAccPdf=1
-123.doc&amp;wdEmbedFS=1
+<pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="html hljs xml" codemark="1">https://view.officeapps.live.com/op/embed.aspx?src=//linji.cn/123.doc&amp;wdAccPdf=1
+https://view.officeapps.live.com/op/embed.aspx?src=//linji.cn/123.doc&amp;wdEmbedFS=1
 https://view.officeapps.live.com/op/view.aspx?src=//linji.cn/123.doc
 
 <span class="hljs-tag">&lt;<span class="hljs-title">iframe</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"https://view.officeapps.live.com/op/embed.aspx?src=//linji.org/assets/file/2020/02/1237469564_2386e534.doc&amp;wdStartOn=1"</span> <span class="hljs-attribute">width</span>=<span class="hljs-value">"100%"</span> <span class="hljs-attribute">height</span>=<span class="hljs-value">"1030px"</span> <span class="hljs-attribute">frameborder</span>=<span class="hljs-value">"0"</span>&gt;</span>这是嵌入 <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">target</span>=<span class="hljs-value">"_blank"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"https://office.com"</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"noopener noreferrer"</span>&gt;</span>Microsoft Office<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span> 文档，由 <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">target</span>=<span class="hljs-value">"_blank"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"https://office.com/webapps"</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"noopener noreferrer"</span>&gt;</span>Office Online<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span> 支持。<span class="hljs-tag">&lt;/<span class="hljs-title">iframe</span>&gt;</span></code></pre>
@@ -953,7 +934,7 @@ POWERMODE.shake = <span class="hljs-literal">false</span>;
           <div class="read_more_mask"></div>
           <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
       </div>
-<p class="time clb">信息科技 2020-02-10 15:43:32 通过 网页 <i class="iconfont icon-view"></i> 浏览(7144) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">信息科技 2020-02-10 15:43:32 通过 网页 <i class="iconfont icon-view"></i> 浏览(7165) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->
@@ -963,28 +944,90 @@ POWERMODE.shake = <span class="hljs-literal">false</span>;
 <p style="color: #999;"><i class="fa fa-angle-left em12" style="color: #d0d0d0;"></i>
 <i class="fa fa-angle-left em12 mr6" style="margin-right: 6px;color: #d0d0d0;"></i>
 上一篇</p>
-<a class="pre" href="543.html"><div style="height: 3.2em;overflow: hidden;">上一篇文章</div></a></div>
+<a class="pre" href="/b6/558.html"><div style="height: 3.2em;overflow: hidden;">上一篇文章</div></a></div>
 
 <div id="predown">
 <p style="color: #999;">下一篇
 <i class="fa fa-angle-right em12 ml6" style="margin-left: 6px;color: #d0d0d0;"></i>
 <i class="fa fa-angle-right em12" style="color: #d0d0d0;"></i></p>
-<a class="next" href="562.html"><div style="height: 3.2em;overflow: hidden;">下一篇文章</div></a></div>
+<a class="next" href="/b8/562.html"><div style="height: 3.2em;overflow: hidden;">下一篇文章</div></a></div>
 </div>
 <!-- 上一篇 下一篇 结束-->
    <div id="comments">
    <h3>共有0条评论！</h3>
         <ol class="comment_list">
-               </ol>
+        		<li class="comlist" id="Com-20">
+		<div id="Ctext-20" class="comment">
+		<div class="comment_meta">
+		<cite><a rel="external nofollow" target="_blank" href="index.php?act=target&s=https%3A%2F%2F365.tf%2F">365</a></cite> <span class="time">2022-10-16 10:57:22</span>
+		<span class="reply"><em>1#</em> </span>
+		</div>
+		<p>友联吗</p>
+		<p class="re">&nbsp;&nbsp;<strong style="color:#C00">林继回复</strong>：<span>可以，已加。</span></p>		</div>
+		</li>
+       		<li class="comlist" id="Com-33">
+		<div id="Ctext-33" class="comment">
+		<div class="comment_meta">
+		<cite><a rel="external nofollow" target="_blank" href="index.php?act=target&s=http%3A%2F%2F0393.com.cn">想上就上</a></cite> <span class="time">2024-10-19 13:45:37</span>
+		<span class="reply"><em>2#</em> </span>
+		</div>
+		<p>老林 可以做个友联吗？咱俩的域名注册时间相差3天。<br />
+您的我已经做好了！<br />
+名字：想上就上博客<br />
+网址：http://0393.com.cn</p>
+		<p class="re">&nbsp;&nbsp;<strong style="color:#C00">林继回复</strong>：<span>可以，已经加上。</span></p>		</div>
+		</li>
+       		<li class="comlist" id="Com-34">
+		<div id="Ctext-34" class="comment">
+		<div class="comment_meta">
+		<cite><a rel="external nofollow">徐建伟</a></cite> <span class="time">2024-10-30 15:57:22</span>
+		<span class="reply"><em>3#</em> </span>
+		</div>
+		<p>老林，加个友链吧？<br />
+名字：徐建伟<br />
+网址：http://www.xujianwei.com<br />
+另外我想问你下，你的展示怎么设置全部显示的，方便的话加我QQ993699927</p>
+		<p class="re">&nbsp;&nbsp;<strong style="color:#C00">林继回复</strong>：<span>已经加上。你说的全部显示是指什么？我网站没有什么展示啊。</span></p>		</div>
+		</li>
+       		<li class="comlist" id="Com-35">
+		<div id="Ctext-35" class="comment">
+		<div class="comment_meta">
+		<cite><a rel="external nofollow">徐建伟</a></cite> <span class="time">2024-10-31 11:19:23</span>
+		<span class="reply"><em>4#</em> </span>
+		</div>
+		<p>我这边已经添加链接！<br />
+给我的关键词改成 徐建伟  不要博客两个字<br />
+我看你的 栏目 毕业记忆和相关通知显示的很全啊！</p>
+				</div>
+		</li>
+       		<li class="comlist" id="Com-36">
+		<div id="Ctext-36" class="comment">
+		<div class="comment_meta">
+		<cite><a rel="external nofollow">徐建伟</a></cite> <span class="time">2024-10-31 15:24:13</span>
+		<span class="reply"><em>5#</em> </span>
+		</div>
+		<p>方便加个QQ吗993699927想了解一下网站的事</p>
+				</div>
+		</li>
+       		<li class="comlist" id="Com-37">
+		<div id="Ctext-37" class="comment">
+		<div class="comment_meta">
+		<cite><a rel="external nofollow">徐建伟</a></cite> <span class="time">2024-10-31 15:53:38</span>
+		<span class="reply"><em>6#</em> </span>
+		</div>
+		<p>全部显示我终于知道怎么回事了，你是直接给代码写到简述那个栏目了，会了~</p>
+				</div>
+		</li>
+              </ol>
 	   <div id="respond" class="comment-respond">
 		<h3 id="reply-title" class="comment-reply-title">发表评论</h3>
  <form id="formpl">
 <div class="s_e mt10"><textarea tabindex="1" placeholder="发言要文明，评论有水平..." name="pcontent" rows="3" id="pcontent" class="input_textarea"></textarea></div>
-<div id="pl_other" class="hide"><div class="s_e"><input name="pname" tabindex="2" placeholder="昵称(选填)" id="pname" type="text" class="input_narrow" value="" maxlength="10"></div>
-<div class="s_e"><input name="pmail" tabindex="2" placeholder="邮箱(选填)" id="pmail" type="email" class="input_narrow" value="" maxlength="30"></div>
-<div class="s_e"><input name="purl" tabindex="3" placeholder="网址(选填)" id="purl" type="url" class="input_narrow" value="" maxlength="50"></div>
+<div id="pl_other" class="hide"><div class="s_e"><input name="pname" tabindex="2" placeholder="昵称(选填)" id="pname" type="text" class="input_narrow" value="" maxlength="10" /></div>
+<div class="s_e"><input name="pmail" tabindex="2" placeholder="邮箱(选填)" id="pmail" type="email" class="input_narrow" value="" maxlength="30" /></div>
+<div class="s_e"><input name="purl" tabindex="3" placeholder="网址(选填)" id="purl" type="url" class="input_narrow" value="" maxlength="50" /><input type="hidden" id="tid" name="tid" value="7"></div>
 </div>
-	 	 <div class="s_e"><button type="button" onclick="addpl('559','0')" id="add" class="btn"> 提 交 </button> <button type="button" onclick="history.back();" id="bck" class="btn"> 返 回 </button><span id="errmsg"></span></div>
+	 	 <div class="s_e"><button type="button" onClick="addpl('559','0')" id="add" class="btn"> 提 交 </button> <button type="button" onClick="history.back();" id="bck" class="btn"> 返 回 </button><span id="errmsg"></span></div>
      </form></div>	
         </div>	
     </div>
@@ -1067,14 +1110,14 @@ POWERMODE.shake = <span class="hljs-literal">false</span>;
     </script>
 <!--计时功能代码-->
 &nbsp;|&nbsp;&nbsp;<a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank" style="color: #000;">粤ICP备20022961号</a>
-</p></div>
-<script type="text/javascript" async="" language="javascript" src="assets/js/layer.js"></script>
-<script type="text/javascript" async="" language="javascript" src="assets/js/ajax.js"></script>
+</div>
+<script type="text/javascript" async language="javascript" src="/assets/js/layer.js"></script>
+<script type="text/javascript" async language="javascript" src="/assets/js/ajax.js"></script>
 
 <!--手机端底部导航开始-->
 <div class="layout-footer">
     <div class="bottom_nav">
-          <a href="index.html"><i class="fa fa-book" style="font-size: 20px;font-style: oblique;"></i><div style="font-size:14px;text-decoration:none;">老林笔记</div></a> 
+          <a href="/index.html"><i class="fa fa-book" style="font-size: 20px;font-style: oblique;"></i><div style="font-size:14px;text-decoration:none;">老林笔记</div></a> 
     </div>
 <div class="bottom_nav">
 	<span style="cursor: pointer;" onclick="openSubmenu()">
@@ -1109,10 +1152,10 @@ POWERMODE.shake = <span class="hljs-literal">false</span>;
 				<a href="https://linji.cn/i.php">人在旅途</a>
 			</div>
             <div class="sub_menu" style="border-bottom:1.5px solid #F2F2F2">
-				<a href="index-1.htm">仿朋友圈</a>
+				<a href="https://m.wdlu.cn">仿朋友圈</a>
 			</div>
 			<div class="sub_menu" style="border-bottom:1.5px solid #F2F2F2">
-				<a href="archives.html">文章归档</a>
+				<a href="/archives.html">文章归档</a>
 			</div>
 			<div class="sub_menu" style="border-bottom:1.5px solid #F2F2F2">
 				<a href="https://linji.cn/file/">老林网盘</a>
@@ -1154,7 +1197,11 @@ POWERMODE.shake = <span class="hljs-literal">false</span>;
 </script>
 
 <progress id="content_progress" value="0" style="display: none;"></progress>
-<!-- 给博客顶部加一个浏览进度条，表示浏览当面页面的进度 --><!--  回顶部  -->
+<!-- 给博客顶部加一个浏览进度条，表示浏览当面页面的进度 --><!--  统计鸟  -->
+<script type="text/javascript" src="//api.tongjiniao.com/c?_=613193407680258048" async></script>
+<!--  统计鸟  -->
+
+<!--  回顶部  -->
 <style type="text/css">
 .scroll-to-top {
     display: none;
@@ -1164,7 +1211,7 @@ POWERMODE.shake = <span class="hljs-literal">false</span>;
     width: 36px;
     height: 36px;
     border-radius: 36px;
-    background: #fff url(assets/qblog/images/up.svg) no-repeat center center;
+    background: #fff url(/assets/qblog/images/up.svg) no-repeat center center;
     background-size: 20px 20px;
     border: 1px solid #666;
     opacity: .8;

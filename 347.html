@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
  <meta http-equiv="x-dns-prefetch-control" content="on">
@@ -47,24 +47,24 @@
                                                                                                                                                       
 
 -->
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <!--IE 8浏览器的页面渲染方式-->
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <!--默认使用极速内核：针对国内浏览器产商-->
 <meta name="renderer" content="webkit">
 <title>LINUX文件/文件夹复制、删除和移动命令集&nbsp;|&nbsp;老林笔记</title>
-<meta name="keywords" content="">
-<meta name="description" content="功能：创建一个目录（类似MSDOS下的md命令）。Linux目录的创建与删除命令mkdir命令功能：创建一个目录（类似MSDOS下的md命令）。语法：mkdir [选项] dir-name说明：该命令创建由dir-name命名的目录。要求创建目录的用户在当前目录中（dir-name的父目录中）具有写权限，并且dirname不能是当前目录中已有的目录或 文件名称。">
-<link href="assets/qblog/style.css" rel="stylesheet" type="text/css">
-<link href="assets/js/highlightjs/dark.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" language="javascript" src="assets/js/jquery.min.js"></script>
-<link rel="stylesheet" href="assets/qblog/fontawesome.min.css">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<script defer="" src="assets/js/readmore.js" type="text/javascript"></script>
+<meta name="keywords" content="" />
+<meta name="description" content="功能：创建一个目录（类似MSDOS下的md命令）。Linux目录的创建与删除命令mkdir命令功能：创建一个目录（类似MSDOS下的md命令）。语法：mkdir [选项] dir-name说明：该命令创建由dir-name命名的目录。要求创建目录的用户在当前目录中（dir-name的父目录中）具有写权限，并且dirname不能是当前目录中已有的目录或 文件名称。" />
+<link href="/assets/qblog/style.css" rel="stylesheet" type="text/css" />
+<link href="/assets/js/highlightjs/dark.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
+<link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
-<link rel="stylesheet" href="assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'">
-<script src="assets/js/fancybox/fancybox.umd.min.js"></script>
+<link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
+<script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
 <script>
 $(document).ready(function() {
       Fancybox.bind('[data-fancybox]', {
@@ -164,7 +164,7 @@ $(document).ready(function() {
     <div class="dialog-mask1" onclick="closeLogin1()"></div>
     <div class="dialog-plane1">
         <h2>管理员登陆</h2>
-        <form class="search-form1" action="index.php?act=dologin" method="post">
+        <form class="search-form1" action="/index.php?act=dologin" method="post">
             <div class="search-form-input-plane1">
                 <input type="password" class="search-keyword1" name="pass" autocomplete="on" placeholder="输入密码..." required="required" value="">
 	   <input name="l" value="" type="hidden">
@@ -184,7 +184,7 @@ $(document).ready(function() {
     <div class="dialog-mask" onclick="closeSearch()"></div>
     <div class="dialog-plane">
         <h2>搜索内容</h2>
-        <form class="search-form" action="https://linji.cn/index.php" method="get" role="search">
+        <form class="search-form" action="/index.php" method="get" role="search">
             <div class="search-form-input-plane">
                 <input type="text" class="search-keyword" name="s" autocomplete="on" placeholder="搜索内容" required="required" value="">
             </div>
@@ -197,46 +197,27 @@ $(document).ready(function() {
     </div>
 </div>
 <!-- 搜索框结束 -->
-<div class="dropdown">
-<span class="dropbtn" onclick="openDropdown()"><i style="color: #888;font-size: 20px;position: absolute;right: 20px;top: 16px;z-index: 9999;height: 50px;font-weight: 300;cursor: pointer;" class="fa fa-user"></i></span>
-<div class="dialog-Dropdown-plane">
-    <div class="dialog-Dropdown-mask" onclick="closeDropdown()"></div>
-  <div class="dropdown-content">
-    <a href="comment.html"><i style="font-size: 20px;padding-right: 5px;" class="fa fa-comment"></i> 文章评论</a>
-    <a href="https://jz.linji.cn"><i style="font-size:20px;padding-right: 5px;" class="fa">&#xf157</i> 资金明细</a>
-</div>
-</div>
-</div>
-<div class="navbar-wrap">
+<div id="menu_toggle1" onclick="openLogin1()"><i style="color: #888;font-size: 20px;position: absolute;right: 20px;top: 16px;z-index: 9999;height: 50px;font-weight: 300;cursor: pointer;" class="fa fa-user"></i></div><div class="navbar-wrap">
   <div class="box-m">
     <div class="logo">
-      <h2 id="title"><a href="index.html">老林笔记</a></h2>   
+      <h2 id="title"><a href="/">老林笔记</a></h2>   
     </div>	   
-        <ul id="nav" class="collapse">
-          <li><a href="/b0/list-0.html">生活随笔</a></li>
-          <li><a href="/b1/list-1.html">荣誉证书</a></li>
-          <li><a href="/b2/list-2.html">继续教育</a></li>
-          <li><a href="/b3/list-3.html">小学教育</a></li>
-          <li><a href="/b4/list-4.html">小学校历</a></li>
-          <li><a href="/b5/list-5.html">毕业记忆</a></li>
-          <li><a href="/b6/list-6.html">相关通知</a></li>
-          <li><a href="/b7/list-7.html" class="on">信息科技</a></li>
-          <li><a href="/b8/list-8.html">闲说</a></li>
-          <li><a href="https://m.linji.cn/" target="_blank">朋友圈</a></li>
-          <li><a href="comment.html">评论</a></li>
-          <li><a href="archives.html">归档</a></li>
-          <li><a href="https://p.linji.cn" target="_blank">导航</a></li>
-          <li><a href="https://linji.cn/file/" target="_blank">网盘</a></li>
-          <li><a href="https://jz.linji.cn/" target="_blank">记帐</a></li>
-        </ul>
+      <ul id="nav" class="collapse"> 
+		<li><a href="/">首页</a></li><li><a href="/b0/list-0.html">生活随笔</a></li><li><a href="/b1/list-1.html">荣誉证书</a></li><li><a href="/b2/list-2.html">继续教育</a></li><li><a href="/b3/list-3.html">小学教育</a></li><li><a href="/b4/list-4.html">小学校历</a></li><li><a href="/b5/list-5.html">毕业记忆</a></li><li><a href="/b6/list-6.html">相关通知</a></li><li><a href="/b7/list-7.html">信息科技</a></li><li><a href="/b8/list-8.html">闲说</a></li>
+<li><a href="/comment.html">评论</a></li>
+<li><a href="/archives.html">归档</a></li>
+<li><a href="https://p.linji.cn" target="_blank">导航</a></li>
+<li><a href="/file/" target="_blank">网盘</a></li>
+<li><a href="https://jz.linji.cn/" target="_blank">记帐</a></li>
+<li><a href="https://m.linji.cn/" target="_blank">朋友圈</a></li><li><a href="javascript:void(0);" onclick="openLogin1()">登录</a></li>      </ul>   
       </div>
 </div>
 <div class="other-wrap collapse">
 	  <div class="other box-m">
-	   <div class="desc"><a href="https://linji.cn/i.php" target="_blank" title="旅游">路虽远，行则将至；事虽难，做则必成</a>
+	   <div class="desc"><a href="/i.php" target="_blank" title="旅游">路虽远，行则将至；事虽难，做则必成</a>
 
 <!-- activity-power-mode 打字效果 -->
-<script src='assets/js/activity-power-mode.min.js'></script>
+<script src='/assets/js/activity-power-mode.min.js' ></script>
 <script>
 POWERMODE.colorful = true;
 POWERMODE.shake = false;
@@ -347,22 +328,22 @@ document.body.addEventListener('input', POWERMODE);
             // -->
         </script>
         <!-- 距离 63 岁 --></div>
-	   <form method="get" class="search-form" action="https://linji.cn/index.php"> <input class="search-text" name="s" autocomplete="on" placeholder="输入关键词搜索..." required="required" type="text" value=""> <button class="search-submit" alt="搜索" type="submit">搜索</button></form>
+	   <form method="get" class="search-form" action="/index.php"> <input class="search-text" name="s" autocomplete="on" placeholder="输入关键词搜索..." required="required" type="text" value=""> <button class="search-submit" alt="搜索" type="submit">搜索</button></form>
 	   </div>   
 </div>
 </div>
 <div id="wrap"> <!-- 引入layui库 -->
-<script defer="" src="assets/qblog/layui/layui.js"></script>
+<script defer src="/assets/qblog/layui/layui.js"></script>
 <style type="text/css">
 	/** 图标字体 **/
 @font-face {
   font-family: 'layui-icon';
-  src: url('assets/qblog/layui/font/iconfont.eot');
-  src: url('assets/qblog/layui/font/iconfont.eot') format('embedded-opentype'),
-       url('assets/qblog/layui/font/iconfont.woff2') format('woff2'),
-       url('assets/qblog/layui/font/iconfont.woff') format('woff'),
-       url('assets/qblog/layui/font/iconfont.ttf') format('truetype'),
-       url('assets/qblog/layui/font/iconfont.svg') format('svg');
+  src: url('/assets/qblog/layui/font/iconfont.eot?v=282');
+  src: url('/assets/qblog/layui/font/iconfont.eot?v=282#iefix') format('embedded-opentype'),
+       url('/assets/qblog/layui/font/iconfont.woff2?v=282') format('woff2'),
+       url('/assets/qblog/layui/font/iconfont.woff?v=282') format('woff'),
+       url('/assets/qblog/layui/font/iconfont.ttf?v=282') format('truetype'),
+       url('/assets/qblog/layui/font/iconfont.svg?v=282#layui-icon') format('svg');
 }
 
 .layui-icon{
@@ -568,12 +549,12 @@ document.body.addEventListener('input', POWERMODE);
 .layui-icon-close-fill:before{content:"\1007"}
 .layui-icon-ok-circle:before{content:"\1005"}
 </style>
-<script src="assets/js/translate.js"></script>
+<script src="/assets/js/translate.js"></script>
   <div id="content" style="position: relative;">
-  <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
-"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="index.htm" style="padding-left: 5px;color: #7d8c8e;">首页</a>
-<span>/</span><a href="list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
-<audio id="audioPlayer" controls="" preload="" style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=LINUX文件文件夹复制，删除和移动命令集。功能创建一个目录类似MSDOS下的md命令。Linux目录的创建与删除命令mkdir命令功能创建一个目录类似MSDOS下的md命令。语法mkdir 选项 dirname说明该命令创建由dirname命名的目录。要求创建目录的用户在当前目录中dirname的父目录中具有写权限，并且dirname不能是当前目录中已有的目录或 文件名称。命令中各选项的含义为 m 对新建目录设置存取权限。也可以用chmod命令设置。 p 可以是一个路径名称。此时若路径中的某些目录尚不存在， 加上此选项后， 系统将自动建立好那些尚不存在的目录，即一次可以建立多个目录。rmdi">
+  <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
+"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
+<span>/</span><a href="/b7/list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
+<audio id="audioPlayer" controls preload style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=LINUX文件文件夹复制，删除和移动命令集。功能创建一个目录类似MSDOS下的md命令。Linux目录的创建与删除命令mkdir命令功能创建一个目录类似MSDOS下的md命令。语法mkdir 选项 dirname说明该命令创建由dirname命名的目录。要求创建目录的用户在当前目录中dirname的父目录中具有写权限，并且dirname不能是当前目录中已有的目录或 文件名称。命令中各选项的含义为 m 对新建目录设置存取权限。也可以用chmod命令设置。 p 可以是一个路径名称。此时若路径中的某些目录尚不存在， 加上此选项后， 系统将自动建立好那些尚不存在的目录，即一次可以建立多个目录。rmdi">
   您的浏览器不支持 audio 元素。
 </audio>
 <span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
@@ -619,14 +600,14 @@ document.body.addEventListener('input', POWERMODE);
 </style>
     <div id="main1">         
 <div id="article">
-<div id="printview">
+<div  id="printview">
 <h1>LINUX文件/文件夹复制、删除和移动命令集</h1><div class="text">
 功能：创建一个目录（类似MSDOS下的md命令）。Linux目录的创建与删除命令mkdir命令<p>功能：创建一个目录（类似MSDOS下的md命令）。</p><p>语法：mkdir [选项] dir-name</p><p>说明：该命令创建由dir-name命名的目录。要求创建目录的用户在当前目录中（dir-name的父目录中）具有写权限，并且dirname不能是当前目录中已有的目录或 文件名称。</p><p>命令中各选项的含义为：</p><p>– m 对新建目录设置存取权限。也可以用chmod命令设置。</p><p>– p 可以是一个路径名称。此时若路径中的某些目录尚不存在， 加上此选项后， 系统将自动建立好那些尚不存在的目录，即一次可以建立多个目录。</p><p>rmdir 命令</p><p>功能：删除空目录。</p><p>语法：rmdir [选项] dir-name</p><p>说明：dir-name表示目录名。该命令从一个目录中删除一个或多个子目录项。需要 特别注意的是，一个目录被删除之前必须是空的。rm – r dir命令可代替 rmdir，但是有危险性。删除某目录时也必须具有对父目录的写权限。</p><p>命令中各选项的含义为：</p><p>– p 递归删除目录dirname，当子目录删除后其父目录为空时，也一同被删除。如果整个路径被删除或者由于某种原因保留部分路径，则系统在标准输出上显示相应 的信息。</p><p>cd 命令</p><p>功能：改变工作目录。</p><p>语法：cd [directory]</p><p>说明：该命令将当前目录改变至directory所指定的目录。若没有指定directory， 则回到用户的主目录。为了改变到指定目录，用户必须拥有对指定目录的执行和读 权限。</p><p>该命令可以使用通配符。pwd 命令</p><p>在Linux层次目录结构中，用户可以在被授权的任意目录下利用mkdir命令创建新目录，也可以利用cd命令从一个目录转换到另一个目录。然而，没有提示符来告知用 户目前处于哪一个目录中。要想知道当前所处的目录，可以使用pwd命令，该命令显示整个路径名。</p><p>语法：pwd</p><p>说明：此命令显示出当前工作目录的绝对路径。</p><p>ls 命令</p><p>ls是英文单词list的简写，其功能为列出目录的内容。这是用户最常用的一个命令之一，因为用户需要不时地查看某个目录的内容。该命令类似于DOS下的dir命令。</p><p>语法：ls [选项] [目录或是文件]</p><p>对于每个目录，该命令将列出其中的所有子目录与文件。对于每个文件，ls将输出 其文件名以及所要求的其他信息。默认情况下，输出条目按字母顺序排序。当未给出目录名或是文件名时，就显示当前目录的信息。</p><p>命令中各选项的含义如下：</p><p>– a 显示指定目录下所有子目录与文件，包括隐藏文件。</p><p>– A 显示指定目录下所有子目录与文件，包括隐藏文件。但不列出“.”和 “..”。</p><p>– b 对文件名中的不可显示字符用八进制逃逸字符显示。</p><p>– c 按文件的修改时间排序。</p><p>– C 分成多列显示各项。</p><p>– d 如果参数是目录，只显示其名称而不显示其下的各文件。往往与l选项一起使 用，以得到目录的详细信息。</p><p>– f 不排序。该选项将使lts选项失效，并使aU选项有效。</p><p>– F 在目录名后面标记“/”，可执行文件后面标记“*”，符号链接后面标记 “@”，管道（或FIFO）后面标记“|”，socket文件后面标记“=”。</p><p>– i 在输出的第一列显示文件的i节点号。</p><p>– l 以长格式来显示文件的详细信息。这个选项最常用。</p><p>每行列出的信息依次是： 文件类型与权限 链接数 文件属主 文件属组 文件大小 建立或最近修改的时间 名字</p><p>对于符号链接文件，显示的文件名之后有“—〉”和引用文件路径名。</p><p>对于设备文件，其“文件大小”字段显示主、次设备号，而不是文件大小。</p><p>目录中的总块数显示在长格式列表的开头，其中包含间接块。</p><p>– L 若指定的名称为一个符号链接文件，则显示链接所指向的文件。</p><p>– m 输出按字符流格式，文件跨页显示，以逗号分开。</p><p>– n 输出格式与l选项相同，只不过在输出中文件属主和属组是用相应的UID号和 GID号来表示，而不是实际的名称。</p><p>– o 与l选项相同，只是不显示拥有者信息。</p><p>– p 在目录后面加一个“/”。</p><p>– q 将文件名中的不可显示字符用“?”代替。</p><p>– r 按字母逆序或最早优先的顺序显示输出结果。</p><p>– R 递归式地显示指定目录的各个子目录中的文件。</p><p>– s 给出每个目录项所用的块数，包括间接块。</p><p>– t 显示时按修改时间（最近优先）而不是按名字排序。若文件修改时间相同，则 按字典顺序。修改时间取决于是否使用了c或u选顶。缺省的时间标记是最后一次修 改时间。</p><p>– u 显示时按文件上次存取的时间（最近优先）而不是按名字排序。即将-t的时间 标记修改为最后一次访问的时间。</p><p>– x 按行显示出各排序项的信息。用ls – l命令显示的信息中，开头是由10个字符构成的字符串，其中第一个字符表示文件类型，它可以是下述类型之一：</p><p>– 普通文件</p><p>d 目录</p><p>l 符号链接</p><p>b 块设备文件</p><p>c 字符设备文件</p><p>后面的9个字符表示文件的访问权限，分为3组，每组3位。第一组表示文件属主的权限，第二组表示同组用户的权限，第三组表示其他用户的权限。每一组的三个字 符分别表示对文件的读、写和执行权限。</p><p>各权限如下所示：</p><p>r 读</p><p>w 写</p><p>x 执行。对于目录，表示进入权限。</p><p>s 当文件被执行时，把该文件的UID或GID赋予执行进程的UID（用户ID）或GID（组 ID）。</p><p>t 设置标志位（留在内存，不被换出）。如果该文件是目录，在该目录中的文件只能被超级用户、目录拥有者或文件属主删除。如果它是可执行文件，在该文件执行 后，指向其正文段的指针仍留在内存。这样再次执行它时，系统就能更快地装入该文件。 下一页介绍文件操作命令。</p><p>Linux文件的复制、删除和移动命令语法： cp [选项] 源文件或目录 目标文件或目录说明：该命令把指定的源文件复制到目标文件或把多个源文件复制到目标目录中。</p><p>该命令的各选项含义如下：</p><p>– a 该选项通常在拷贝目录时使用。它保留链接、文件属性，并递归地拷贝目录，其作用等于dpR选项的组合。</p><p>– d 拷贝时保留链接。</p><p>– f 删除已经存在的目标文件而不提示。</p><p>– i 和f选项相反，在覆盖目标文件之前将给出提示要求用户确认。回答y时目标文件将被覆盖，是交互式拷贝。</p><p>– p 此时cp除复制源文件的内容外，还将把其修改时间和访问权限也复制到新文件中。</p><p>– r 若给出的源文件是一目录文件，此时cp将递归复制该目录下所有的子目录和文件。此时目标文件必须为一个目录名。</p><p>– l 不作拷贝，只是链接文件。</p><p>需要说明的是，为防止用户在不经意的情况下用cp命令破坏另一个文件，如用户指定的目标文件名已存在，用cp命令拷贝文件后，这个文件就会被新源文件覆盖，因此，建议用户在使用cp命令拷贝文件时，最好使用i选项。</p><p>mv命令</p><p>用户可以使用mv命令来为文件或目录改名或将文件由一个目录移入另一个目录中。该命令如同MSDOS下的ren和move的组合。</p><p>语法：mv [选项] 源文件或目录 目标文件或目录</p><p>说明：视mv命令中第二个参数类型的不同（是目标文件还是目标目录），mv命令将文件重命名或将其移至一个新的目录中。当第二个参数类型是文件时，mv 命令完成文件重命名，此时，源文件只能有一个（也可以是源目录名），它将所给的源文件或目录重命名为给定的目标文件名。当第二个参数是已存在的目录名称 时，源文件或目录参数可以有多个，mv命令将各参数指定的源文件均移至目标目录中。在跨文件系统移动文件时，mv先拷贝，再将原有文件删除，而链至该文件 的链接也将丢失。</p><p>命令中各选项的含义为：</p><p>– I 交互方式操作。如果mv操作将导致对已存在的目标文件的覆盖，此时系统询问是否重写，要求用户回答y或n，这样可以避免误覆盖文件。</p><p>– f 禁止交互操作。在mv操作要覆盖某已有的目标文件时不给任何指示，指定此选项后，i选项将不再起作用。</p><p>如果所给目标文件（不是目录）已存在，此时该文件的内容将被新文件覆盖。为防止用户用mv命令破坏另一个文件，使用mv命令移动文件时，最好使用i选项。</p><p>rm命令</p><p>用户可以用rm命令删除不需要的文件。该命令的功能为删除一个目录中的一个或多个文件或目录，它也可以将某个目录及其下的所有文件及子目录均删除。对于链接文件，只是断开了链接，原文件保持不变。</p><p>rm命令的一般形式为：</p><p>rm [选项] 文件…</p><p>如果没有使用- r选项，则rm不会删除目录。</p><p>该命令的各选项含义如下：– f 忽略不存在的文件，从不给出提示。</p><p>– r 指示rm将参数中列出的全部目录和子目录均递归地删除。</p><p>– i 进行交互式删除。</p><p>使用rm命令要小心。因为一旦文件被删除，它是不能被恢复的。了防止这种情况的发生，可以使用i选项来逐个确认要删除的文件。如果用户输入y，文件将被删除。如果输入任何其他东西，文件则不会删除。</p></div>
 <div class="readall_box">
           <div class="read_more_mask"></div>
           <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
       </div>
-<p class="time clb">信息科技 2012-03-27 23:28:59 通过 网页 <i class="iconfont icon-view"></i> 浏览(5552) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">信息科技 2012-03-27 23:28:59 通过 网页 <i class="iconfont icon-view"></i> 浏览(5555) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->
@@ -636,13 +617,13 @@ document.body.addEventListener('input', POWERMODE);
 <p style="color: #999;"><i class="fa fa-angle-left em12" style="color: #d0d0d0;"></i>
 <i class="fa fa-angle-left em12 mr6" style="margin-right: 6px;color: #d0d0d0;"></i>
 上一篇</p>
-<a class="pre" href="337.html"><div style="height: 3.2em;overflow: hidden;">基于Linux的VPS下SSH常用命令大全</div></a></div>
+<a class="pre" href="/b8/346.html"><div style="height: 3.2em;overflow: hidden;">上一篇文章</div></a></div>
 
 <div id="predown">
 <p style="color: #999;">下一篇
 <i class="fa fa-angle-right em12 ml6" style="margin-left: 6px;color: #d0d0d0;"></i>
 <i class="fa fa-angle-right em12" style="color: #d0d0d0;"></i></p>
-<a class="next" href="351.html"><div style="height: 3.2em;overflow: hidden;">双击空白部分返回顶部</div></a></div>
+<a class="next" href="/b8/348.html"><div style="height: 3.2em;overflow: hidden;">下一篇文章</div></a></div>
 </div>
 <!-- 上一篇 下一篇 结束-->
    <div id="comments">
@@ -653,11 +634,11 @@ document.body.addEventListener('input', POWERMODE);
 		<h3 id="reply-title" class="comment-reply-title">发表评论</h3>
  <form id="formpl">
 <div class="s_e mt10"><textarea tabindex="1" placeholder="发言要文明，评论有水平..." name="pcontent" rows="3" id="pcontent" class="input_textarea"></textarea></div>
-<div id="pl_other" class="hide"><div class="s_e"><input name="pname" tabindex="2" placeholder="昵称(选填)" id="pname" type="text" class="input_narrow" value="" maxlength="10"></div>
-<div class="s_e"><input name="pmail" tabindex="2" placeholder="邮箱(选填)" id="pmail" type="email" class="input_narrow" value="" maxlength="30"></div>
-<div class="s_e"><input name="purl" tabindex="3" placeholder="网址(选填)" id="purl" type="url" class="input_narrow" value="" maxlength="50"></div>
+<div id="pl_other" class="hide"><div class="s_e"><input name="pname" tabindex="2" placeholder="昵称(选填)" id="pname" type="text" class="input_narrow" value="" maxlength="10" /></div>
+<div class="s_e"><input name="pmail" tabindex="2" placeholder="邮箱(选填)" id="pmail" type="email" class="input_narrow" value="" maxlength="30" /></div>
+<div class="s_e"><input name="purl" tabindex="3" placeholder="网址(选填)" id="purl" type="url" class="input_narrow" value="" maxlength="50" /><input type="hidden" id="tid" name="tid" value="7"></div>
 </div>
-	 	 <div class="s_e"><button type="button" onclick="addpl('347','0')" id="add" class="btn"> 提 交 </button> <button type="button" onclick="history.back();" id="bck" class="btn"> 返 回 </button><span id="errmsg"></span></div>
+	 	 <div class="s_e"><button type="button" onClick="addpl('347','0')" id="add" class="btn"> 提 交 </button> <button type="button" onClick="history.back();" id="bck" class="btn"> 返 回 </button><span id="errmsg"></span></div>
      </form></div>	
         </div>	
     </div>
@@ -740,14 +721,14 @@ document.body.addEventListener('input', POWERMODE);
     </script>
 <!--计时功能代码-->
 &nbsp;|&nbsp;&nbsp;<a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank" style="color: #000;">粤ICP备20022961号</a>
-</p></div>
-<script type="text/javascript" async="" language="javascript" src="assets/js/layer.js"></script>
-<script type="text/javascript" async="" language="javascript" src="assets/js/ajax.js"></script>
+</div>
+<script type="text/javascript" async language="javascript" src="/assets/js/layer.js"></script>
+<script type="text/javascript" async language="javascript" src="/assets/js/ajax.js"></script>
 
 <!--手机端底部导航开始-->
 <div class="layout-footer">
     <div class="bottom_nav">
-          <a href="index.html"><i class="fa fa-book" style="font-size: 20px;font-style: oblique;"></i><div style="font-size:14px;text-decoration:none;">老林笔记</div></a> 
+          <a href="/index.html"><i class="fa fa-book" style="font-size: 20px;font-style: oblique;"></i><div style="font-size:14px;text-decoration:none;">老林笔记</div></a> 
     </div>
 <div class="bottom_nav">
 	<span style="cursor: pointer;" onclick="openSubmenu()">
@@ -782,10 +763,10 @@ document.body.addEventListener('input', POWERMODE);
 				<a href="https://linji.cn/i.php">人在旅途</a>
 			</div>
             <div class="sub_menu" style="border-bottom:1.5px solid #F2F2F2">
-				<a href="index-1.htm">仿朋友圈</a>
+				<a href="https://m.wdlu.cn">仿朋友圈</a>
 			</div>
 			<div class="sub_menu" style="border-bottom:1.5px solid #F2F2F2">
-				<a href="archives.html">文章归档</a>
+				<a href="/archives.html">文章归档</a>
 			</div>
 			<div class="sub_menu" style="border-bottom:1.5px solid #F2F2F2">
 				<a href="https://linji.cn/file/">老林网盘</a>
@@ -827,7 +808,11 @@ document.body.addEventListener('input', POWERMODE);
 </script>
 
 <progress id="content_progress" value="0" style="display: none;"></progress>
-<!-- 给博客顶部加一个浏览进度条，表示浏览当面页面的进度 --><!--  回顶部  -->
+<!-- 给博客顶部加一个浏览进度条，表示浏览当面页面的进度 --><!--  统计鸟  -->
+<script type="text/javascript" src="//api.tongjiniao.com/c?_=613193407680258048" async></script>
+<!--  统计鸟  -->
+
+<!--  回顶部  -->
 <style type="text/css">
 .scroll-to-top {
     display: none;
@@ -837,7 +822,7 @@ document.body.addEventListener('input', POWERMODE);
     width: 36px;
     height: 36px;
     border-radius: 36px;
-    background: #fff url(assets/qblog/images/up.svg) no-repeat center center;
+    background: #fff url(/assets/qblog/images/up.svg) no-repeat center center;
     background-size: 20px 20px;
     border: 1px solid #666;
     opacity: .8;
