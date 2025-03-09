@@ -943,7 +943,7 @@ POWERMODE.shake = <span class="hljs-literal">false</span>;
           <div class="read_more_mask"></div>
           <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
       </div>
-<p class="time clb">信息科技 2020-02-10 15:43:32 通过 网页 <i class="iconfont icon-view"></i> 浏览(7196) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">信息科技 2020-02-10 15:43:32 通过 网页 <i class="iconfont icon-view"></i> 浏览(7198) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->
@@ -1313,6 +1313,111 @@ translate.setAutoDiscriminateLocalLanguage();	//设置用户第一次用时，�
 //translate.language.setLocal('chinese_simplified'); //设置本地语种（当前网页的语种）。如果不设置，默认就是 'chinese_simplified' 简体中文。 可填写如 'english'、'chinese_simplified' 等，具体参见文档下方关于此的说明
 translate.selectLanguageTag.languages = 'chinese_simplified,chinese_traditional,english,korean,corsican,guarani,kinyarwanda,hausa,norwegian,dutch,yoruba,gongen,latin,nepali,french,czech,hawaiian,georgian,russian,persian,bhojpuri,hindi,belarusian,swahili,icelandic,yiddish,twi,irish,gujarati,khmer,slovak,hebrew,kannada,hungarian,tamil,arabic,bengali,azerbaijani,samoan,afrikaans,indonesian,danish,shona,bambara,lithuanian,vietnamese,maltese,turkmen,assamese,catalan,singapore,cebuano,nskrit,polish,galician,latvian,ukrainian,tatar,scottish_gaelic,welsh,filipino,aymara,lao,telugu,romanian,haitian_creole,dogrid,swedish,maithili,thai,armenian,burmese,pashto,hmong,dhivehi,luxembourgish,sindhi,kurdish,turkish,macedonian,bulgarian,malay,luganda,marathi,estonian,malayalam,deutsch,slovene,urdu,portuguese,igbo,kurdish_sorani,oromo,greek,spanish,frisian,somali,amharic,nyanja,punjabi,basque,italian,albanian,tajik,finnish,kyrgyz,ewe,croatian,creole,quechua,bosnian,maori';
 translate.language.setUrlParamControl(); //url参数后可以加get方式传递 language 参数的方式控制当前网页以什么语种显示
+translate.selectLanguageTag.refreshRender();
+//translate.language.setDefaultTo('english'); //先设置默认翻译为的什么语言
+//translate.selectionTranslate.start(); //开启鼠标划词翻译能力
+translate.listener.start();	//开启html页面变化的监控，对变化部分会进行自动翻译。注意，这里变化区域，是指使用 translate.setDocuments(...) 设置的区域。如果未设置，那么为监控整个网页的变化
+//translate.service.use('client.edge');//由微软直接提供翻译支持，不在依赖翻译服务器
+translate.execute(); //执行翻译初始化操作，显示出select语言选择
+</script>
+<!-- 为代码块加上双击复制功能 -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // 确保Layui库加载完成后再执行
+    layui.use(['layer'], function () {
+        var layer = layui.layer;
+
+        // 获取页面中所有的<div class="text">元素
+        var textDivs = document.getElementsByClassName('text');
+        for (var j = 0; j < textDivs.length; j++) {
+            // 获取每个<div class="text">元素内部的所有<pre>标签
+            var preTags = textDivs[j].getElementsByTagName('pre');
+            for (var i = 0; i < preTags.length; i++) {
+                // 为每个pre标签绑定双击事件
+                preTags[i].addEventListener('dblclick', function () {
+                    var codeContent = this.textContent;
+                    var textarea = document.createElement('textarea');
+                    textarea.value = codeContent;
+                    document.body.appendChild(textarea);
+                    textarea.select();
+                    
+                    try {
+                        document.execCommand('copy');
+                        layer.msg('代码已复制成功！', {icon: 1});  // 设置成功提示图标
+                        console.log('尝试复制代码...');
+                    } catch (err) {
+                        layer.msg('复制代码失败，请手动复制。', {icon: 2});  // 设置失败提示图标
+                        console.log('复制代码结果:', err);  // 在catch块中   
+                    } finally {
+                        // 确保无论是否成功，都移除textarea元素
+                        document.body.removeChild(textarea);
+                    }
+                });
+
+                // 为每个pre标签添加title属性
+                preTags[i].setAttribute('title', '双击复制代码');
+            }
+        }
+    });
+});
+</script>
+<!-- 为代码块加上双击复制功能 -->
+</body>
+</html>oDiscriminateLocalLanguage();	//设置用户第一次用时，自动识别其所在国家的语种进行切换
+//translate.language.setLocal('chinese_simplified'); //设置本地语种（当前网页的语种）。如果不设置，默认就是 'chinese_simplified' 简体中文。 可填写如 'english'、'chinese_simplified' 等，具体参见文档下方关于此的说明
+translate.selectLanguageTag.languages = 'chinese_simplified,chinese_traditional,english,korean,corsican,guarani,kinyarwanda,hausa,norwegian,dutch,yoruba,gongen,latin,nepali,french,czech,hawaiian,georgian,russian,persian,bhojpuri,hindi,belarusian,swahili,icelandic,yiddish,twi,irish,gujarati,khmer,slovak,hebrew,kannada,hungarian,tamil,arabic,bengali,azerbaijani,samoan,afrikaans,indonesian,danish,shona,bambara,lithuanian,vietnamese,maltese,turkmen,assamese,catalan,singapore,cebuano,nskrit,polish,galician,latvian,ukrainian,tatar,scottish_gaelic,welsh,filipino,aymara,lao,telugu,romanian,haitian_creole,dogrid,swedish,maithili,thai,armenian,burmese,pashto,hmong,dhivehi,luxembourgish,sindhi,kurdish,turkish,macedonian,bulgarian,malay,luganda,marathi,estonian,malayalam,deutsch,slovene,urdu,portuguese,igbo,kurdish_sorani,oromo,greek,spanish,frisian,somali,amharic,nyanja,punjabi,basque,italian,albanian,tajik,finnish,kyrgyz,ewe,croatian,creole,quechua,bosnian,maori';
+translate.language.setUrlParamControl(); //url参数后可以加get方式传递 language 参数的方式控制当前网页以什么语种显示
+translate.selectLanguageTag.refreshRender();
+//translate.language.setDefaultTo('english'); //先设置默认翻译为的什么语言
+//translate.selectionTranslate.start(); //开启鼠标划词翻译能力
+translate.listener.start();	//开启html页面变化的监控，对变化部分会进行自动翻译。注意，这里变化区域，是指使用 translate.setDocuments(...) 设置的区域。如果未设置，那么为监控整个网页的变化
+//translate.service.use('client.edge');//由微软直接提供翻译支持，不在依赖翻译服务器
+translate.execute(); //执行翻译初始化操作，显示出select语言选择
+</script>
+<!-- 为代码块加上双击复制功能 -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // 确保Layui库加载完成后再执行
+    layui.use(['layer'], function () {
+        var layer = layui.layer;
+
+        // 获取页面中所有的<div class="text">元素
+        var textDivs = document.getElementsByClassName('text');
+        for (var j = 0; j < textDivs.length; j++) {
+            // 获取每个<div class="text">元素内部的所有<pre>标签
+            var preTags = textDivs[j].getElementsByTagName('pre');
+            for (var i = 0; i < preTags.length; i++) {
+                // 为每个pre标签绑定双击事件
+                preTags[i].addEventListener('dblclick', function () {
+                    var codeContent = this.textContent;
+                    var textarea = document.createElement('textarea');
+                    textarea.value = codeContent;
+                    document.body.appendChild(textarea);
+                    textarea.select();
+                    
+                    try {
+                        document.execCommand('copy');
+                        layer.msg('代码已复制成功！', {icon: 1});  // 设置成功提示图标
+                        console.log('尝试复制代码...');
+                    } catch (err) {
+                        layer.msg('复制代码失败，请手动复制。', {icon: 2});  // 设置失败提示图标
+                        console.log('复制代码结果:', err);  // 在catch块中   
+                    } finally {
+                        // 确保无论是否成功，都移除textarea元素
+                        document.body.removeChild(textarea);
+                    }
+                });
+
+                // 为每个pre标签添加title属性
+                preTags[i].setAttribute('title', '双击复制代码');
+            }
+        }
+    });
+});
+</script>
+<!-- 为代码块加上双击复制功能 -->
+</body>
+</html>/url参数后可以加get方式传递 language 参数的方式控制当前网页以什么语种显示
 translate.selectLanguageTag.refreshRender();
 //translate.language.setDefaultTo('english'); //先设置默认翻译为的什么语言
 //translate.selectionTranslate.start(); //开启鼠标划词翻译能力

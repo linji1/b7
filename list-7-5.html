@@ -53,7 +53,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <!--默认使用极速内核：针对国内浏览器产商-->
 <meta name="renderer" content="webkit">
-<title>信息科技_第7页_&nbsp;|&nbsp;老林笔记</title>
+<title>信息科技_第5页_&nbsp;|&nbsp;老林笔记</title>
 <meta name="keywords" content="林继,小学,数学,语文,继续教育,公需课,专业课,选修课" />
 <meta name="description" content="本人是一位农村教师，2001年从韶关学院毕业，一直在本村教书。在教书的同时，一直在自学计算机技术，略有所成，在镇里经常帮助教办处理各类事务，给老师们代学各类学时培训。在广东范围内，需要代学的同行们可以找我。微信：15816122881" />
 <link href="/assets/qblog/style.css" rel="stylesheet" type="text/css" />
@@ -344,133 +344,203 @@ document.body.addEventListener('input', POWERMODE);
 <div id="wrap">   <div id="content">
     <div id="main">
 	<div class="class"><i class="fa fa-folder-open"></i><span style="padding-left: 10px;">信息科技</span><span style="padding-left: 10px;">共 102 篇</span></div>	    	 
-      <div id="log-520" class="post_list">
-	  <a href="/b7/520.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">URLOS 使用笔记</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b7/520.html">改变文件或目录属性<pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.5em;"><code class="nginx hljs" codemark="1"><span class="hljs-title">cd</span> /home/mounts/linji/data/
+      <div id="log-638" class="post_list">
+	  <a href="/b7/638.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">读取当前设备wifi密码（仅win10测试）</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/638.html">复制代码，粘贴到记事本里<br>
+注！最好不要用第三方编辑器。。。。<br>
+win10默认的保存语言是utf-8，bat只支持ANSI，中文编码错误保存会乱码<br>
 
-chmod -R <span class="hljs-number">777</span> /home/mounts</code></pre></div>	  
+<pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="javascript hljs" codemark="1">@echo off
+color <span class="hljs-number">2</span>f
+mode con: cols=<span class="hljs-number">40</span> lines=<span class="hljs-number">15</span>
+title WiFi密码查询
+echo 正在查询结果
+setlocal enabledelayedexpansion
+<span class="hljs-keyword">for</span> /f <span class="hljs-string">"tokens=2* delims=:"</span> %%i <span class="hljs-keyword">in</span> (<span class="hljs-string">'netsh wlan show profiles'</span>) <span class="hljs-keyword">do</span> (
+    set str=%%i
+    <span class="hljs-keyword">for</span> /f <span class="hljs-string">"tokens=3* delims= "</span> %%d <span class="hljs-keyword">in</span> (<span class="hljs-string">'netsh wlan show profiles key^=clear name^="!str:~1!"^| findstr "关键内容"'</span>) <span class="hljs-keyword">do</span> (
+        echo <span class="hljs-string">"!str:~1!"</span>密码为：【%%d】
+        echo <span class="hljs-string">"!str:~1!"</span>密码为：【%%d】&gt;&gt;WiFi.txt
+    )
+)
+echo 保存在脚本所在目录的WiFi.txt文件中
+echo 任意键退出查询
+pause&gt;nul</code></pre></div>	  
 	  </div>	
 	  <div class="meta">
-	  <p class="time">2019-04-06 通过网页 
+	  <p class="time">2021-01-24 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(6445) <a href="/b7/520.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3067) <a href="/b7/638.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
-      <div id="log-444" class="post_list">
-	  <a href="/b7/444.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">df命令的详细用法</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b7/444.html">1、df -hl 查看硬盘大小及剩余空间，以M显示<br>
-2、du -sm 查看文件夹数目<br>
-3、du [参数详解]<br>
--a 列出所有文件与目录，默认值是列出目录的值<br>
--b 列出的值以b输出<br>
--c 最后求总total<br>
--k 列出的值 以KB输出<br>
--m 列出的值以mb输出<br>
--s 只列出最后求总的值</div>	  
+      <div id="log-637" class="post_list">
+	  <a href="/b7/637.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">永别了，电脑弹窗广告！</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/637.html">相信很多人都有这种情况，打开电脑，电脑上全部各种广告弹窗，或者在办公、追剧的时候，电脑突然就弹出了一条，是不是很烦人，今天教大家几招不用借助软件，手撕弹窗的方法。
+<h2>方法一：</h2>
+<p>第一种方法，可以对付部分突然的弹窗，开机的弹窗也可以对付。</p><p>1、在电脑弹出广告的时候，先不要关闭，按下组合键【Ctrl+Shift+Esc】进入【任务管理器】，如果组合键没反应的话，还可以按【Ctrl+Alt+Delete】，然后选择启动任务管理器。</div>	  
 	  </div>	
 	  <div class="meta">
-	  <p class="time">2013-08-14 通过网页 
+	  <p class="time">2021-01-18 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2985) <a href="/b7/444.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2725) <a href="/b7/637.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
-      <div id="log-396" class="post_list">
-	  <a href="/b7/396.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">Linux常用命令：查看CPU、内存和硬盘信息</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b7/396.html">购买的VPS /服务器，都需要查看下VPS的硬件配置信息和资源信息是否符合，通过以下几个命令查看配置<p>1.查看CPU信息</p><p>注： CPU是支持多核，多线程的，所以显示多核数信息。如：2核CPU，支持多线程就会显示4核CPU，但最后结果都是一样的</p></div>	  
+      <div id="log-629" class="post_list">
+	  <a href="/b7/629.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">让php强制使用https协议（http自动跳转到https）</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/629.html">其实很简单，在你的程序引用的全局脚本加上
+<br>
+<pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="php hljs" codemark="1"><span class="hljs-keyword">if</span>(<span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">"SERVER_PORT"</span>] !== <span class="hljs-string">'443'</span>) {
+  header(<span class="hljs-string">'location:https://'</span>.<span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">'SERVER_NAME'</span>].<span class="hljs-variable">$_SERVER</span>[<span class="hljs-string">'REQUEST_URI'</span>]);
+  <span class="hljs-keyword">exit</span>;
+}</code></pre>
+应该是通用的<br>
+如果你没有引用的全局脚本，建议你写一个（更方便你的开发），本人建议有能力的用上框架，是不错的<br>
+有的人会问我怎么不使用$_SERVER["HTTPS"]变量，因为这个是局限性的，fastcgi等是无用的（例如nginx），而$_SERVER["SERVER_PORT"]是一定存在的，无论是apache还是nginx等等都可以使用</p></div>	  
 	  </div>	
 	  <div class="meta">
-	  <p class="time">2012-11-16 通过网页 
+	  <p class="time">2020-12-22 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3012) <a href="/b7/396.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2785) <a href="/b7/629.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
-      <div id="log-395" class="post_list">
-	  <a href="/b7/395.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">Linux下面的复制(覆盖)文件</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b7/395.html">linux下面覆盖文件的时候都会有提示.需要不停的按Y来执行覆盖.在文件数量少的情况下没问题，但在N个文件时，一直按Y，估计你要疯了，那么cp命令在这时候将会是个很好的选择：</div>	  
+      <div id="log-627" class="post_list">
+	  <a href="/b7/627.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">PHP数据类型转换(字符转数字,数字转字符)</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/627.html"><p>原文链接：<a href="http://blog.sina.com.cn/s/blog_7dc1ff4d0101deb7.html" style="">http://blog.sina.com.cn/s/blog_7dc1ff4d0101deb7.html</a></p><p>PHP的数据类型转换属于强制转换，允许转换的PHP数据类型有：</p><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="javascript hljs" codemark="1">（int）、（integer）：转换成整形
+（float）、（double）、（real）：转换成浮点型
+（string）：转换成字符串
+（bool）、（boolean）：转换成布尔类型
+（array）：转换成数组
+（object）：转换成对象</code></pre></div>	  
 	  </div>	
 	  <div class="meta">
-	  <p class="time">2012-11-16 通过网页 
+	  <p class="time">2020-12-20 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3343) <a href="/b7/395.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2655) <a href="/b7/627.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
-      <div id="log-374" class="post_list">
-	  <a href="/b7/374.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">安全传输文件：SCP命令用法示例</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b7/374.html"><p><b>1、拷贝本地的档案到远程的机器上</b></p><ol><li><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="nginx hljs" codemark="1"><span class="hljs-title">scp</span> /etc/lilo.conf k<span class="hljs-variable">@net67</span>.ee.oit.edu.<span class="hljs-url">tw:/home/k</span></code></pre></li></ol></div>	  
-	  </div>	
-	  <div class="meta">
-	  <p class="time">2012-07-16 通过网页 
-	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2549) <a href="/b7/374.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
-	 
-	</p></div></div> 
-	 
-      <div id="log-357" class="post_list">
-	  <a href="/b7/357.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">复制文件或目录命令：cp</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b7/357.html">文件的管理，少不了复制、粘贴文件，在Linux系统下，我们常用cp这个命令复制或粘贴文件。
+      <div id="log-626" class="post_list">
+	  <a href="/b7/626.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">电脑使用技巧</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/626.html">win10 家庭中文版打开本地组策略编辑器：解决方案<br><br>
 
-<strong>cp</strong>
+　　新建一个txt文件-->将以下内容进行拷贝<br><br>
 
-<strong>【语法】</strong>cp[选项][参数]
-<strong>【详解】</strong>cp命令用于将单个或多个源文件或文件目录，复制到目标文件或文件夹目录中。
-<strong>【参数】</strong></div>	  
+pushd "%~dp0"<br>
+dir /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientExtensions-Package~3*.mum >List.txt<br>
+dir /b C:\Windows\servicing\Packages\Microsoft-Windows-GroupPolicy-ClientTools-Package~3*.mum >>List.txt<br>
+for /f %%i in ('findstr /i . List.txt 2^>nul') do dism /online /norestart /add-package:"C:\Windows\servicing\Packages\%%i"<br>
+　　另存为bat文件，如：加入组策略.bat-->选中以管理员身份运行-->命令执行完毕重启；<br><br>
+
+　　win+r-->输入gpedit.msc-->回车-->即可打开本地组策略； <br><br>
+
+　　将生成的bat文件和List.txt文件进行删除即可。</div>	  
 	  </div>	
 	  <div class="meta">
-	  <p class="time">2012-06-17 通过网页 
+	  <p class="time">2020-10-22 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3297) <a href="/b7/357.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(7222) <a href="/b7/626.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
-      <div id="log-351" class="post_list">
-	  <a href="/b7/351.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">双击空白部分返回顶部</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b7/351.html">实际上实现“WordPres主题双击空白部分返回顶部”的方法很是简单，只需要把下面JS代码加到主题的头部模版中:</div>	  
+      <div id="log-625" class="post_list">
+	  <a href="/b7/625.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">让指定的div层在网页打开几秒后自动隐藏关闭</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/625.html"><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="javascript hljs" codemark="1">如果是jquery
+
+&lt;script&gt;
+
+setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{$(<span class="hljs-string">"#这里放id"</span>).hide()},<span class="hljs-number">1000</span>)<span class="hljs-comment">//1000是1秒</span>
+
+&lt;<span class="hljs-regexp">/script&gt;
+
+如果没有jquery
+
+&lt;script&gt;
+
+setTimeout(function(){document.getElementById("这里放id").style.display = "none"},1000)/</span><span class="hljs-regexp">/id是你要隐藏zhi的div的id 1000是1秒
+
+&lt;/</span>script&gt;
+
+把代码放在网页&lt;<span class="hljs-regexp">/body&gt;前面</span></code></pre></div>	  
 	  </div>	
 	  <div class="meta">
-	  <p class="time">2012-04-22 通过网页 
+	  <p class="time">2020-10-20 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2826) <a href="/b7/351.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3797) <a href="/b7/625.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
-      <div id="log-347" class="post_list">
-	  <a href="/b7/347.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">LINUX文件/文件夹复制、删除和移动命令集</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b7/347.html">功能：创建一个目录（类似MSDOS下的md命令）。Linux目录的创建与删除命令mkdir命令<p>功能：创建一个目录（类似MSDOS下的md命令）。</p><p>语法：mkdir [选项] dir-name</p><p>说明：该命令创建由dir-name命名的目录。要求创建目录的用户在当前目录中（dir-name的父目录中）具有写权限，并且dirname不能是当前目录中已有的目录或 文件名称。</p></div>	  
+      <div id="log-618" class="post_list">
+	  <a href="/b7/618.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">在网页里插入 MP3</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/618.html"><center><audio controls="" autoplay="">
+
+  <source src="https://img.tukuppt.com/newpreview_music/08/99/49/5c897788e421b53181.mp3" type="audio/mpeg">
+
+  您的浏览器不支持 audio 元素。
+
+</audio></center>
+<div><br></div><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="html hljs xml" codemark="1"><span class="hljs-tag"><<span class="hljs-title">audio</span> <span class="hljs-attribute">controls</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">autoplay</span>=<span class="hljs-value">""</span>></span>
+
+  <span class="hljs-tag"><<span class="hljs-title">source</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"https://img.tukuppt.com/newpreview_music/08/99/49/5c897788e421b53181.mp3"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"audio/mpeg"</span>></span>
+
+  您的浏览器不支持 audio 元素。
+
+<span class="hljs-tag"></<span class="hljs-title">audio</span>></span></code></pre></div>	  
 	  </div>	
 	  <div class="meta">
-	  <p class="time">2012-03-27 通过网页 
+	  <p class="time">2020-09-19 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(5567) <a href="/b7/347.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3060) <a href="/b7/618.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
-      <div id="log-337" class="post_list">
-	  <a href="/b7/337.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">基于Linux的VPS下SSH常用命令大全</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b7/337.html">目录操作：<ul><li>rm -rf mydir /*删除mydir目录*/</li><li>mkdir dirname /*创建名为dirname的目录*/</li><li>cd mydir /*进入mydir目录*/</li><li>cd – /*回上一级目录*/</li><li>cd .. /*回父目录，中间有空格*/</li><li>cd ~ /*回根目录*/</li><li>mv tools tool /*把tools目录改名为tool */</li><li>ln -s tool bac /*给tool目录创建名为bac的符号链接,最熟悉的应该就是FTP中www链接到public_html目录了*/</li><li>cp -a tool /home/vpser/www /*把tool目录下所有文件复制到www目录下 */</li></ul></div>	  
+      <div id="log-617" class="post_list">
+	  <a href="/b7/617.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">电脑桌面上的文件夹变成白色的图标如何解决</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/617.html">在我们使用电脑的过程中，经常会遇到各种各样的问题。有时候会突然发现电脑桌面上文件夹的图标变成了白色的图标，但是还是可以正常打开。那么，遇到这样的问题应该如何解决呢?<br>
+1、先打开文本文档，输入以下代码；<br>
+2、将文件另存为bat格式文件；<br>
+3、双击运行这个bat文件即可。<br>
+通过上述的方法就可以解决电脑桌面上的文件夹图标显示异常，变成白色的图标的问题。<br>
+<pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="javascript hljs" codemark="1">@echo off
+taskkill /f /im explorer.exe
+CD /d %userprofile%\AppData\Local
+DEL IconCache.db /a
+start explorer.exe
+cho 执行完成</code></pre></div>	  
 	  </div>	
 	  <div class="meta">
-	  <p class="time">2012-02-16 通过网页 
+	  <p class="time">2020-09-17 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(2964) <a href="/b7/337.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4554) <a href="/b7/617.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	 
-      <div id="log-311" class="post_list">
-	  <a href="/b7/311.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">文章内容页顶部广告代码</h2></a>      <div class="excerpt">
-	  	  <div class="textPost" data-url="/b7/311.html">两段代码</div>	  
+      <div id="log-596" class="post_list">
+	  <a href="/b7/596.html"><h2 style="border-bottom: 1px dashed #e0e0e0;line-height: 1.5em;font-weight: bold;font-size: 20px;">最新支付宝开通当面付教程无需营业执照</h2></a>      <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/596.html">转自：<a href="http://d58555.cn/index.php?act=pl&id=5" target="_blank" style="font-size: 14px;">http://d58555.cn/index.php?act=pl&amp;id=5</a><br>支付宝官方出品的自助全功能工具，支持开通当面付，营业执照可选填，只需要门头照（门头照可以自己随便去街上拍一张)<br><center><img src="/assets/file/2020/05/b_141530_1951784815.jpg" style="max-width:100%;"></center></div>	  
 	  </div>	
 	  <div class="meta">
-	  <p class="time">2011-12-25 通过网页 
+	  <p class="time">2020-05-16 通过网页 
 	  	  	  	  </p>
-      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3104) <a href="/b7/311.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(4030) <a href="/b7/596.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
+	 
+	</p></div></div> 
+	 
+      <div id="log-595" class="post_list">
+	        <div class="excerpt">
+	  	  <div class="textPost" data-url="/b7/595.html">Execl可以将公历转换成农历<br>
+=TEXT(A1,"[$-130000]yyyy-mm-dd")</div>	  
+	  </div>	
+	  <div class="meta">
+	  <p class="time">2020-05-16 通过网页 
+	  	  	  	  </p>
+      <p class="navPost"><i class="iconfont icon-view"></i> 浏览(3555) <a href="/b7/595.html#comments"><i class="iconfont icon-com"></i> 评论(0)</a> 
 	 
 	</p></div></div> 
 	<div class="pagination">
-		<span class="info"> 共计：102 条记录 每页:10条</span><a href='list-7-1.html'>首页</a><a href='list-7-6.html'>&lt;</a><a href='list-7-5.html'>5</a><a href='list-7-6.html'>6</a><span class="current">7</span><a href='list-7-8.html'>8</a><a href='list-7-9.html'>9</a><a href='list-7-8.html'>&gt;</a><a href='list-7-11.html'>尾页</a>	</div>
+		<span class="info"> 共计：102 条记录 每页:10条</span><a href='list-7-1.html'>首页</a><a href='list-7-4.html'>&lt;</a><a href='list-7-3.html'>3</a><a href='list-7-4.html'>4</a><span class="current">5</span><a href='list-7-6.html'>6</a><a href='list-7-7.html'>7</a><a href='list-7-6.html'>&gt;</a><a href='list-7-11.html'>尾页</a>	</div>
     </div> 
 	<div id="sidebar"> 
      <div class="sidebar">
@@ -1068,6 +1138,12 @@ jQuery(document).ready(function($){
         // 遍历所有img元素，为它们设置lazy加载属性
         images.forEach(img => {
             img.setAttribute('loading', 'lazy');
+        });
+    });
+</script></div>
+
+</body>
+</html>ading', 'lazy');
         });
     });
 </script></div>
