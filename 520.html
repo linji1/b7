@@ -1206,4 +1206,21 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 <!-- 为代码块加上双击复制功能 -->
 </body>
+</html>on: 2});  // 设置失败提示图标
+                        console.log('复制代码结果:', err);  // 在catch块中   
+                    } finally {
+                        // 确保无论是否成功，都移除textarea元素
+                        document.body.removeChild(textarea);
+                    }
+                });
+
+                // 为每个pre标签添加title属性
+                preTags[i].setAttribute('title', '双击复制代码');
+            }
+        }
+    });
+});
+</script>
+<!-- 为代码块加上双击复制功能 -->
+</body>
 </html>

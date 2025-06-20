@@ -1095,4 +1095,15 @@ jQuery(document).ready(function($){
 </script></div>
 
 </body>
+</html>nt.addEventListener("DOMContentLoaded", function() {
+        // 获取页面上所有的img元素
+        const images = document.querySelectorAll('img');
+        // 遍历所有img元素，为它们设置lazy加载属性
+        images.forEach(img => {
+            img.setAttribute('loading', 'lazy');
+        });
+    });
+</script></div>
+
+</body>
 </html>

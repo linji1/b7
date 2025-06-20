@@ -1122,4 +1122,27 @@ jQuery(document).ready(function($){
 </script></div>
 
 </body>
+</html>rollTop: 0 //点击按钮，滚动回到顶部
+		}, 600)
+	})
+
+});  
+</script>
+
+<div class="scroll-to-top" style="display: none;"><i class="fa fa-chevron-up"></i></div>
+<!-- 返回顶部 -->
+
+<script>
+    // 当文档内容完全加载后执行指定函数
+    document.addEventListener("DOMContentLoaded", function() {
+        // 获取页面上所有的img元素
+        const images = document.querySelectorAll('img');
+        // 遍历所有img元素，为它们设置lazy加载属性
+        images.forEach(img => {
+            img.setAttribute('loading', 'lazy');
+        });
+    });
+</script></div>
+
+</body>
 </html>
