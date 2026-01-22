@@ -61,7 +61,6 @@
 <script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
 <link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
 <link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
 <script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
@@ -585,38 +584,7 @@ document.body.addEventListener('input', POWERMODE);
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b7/list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
-<audio id="audioPlayer" controls preload style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=jQuery实现table列的隐藏和展示。lthtmlgtltbodygtnbspnbspnbsp ltscript languagejavascript srcjqueryminjsgtltscriptgtnbspnbspnbsp ltscript typetextjavascriptgtnbspnbsp documentreadyfunctionnbspnbsp nbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbsptdeq2,trhidenbspnbsp nbspnbspnbspnbspnbspnbspnbspnbspnbspnbsp tdeq3,trh">
-  您的浏览器不支持 audio 元素。
-</audio>
 <span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
-
-    <script>
-        const audioPlayer = document.getElementById('audioPlayer');
-        const audioFiles = [
-            'https://dict.youdao.com/dictvoice?le=zh&audio=jQuery实现table列的隐藏和展示。lthtmlgtltbodygtnbspnbspnbsp ltscript languagejavascript srcjqueryminjsgtltscriptgtnbspnbspnbsp ltscript typetextjavascriptgtnbspnbsp documentreadyfunctionnbspnbsp nbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbsptdeq2,trhidenbspnbsp nbspnbspnbspnbspnbspnbspnbspnbspnbspnbsp tdeq3,trh','https://dict.youdao.com/dictvoice?le=zh&audio=idenbspnbsp nbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbsptdeq4,trhidenbspnbsp nbspnbspnbspnbspnbspnbspnbspnbspnbsp  button1clickfunctionnbspnbsp nbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbsp tdeq2,trtoggle1000 设置为0表示不用动画 ，1000就1秒的时间来展示或者隐藏nbspnbspnbspnbspnbspnbspnbspnbs','https://dict.youdao.com/dictvoice?le=zh&audio=pnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbsp tdeq3,trtoggle1000nbspnbspnbsp nbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbsp   nbsp tdeq4,trtoggle1000nbspnbspnbsp nbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbsp nbspnbspnbspnbspnbspnbsp nbspnbspnbsp nbspnbspnbspn','https://dict.youdao.com/dictvoice?le=zh&audio=bspnbspnbspnbspnbsp nbspnbspnbspnbsp ltscriptgtnbspnbsp ltinput typebutton idbutton1 value隐藏显示后三列gtnbspnbspnbsp lttable idmytablenbsp border1nbsp cellpadding0nbsp nbspnbsp cellspacing0 bordercolora3b0dc stylebordercollapsecollapsegtnbspnbsp nbspnbsp lttr gtnbspnbsp nbspnbspnbspnbspnbspnbsp lttd widt','https://dict.youdao.com/dictvoice?le=zh&audio=h200gt第一列lttdgtnbspnbsp nbspnbspnbspnbspnbspnbspnbsplttdnbsp width200gt第二列lttdgtnbspnbsp nbspnbspnbspnbspnbsp lttdnbsp width200gt第三列lttdgtnbspnbsp nbspnbspnbspnbspnbsp lttdnbsp width200gt第四列lttdgtnbspnbsp nbspnbspnbspnbspnbspnbsplttdnbsp width200gt第五列lttdgtnbspnbsp nbspnbsp lttrgtnbspnbspnbspnbsp nb','https://dict.youdao.com/dictvoice?le=zh&audio=spnbsp lttrgtlttdgtidlttdgtlttdgtid1lttdgtlttdgtid2lttdgtlttdgtid3lttdgtlttdgtid4lttdgtlttrgtnbspnbspnbspnbspnbspnbspnbspnbsp nbspnbsp lttrgtlttdgtidlttdgtlttdgtid1lttdgtlttdgtid2lttdgtlttdgtid3lttdgtlttdgtid4lttdgtlttrgtnbspnbspnbspnbspnbspnbspnbsp nbspnbsp lttrgtlttdgtidlttdgtlttdgtid1lttdgtlttdgt','https://dict.youdao.com/dictvoice?le=zh&audio=id2lttdgtlttdgtid3lttdgtlttdgtid4lttdgtlttrgtnbspnbsp nbspnbspnbspnbspnbsp nbspnbspnbsplttrgtlttdgtidlttdgtlttdgtid1lttdgtlttdgtid2lttdgtlttdgtid3lttdgtlttdgtid4lttdgtlttrgtnbspnbspnbspnbspnbspnbspnbspnbsp nbsp  lttrgtlttdgtidlttdgtlttdgtid1lttdgtlttdgtid2lttdgtlttdgtid3lttdgtlttdgtid4lttdgtlttrgtnb','https://dict.youdao.com/dictvoice?le=zh&audio=spnbsp lttablegtnbspnbspnbspnbsp ltbodygtnbsp lthtmlgt',        ];
-        let currentTrack = 0;
-
-        // 点击播放按钮时开始播放
-        function playAudio() {
-            if (currentTrack < audioFiles.length) {
-                audioPlayer.src = audioFiles[currentTrack];
-                audioPlayer.play();
-            } else {
-                audioPlayer.pause();
-            }
-        }
-
-        // 绑定播放按钮的点击事件
-        audioPlayer.addEventListener('click', playAudio);
-
-        // 监听播放结束事件
-        audioPlayer.addEventListener('ended', () => {
-            currentTrack++;
-            if (currentTrack < audioFiles.length) {
-                playAudio(); // 自动播放下一首
-            }
-        });
-    </script>
 
 <style type="text/css">
 	span#translate select {
@@ -668,11 +636,7 @@ $(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"
 <span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span>&nbsp;&nbsp;&nbsp;&nbsp; 
 <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>&nbsp; 
 <span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span></code></pre></div>
-<div class="readall_box">
-          <div class="read_more_mask"></div>
-          <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
-      </div>
-<p class="time clb">信息科技 2020-04-11 12:43:44 通过 网页 <i class="iconfont icon-view"></i> 浏览(3772) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">信息科技 2020-04-11 12:43:44 通过 网页 <i class="iconfont icon-view"></i> 浏览(3870) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->

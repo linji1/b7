@@ -61,7 +61,6 @@
 <script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
 <link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
 <link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
 <script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
@@ -585,38 +584,7 @@ document.body.addEventListener('input', POWERMODE);
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b7/list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
-<audio id="audioPlayer" controls preload style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=Fancybox v5 使用体验。前言Fancybox 是一个用于创建灵活且可定制的图片和媒体弹出框的JavaScript库。 Fancybox v5是其最新版本。要使用Fancybox v5，需要在HTML文件中包含必要的CSS和JavaScript文件，以及一个HTML元素作为触发器。 然后，使用Fancyboxbind方法来绑定Fancybox到该元素。 使用步骤引入fancyboxlt 引入fancybox  gtltlink relstylesheet hrefhttpscdnjsdelivrnetnpmfancyappsuidistfancyboxfancyboxmincss me">
-  您的浏览器不支持 audio 元素。
-</audio>
 <span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
-
-    <script>
-        const audioPlayer = document.getElementById('audioPlayer');
-        const audioFiles = [
-            'https://dict.youdao.com/dictvoice?le=zh&audio=Fancybox v5 使用体验。前言Fancybox 是一个用于创建灵活且可定制的图片和媒体弹出框的JavaScript库。 Fancybox v5是其最新版本。要使用Fancybox v5，需要在HTML文件中包含必要的CSS和JavaScript文件，以及一个HTML元素作为触发器。 然后，使用Fancyboxbind方法来绑定Fancybox到该元素。 使用步骤引入fancyboxlt 引入fancybox  gtltlink relstylesheet hrefhttpscdnjsdelivrnetnpmfancyappsuidistfancyboxfancyboxmincss me','https://dict.youdao.com/dictvoice?le=zh&audio=diaall onloadthismediaall gtltscript srchttpscdnjsdelivrnetnpmfancyappsuidistfancyboxfancyboxumdminjsgtltscriptgt触发器简单的例子为lta href01png datafancyboxgallery datacaption这是图片名称1gt    ltimg src01png gtltagt  lta href02png datafancyboxgallery datacaption这是图片名称2gt    ltimg src02png gtltagtlt a gt 标签中的 dat','https://dict.youdao.com/dictvoice?le=zh&audio=afancybox 属性将告诉Fancybox要绑定到这个元素。datacaption这是图片名称 这个可以省略使用Fancyboxbind方法来绑定Fancybox到该元素假设页面已经引入jQuery库documentreadyfunction   Fancyboxbinddatafancybox,      默认选项    dragToClose false,  禁用拖动关闭    wheel false,  禁用滚轮缩放    click false,  禁用单击关闭    dblclick false,  禁用双击缩放    buttons zoom, fullScreen, clos','https://dict.youdao.com/dictvoice?le=zh&audio=e,  只显示缩放，全屏和关闭按钮  这段代码需要添加到您的JavaScript文件中，这样，它将在页面加载时执行，并绑定Fancybox到所有包含 datafancybox 属性的元素。假设页面没有引入jQuery库这时候需要使用JavaScript的原生方法来在文档加载完成时调用 Fancyboxbind一种方法是在 window 对象上添加 load 事件监听器，该监听器将在所有资源例如图像和样式表加载完成后触发。然后，在事件回调函数中调用 Fancyboxbind 方法。示例代码如下windowaddEventListenerload, function   Fancyboxbindd','https://dict.youdao.com/dictvoice?le=zh&audio=atafancybox,      默认选项    dragToClose false,  禁用拖动关闭    wheel false,  禁用滚轮缩放    click false,  禁用单击关闭    dblclick false,  禁用双击缩放    buttons zoom, fullScreen, close,  只显示缩放，全屏和关闭按钮  另一种方法是在 document 对象上添加 DOMContentLoaded 事件监听器，该监听器将在HTML文档解析完成后触发。这意味着该事件在图像和其他资源加载之前触发，因此可以更快地绑定Fancybox。示例代码如下document','https://dict.youdao.com/dictvoice?le=zh&audio=addEventListenerDOMContentLoaded, function   Fancyboxbinddatafancybox,      默认选项    dragToClose false,  禁用拖动关闭    wheel false,  禁用滚轮缩放    click false,  禁用单击关闭    dblclick false,  禁用双击缩放    buttons zoom, fullScreen, close,  只显示缩放，全屏和关闭按钮   使用例子及官网 Fancybox V5 使用例子Fancybox V5 原始例子Fancybox V5 官方例子Fancy','https://dict.youdao.com/dictvoice?le=zh&audio=box V5 代码网址',        ];
-        let currentTrack = 0;
-
-        // 点击播放按钮时开始播放
-        function playAudio() {
-            if (currentTrack < audioFiles.length) {
-                audioPlayer.src = audioFiles[currentTrack];
-                audioPlayer.play();
-            } else {
-                audioPlayer.pause();
-            }
-        }
-
-        // 绑定播放按钮的点击事件
-        audioPlayer.addEventListener('click', playAudio);
-
-        // 监听播放结束事件
-        audioPlayer.addEventListener('ended', () => {
-            currentTrack++;
-            if (currentTrack < audioFiles.length) {
-                playAudio(); // 自动播放下一首
-            }
-        });
-    </script>
 
 <style type="text/css">
 	span#translate select {
@@ -719,11 +687,7 @@ document.body.addEventListener('input', POWERMODE);
 
 <a href="https://github.com/fancyapps/ui" target="_blank">Fancybox V5 代码网址</a>
 </div></div></div>
-<div class="readall_box">
-          <div class="read_more_mask"></div>
-          <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
-      </div>
-<p class="time clb">信息科技 2024-02-11 03:27:16 通过 网页 <i class="iconfont icon-view"></i> 浏览(1688) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">信息科技 2024-02-11 03:27:16 通过 网页 <i class="iconfont icon-view"></i> 浏览(1829) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->

@@ -61,7 +61,6 @@
 <script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
 <link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
 <link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
 <script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
@@ -585,38 +584,7 @@ document.body.addEventListener('input', POWERMODE);
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b7/list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
-<audio id="audioPlayer" controls preload style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=禁用这18个系统服务，快速提升windows11系统性能。在windows11中，有些服务所提供的功能并不是我们经常使用到的，我们可以通过禁用他们来提高系统的运行速度和性能。选择服务和应用程序，点击服务。双击一个服务，启动类型处选择禁用，点击确定，即可停用该服务。1Windows 更新功能负责windows的系统更新windows的有些更新有时会让电脑出现各种问题，如果你不需要自动更新，可以禁用。2Windows Search功能提供快速文件搜索windows自带的搜索功能速度特别慢，而且搜索的时候会占用大量的系统资源，建议禁用并使用第三方工具代替。3 Superfetch SysMain功能">
-  您的浏览器不支持 audio 元素。
-</audio>
 <span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
-
-    <script>
-        const audioPlayer = document.getElementById('audioPlayer');
-        const audioFiles = [
-            'https://dict.youdao.com/dictvoice?le=zh&audio=禁用这18个系统服务，快速提升windows11系统性能。在windows11中，有些服务所提供的功能并不是我们经常使用到的，我们可以通过禁用他们来提高系统的运行速度和性能。选择服务和应用程序，点击服务。双击一个服务，启动类型处选择禁用，点击确定，即可停用该服务。1Windows 更新功能负责windows的系统更新windows的有些更新有时会让电脑出现各种问题，如果你不需要自动更新，可以禁用。2Windows Search功能提供快速文件搜索windows自带的搜索功能速度特别慢，而且搜索的时候会占用大量的系统资源，建议禁用并使用第三方工具代替。3 Superfetch SysMain功能','https://dict.youdao.com/dictvoice?le=zh&audio=优化内存管理这个服务常驻系统后台，一直占用系统资源，而且对现在的SSD硬盘的使用场景中优化提升微乎其微，建议禁用，可以释放大量系统资源。4 Remote Desktop Services TermService功能远程桌面访问如果你不需要使用到远程桌面功能，可以禁用它提高系统安全性。5 Print Spooler Spooler功能打印机管理如果你电脑不需要连接打印机，可以禁用掉此服务。6 Windows Defender Firewall，Microsoft Defender Antivirus Service功能windows内置防病毒工具虽然对系统进行了保护，但是占用了大量的系统资源，可','https://dict.youdao.com/dictvoice?le=zh&audio=以禁用它，使用第三方安全工具来保护系统。7Windows Error Reporting功能收集错误信息并发送给微软在系统出现崩溃或系统错误的时候，这个服务会把错误的信息发送给微软，但是发送之后也不见得给你解决，建议禁用此服务。8Windows Biometric Service功能指纹和面部识别这个功能只是在特定的环境中使用，在家用的电脑上几乎用不到这个功能，建议禁用。9零售演示服务功能零售演示模式，用于商店展示建议禁用。10Remote Registry功能允许远程用户修改注册表建议禁用，可提高系统安全性11家长控制功能对windows子账户强制执行家长控制如果不需要可以禁用12xbox ','https://dict.youdao.com/dictvoice?le=zh&audio=live功能为xbox游戏提供服务如果你电脑不完xbox游戏，可以禁用此服务。13edge浏览器更新服务Microsoft Edge 有三个功能使edge浏览器保存最新状态它常年在后台运行，占用系统资源，建议禁止。14Windows Media Player功能windows系统自带媒体播放器一般我们都会下载解码能力更强，支持格式更多的使用第三方媒体播放器，可以禁用。15Windows Image Acquisition功能为扫描仪，相机提供图像采集如果电脑没有连接扫描仪或者相机，不需要采集图像，可以禁用。16Connected User Experiences and Telemetry功能','https://dict.youdao.com/dictvoice?le=zh&audio=反馈系统的错误给微软可以禁用17windows备份功能对系统进行备份 一般不会使用，可禁用18windows推送通知系统服务功能推送系统通知方面的服务占用大量系统资源，建议禁用。禁用不需要的系统服务可以提升电脑的运行速度和性能，但是也要根据自己的使用场景进行选择，避免出现某些功能无法使用的情况。',        ];
-        let currentTrack = 0;
-
-        // 点击播放按钮时开始播放
-        function playAudio() {
-            if (currentTrack < audioFiles.length) {
-                audioPlayer.src = audioFiles[currentTrack];
-                audioPlayer.play();
-            } else {
-                audioPlayer.pause();
-            }
-        }
-
-        // 绑定播放按钮的点击事件
-        audioPlayer.addEventListener('click', playAudio);
-
-        // 监听播放结束事件
-        audioPlayer.addEventListener('ended', () => {
-            currentTrack++;
-            if (currentTrack < audioFiles.length) {
-                playAudio(); // 自动播放下一首
-            }
-        });
-    </script>
 
 <style type="text/css">
 	span#translate select {
@@ -749,11 +717,7 @@ document.body.addEventListener('input', POWERMODE);
 <p>占用大量系统资源，建议禁用。</p>
 
 <p>禁用不需要的系统服务可以提升电脑的运行速度和性能，但是也要根据自己的使用场景进行选择，避免出现某些功能无法使用的情况。</p></div>
-<div class="readall_box">
-          <div class="read_more_mask"></div>
-          <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
-      </div>
-<p class="time clb">信息科技 2024-11-02 00:48:33 通过 网页 <i class="iconfont icon-view"></i> 浏览(1555) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">信息科技 2024-11-02 00:48:33 通过 网页 <i class="iconfont icon-view"></i> 浏览(1695) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->

@@ -61,7 +61,6 @@
 <script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
 <link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
 <link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
 <script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
@@ -585,38 +584,7 @@ document.body.addEventListener('input', POWERMODE);
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b7/list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
-<audio id="audioPlayer" controls preload style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=Windows 常用快捷键大全。1， Ctrl  CV 复制粘贴党必备CtrlC一键复制，CtrlV瞬间粘贴，文档整理，资料汇总再也不怕手慢2，Ctrl  Z 哎呀，不小心删错了CtrlZ来救场，撤销上一步操作，让你的失误瞬间消失无踪3，Ctrl  S 养成好习惯，时不时CtrlS保存一下，再也不怕电脑突然罢工，心血白费啦4，Ctrl  NT CtrlN新建窗口文档，CtrlT在浏览器中新建标签页，开启新篇章就是这么简单5，Ctrl  F 海量信息中找关键词CtrlF快速定位，搜索功能秒开启，精准直达不迷路6，Win  D 老板突袭检查WinD一键回到桌面，所有窗口瞬间隐藏，完美伪装成认真工作">
-  您的浏览器不支持 audio 元素。
-</audio>
 <span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
-
-    <script>
-        const audioPlayer = document.getElementById('audioPlayer');
-        const audioFiles = [
-            'https://dict.youdao.com/dictvoice?le=zh&audio=Windows 常用快捷键大全。1， Ctrl  CV 复制粘贴党必备CtrlC一键复制，CtrlV瞬间粘贴，文档整理，资料汇总再也不怕手慢2，Ctrl  Z 哎呀，不小心删错了CtrlZ来救场，撤销上一步操作，让你的失误瞬间消失无踪3，Ctrl  S 养成好习惯，时不时CtrlS保存一下，再也不怕电脑突然罢工，心血白费啦4，Ctrl  NT CtrlN新建窗口文档，CtrlT在浏览器中新建标签页，开启新篇章就是这么简单5，Ctrl  F 海量信息中找关键词CtrlF快速定位，搜索功能秒开启，精准直达不迷路6，Win  D 老板突袭检查WinD一键回到桌面，所有窗口瞬间隐藏，完美伪装成认真工作','https://dict.youdao.com/dictvoice?le=zh&audio=样7，Alt  Tab 多任务切换神器AltTab轻松在不同窗口间跳跃，工作娱乐两不误8，Ctrl  Shift  T 浏览器党福音不小心关掉了重要标签页CtrlShiftT恢复关闭的标签页，救急小能手9，Win  E 快速打开文件资源管理器，找文件，存资料，WinE一键直达，效率翻倍10，Ctrl  P 打印前的最后确认CtrlP调出打印预览，确保每份资料都完美呈现11，使用键盘快捷键可以快速进入任务视图，具体的快捷键如下进入任务视图WinTab新建桌面WinCtrlD进入前一个桌面ctrlwin方向左键进入后一个桌面ctrlwin方向右键12，讲述人提升了扫描模式的响应速度，特别是在 Mi','https://dict.youdao.com/dictvoice?le=zh&audio=crosoft Edge 中阅读大型文档时。使用方法先按Windows  Ctrl  Enter开启讲述人功能，然后在讲述人会话中按Caps Lock  空格键启动扫描模式。13，在运行框里输入 msinfo32 打开 系统信息14，Ctrll  Shift  Esc 打开 任务管理器layuicolspace15     padding 75pxlayuicolspace15     margin 75pxzhiche     border 2px dashed cdc8c8media screen and minwidth 992pxlayuicolmd6     width 25floa','https://dict.youdao.com/dictvoice?le=zh&audio=t leftposition relative    display block    boxsizing borderboxzhiche       width 100      height auto    border 2px dashed cdc8c8media screen and maxwidth650pxzhiche       height auto      width 100                                                                                                 ',        ];
-        let currentTrack = 0;
-
-        // 点击播放按钮时开始播放
-        function playAudio() {
-            if (currentTrack < audioFiles.length) {
-                audioPlayer.src = audioFiles[currentTrack];
-                audioPlayer.play();
-            } else {
-                audioPlayer.pause();
-            }
-        }
-
-        // 绑定播放按钮的点击事件
-        audioPlayer.addEventListener('click', playAudio);
-
-        // 监听播放结束事件
-        audioPlayer.addEventListener('ended', () => {
-            currentTrack++;
-            if (currentTrack < audioFiles.length) {
-                playAudio(); // 自动播放下一首
-            }
-        });
-    </script>
 
 <style type="text/css">
 	span#translate select {
@@ -735,11 +703,7 @@ position: relative;
     </div>
     </div> 
 </div></div>
-<div class="readall_box">
-          <div class="read_more_mask"></div>
-          <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
-      </div>
-<p class="time clb">信息科技 2024-08-22 20:59:52 通过 网页 <i class="iconfont icon-view"></i> 浏览(2291) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">信息科技 2024-08-22 20:59:52 通过 网页 <i class="iconfont icon-view"></i> 浏览(2425) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->

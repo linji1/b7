@@ -61,7 +61,6 @@
 <script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
 <link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
 <link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
 <script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
@@ -585,38 +584,7 @@ document.body.addEventListener('input', POWERMODE);
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b7/list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
-<audio id="audioPlayer" controls preload style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=linux实际工作中用的命令总结。基本命令1ls 路径als路径 列出路径下的文件夹和文件的名字如果没有路径 则列出当前下的文件夹和文件的名字bll以列表的形式列出当前下的文件夹和文件的名字 显示文件信息cll l 以列表的形式列出当前下的文件夹和文件的名字 显示文件信息dll al以列表的形式列出当前下的文件夹和文件的名字 显示文件信息 包含隐藏文件2clear清空当前屏幕的所有内容 clear3su切换用户su 用户名 su admin4logout退出当前用户5shutdown 关机命令shutdown h 分钟数 表示多少分钟后关机shutdown r 分钟数 多少分钟后重启shutd">
-  您的浏览器不支持 audio 元素。
-</audio>
 <span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
-
-    <script>
-        const audioPlayer = document.getElementById('audioPlayer');
-        const audioFiles = [
-            'https://dict.youdao.com/dictvoice?le=zh&audio=linux实际工作中用的命令总结。基本命令1ls 路径als路径 列出路径下的文件夹和文件的名字如果没有路径 则列出当前下的文件夹和文件的名字bll以列表的形式列出当前下的文件夹和文件的名字 显示文件信息cll l 以列表的形式列出当前下的文件夹和文件的名字 显示文件信息dll al以列表的形式列出当前下的文件夹和文件的名字 显示文件信息 包含隐藏文件2clear清空当前屏幕的所有内容 clear3su切换用户su 用户名 su admin4logout退出当前用户5shutdown 关机命令shutdown h 分钟数 表示多少分钟后关机shutdown r 分钟数 多少分钟后重启shutd','https://dict.youdao.com/dictvoice?le=zh&audio=own k 分钟数 多少分钟后关机 只发出警告 不执行关机shutdown c 取消关机halt 立即关机reboot 立即重启6cat指令1直接打开一个文件的功能如cat 文件的路径2对文件进行合并如cat 文件1 文件2 文件3。。。也可以 cat 文件1 文件2 文件3gtgt新的文件这样会把三个文件的内容合并到新的文件中7目录切换命令1cd 需要切换的路径路径可以是相对路径 也可以是绝对路径切换目录 cd 例cd home2pwd打印当前的路径例pwd8输出当前目录下各个子目录所使用的空间du h  maxdepth1文件操作命令1文件创建touch 文件名 文件名也可以是路径加文件名','https://dict.youdao.com/dictvoice?le=zh&audio=例touch testphp2文件赋值cp 文件名 存放的新路径例cp aphp home3文件移动mv 文件名 移动到的位置例mv aphp home4文件删除rm 文件名例rm aphp 确认删除 输入y 或者yes强制删除rm f aphp5文件重命名mv 文件名 新名字例mv aphp bphp文件夹操作命令1文件夹创建mkdir 文件夹名字 文件夹名字也可以是路径加文件夹名字例 mkdir zzs2文件夹复制cp r 文件夹名字 位置例cp r clp 3文件夹移动mv 文件夹名字 位置例mv clp 4文件夹删除rm f 文件夹名字例rm f clp clp5文件夹重命名mv 文件','https://dict.youdao.com/dictvoice?le=zh&audio=夹名字 新名字例mv zzs clp其他命令1ctrlc 停止正在运行的命令2ctrla 光标快速移动到命令的第一位3ctrle 光标快速移动到命令的最后一位4向上键和向下键 切换历史命令5tab 补全文件名修改服务器ssh默认端口vim etcsshsshdconfigPort22 去掉默认22 另起一行改为Port 5157binsystemctl restart sshdservicevim使用vi 没有vim强大1打开需要编辑的文件vim 文件名进入之后 想退出 按wq 保存并退出 wq 强制保存并退出q强制退出进入文件 显示行号 输入 set nu2打开需要编辑的文件 并将光标定位到','https://dict.youdao.com/dictvoice?le=zh&audio=该文件的第N行vim  n 文件名例vim 5 aphp 打开aphp文件 并将光标定位到第五行3打开需要编辑的文件 显示所要查询的字符串 加上高亮效果vim 字符串 文件名例vim a indexphp如果要在高亮的结果中进行快速跳转 可以按 n 向下切换 N向上切换想去除高亮显示 输入nohl 按下回车以上三种打开文件的方式 有一个特点 当打开的文件不存在的时候 会以一个新的文件进行打开4替换内容s需要替换的字符串替换成的字符串 表示替换s需要替换的字符串替换成的字符串g 表示替换光标所在行全部符合条件的地方s需要替换的字符串替换成的字符串 表示替换当前文件中的每一行的第一个符合条件的地方','https://dict.youdao.com/dictvoice?le=zh&audio=s需要替换的字符串替换成的字符串g 表示替换整个文档中全部符合条件的地方5查找查找的字符串6光标移动在非输入操作的情况下G大写G 光标直接跳到最后一行在非输入操作的情况下第n行G 光标直接跳到第N行 如5G 跳到第五行在非输入操作的情况下gg两个小写的g 光标直接跳到第一行7删除文本内容在非输入操作的情况下dd删除光标所在一行 之后 下一行往上移动D删除当前行 下一行不会往上移动数字dd删除多行 以当前光标为起始点 向下算起删掉n行起始点为18复制文本内容yy复制光标所在的这一行数字yy复制多行 以当前光标为起始点 向下算起复制n行起始点为1复制完成后按 P 进行粘贴用户和用户组用户1添加用户','https://dict.youdao.com/dictvoice?le=zh&audio=useradd 用户名例useradd zzs2设置密码passwd 需要设置密码的用户名例passwd zzs3编辑用户usermod l 用户的新名字 用户的旧名字例usermod l clp zzsusermod g 新的用户组id 用户名例usermod g 500 clp4删除用户userdel 用户名例userdel clp5切换用户su 用户名用户组1添加用户组groupadd 用户组名字例groupadd china2用户组编辑groupmod 用户组名例groupmod n 新的用户组名 旧的用户组名3用户组删除groupdel 用户组名例groupdel权限设置第一个字符 ','https://dict.youdao.com/dictvoice?le=zh&audio=表示文档的类型 d表示的是目录 表示文件 ugo第24个字符 表示文件的所有者的权限情况 u表示 user第57个字符 表示所有者同组的组内成员的权限情况 g 表示 group第810个字符 表示除了上述两类人员的其他用户的权限情况 o 表示other1通过字符形式设置权限读4    写2    执行1755， 三个数字，第一个，是所有者权限，第二个是自己用户组权限，第三个是其他用户权限  命令chmod第一种情况 针对单个对象进行拆分 u所有者 g同组用户 o其他用户chmod 权限组成信息 需要操作的对象文件夹或者文件如果对象是文件夹 则需要加上r参数 表示递归赋予权限给某个组成部分添加读','https://dict.youdao.com/dictvoice?le=zh&audio=权限 chmod ur,gr,or 需要操作的对象文件夹或者文件给某个组成部分删减读权限 chmod ur,gr,or 需要操作的对象文件夹或者文件给某个组成部分设置一个目标值 比如权限的全部组成部分都设为rwx则 chmod urwx,grwx,orwx 需要操作的对象文件夹或者文件第二种情况 设置全部的组成部分 augochmod ar 文件 给全部的组成部分添加读权限chmod ar 文件 给全部的组成部分删减读权限chmod arwx 文件 给全部的组成部分赋予可读可写可执行权限2通过数字形式设置权限777表示全部的权限 4读 2写 1执行比如给一个文件设置 所有者的拥有全部权限 同组','https://dict.youdao.com/dictvoice?le=zh&audio=用户拥有读写 其他用户拥有读则所有者 7 同组用户42 其他用户4 所以是764chmod 764 文件名查找命令find 查找范围路径 name 文件名linux下的gt和gtgt保存操作命令的结果到文件 可以使用gt 或gtgtgt表示覆盖写 每次执行 就覆盖之前写入的内容echo 22 gt startshgtgt表示追加写 每次执行 就追加到之前写入的内容后面echo 111 gtgt startsh服务的开关服务service 服务名称 startstoprestart开机设置systemctl startstoprestart 服务名称rpm软件管理1查询安装rpm qagrep ','https://dict.youdao.com/dictvoice?le=zh&audio=需要查询的关键词q 表示query 查询 a表示all 全部 在linux中称为管道 grep表示从结果中进行过滤2软件卸载rpm e 需要卸载的软件名称软件的完整名称 也就是通过上个命苦查询到的名称 nodepse表示卸载 nodeps 表示忽略依赖关系3软件安装rpm ivh 需要安装的完整软件名称i表示安装 install v表示显示进度条 h表示进度条以形式进阶命令1df 查看磁盘空间例df h2free 查看内存使用情况例free m 表示以mb为单位查看3head 输出一个文件的前n行 如果不指定 则默认显示前10例 head n 文件路径head n 10 aphp4tail 输','https://dict.youdao.com/dictvoice?le=zh&audio=出文件的末尾的n行 不指定则默认末尾10例 tail n 文件路径5less 查看文件，以较少的内容进行输出例less 文件路径6wc 统计文件内容信息行数 单词书 字节数例wc lwc 文件路径l行数 w单词数 c字节数7date 操作时间日期读取和设置例date 输出 年月日 星期几 时分秒date F 输出 年月日date F T 输出年月日 时分秒8cal 用来操作日历例cal查看日历 直接输出当前月份的日历cal 3 输出上一个月 本月 下一个月的日历cal y 年 输出某一年的日历 cal y 20089hostname 读取服务器的主机名10id 查看用户的基本信息 不指定则默认','https://dict.youdao.com/dictvoice?le=zh&audio=当前的用户11whoami 显示当前用户名12ps 查看服务器的进程信息e 列出全部的进程 f显示全部的列13top 查看服务器的进程占的资源14杀死端口号对应的进程kill 9 lsof ti端口号如kill 9 lsof ti990215查看某个文件的第几行内容sed n 5p 文件名 输出第5行16查看系统版本cat etcredhatrelease17启动服务和开机自启和查看服务状态systemctl start 服务名servicesystemctl enable 服务名servicesystemctl status 服务名service18创建软连接 为环境中的apache和mys','https://dict.youdao.com/dictvoice?le=zh&audio=ql创建ln s 源文件路径 目标文件路径例如 ln s usrlocalmysqlbinmysql binmysql例如 ln s usrlocalapachebinapachectl binapache19查看端口号状态netstat anp  grep 950120查看进程加上端口ps def grep 520021查看已经开放的端口firewallcmd listports22防火墙增加开放的端口添加之后记得重启防火墙firewallcmd zonepublic addport5200tcp permanent查看开放的端口firewallcmd zonepublic listport','https://dict.youdao.com/dictvoice?le=zh&audio=slinux中常见的压缩包有两种格式gz bz2解压gz格式的文件tar zxvf 需要解压的gz文件解压bz2格式的文件tar jxvf 需要解压的bz2文件yum的使用yum list 列出当前已经装的和可以装的全部软件yum search 名字 列出搜索的的包yum y install 包名 安装指定的包 y表示允许不再确认yum y update 包名 更新指定的包 不指定包名则更新全部yum y remove 包名 卸载指定的包日志切割1usrlocalnginxlogs下创建文件logcleansh,编写内容binbashLOGSPATH为日志存放路径LOGSPATHusrloca','https://dict.youdao.com/dictvoice?le=zh&audio=lnginxlogsYESTERDAYdate d yesterday Ymd切分日志文件mv LOGSPATHaccesslog LOGSPATHaccessYESTERDAYlogmv LOGSPATHerrorlog LOGSPATHerrorYESTERDAYlog 清理1天前log文件rm f LOGSPATHaccessdate d 2 days ago Ymdlogrm f LOGSPATHerrordate d 2 days ago Ymdlogkill USR1 cat LOGSPATHnginxpidecho 02修改权限chmod ax logcleansh3添加定时任务','https://dict.youdao.com/dictvoice?le=zh&audio= 定时任务crontab e 添加定时任务0 0    usrlocalnginxlogslogcleansh4重启和重载 重启crontabbinsystemctl restart crondservice 重载crontab配置binsystemctl reload crondservice来源httpzhangzeshantoparticles202012311609406690470html',        ];
-        let currentTrack = 0;
-
-        // 点击播放按钮时开始播放
-        function playAudio() {
-            if (currentTrack < audioFiles.length) {
-                audioPlayer.src = audioFiles[currentTrack];
-                audioPlayer.play();
-            } else {
-                audioPlayer.pause();
-            }
-        }
-
-        // 绑定播放按钮的点击事件
-        audioPlayer.addEventListener('click', playAudio);
-
-        // 监听播放结束事件
-        audioPlayer.addEventListener('ended', () => {
-            currentTrack++;
-            if (currentTrack < audioFiles.length) {
-                playAudio(); // 自动播放下一首
-            }
-        });
-    </script>
 
 <style type="text/css">
 	span#translate select {
@@ -883,11 +851,7 @@ crontab -e
 /bin/systemctl reload crond.service</pre>
 <br>
 来源：http://zhangzeshan.top/articles/2020/12/31/1609406690470.html</div>
-<div class="readall_box">
-          <div class="read_more_mask"></div>
-          <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
-      </div>
-<p class="time clb">信息科技 2021-08-03 21:38:45 通过 网页 <i class="iconfont icon-view"></i> 浏览(3309) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">信息科技 2021-08-03 21:38:45 通过 网页 <i class="iconfont icon-view"></i> 浏览(3440) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->

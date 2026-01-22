@@ -61,7 +61,6 @@
 <script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
 <link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
 <link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
 <script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
@@ -585,38 +584,7 @@ document.body.addEventListener('input', POWERMODE);
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b7/list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
-<audio id="audioPlayer" controls preload style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=常用HTML代码速查表。   A                  标记或参数      定 义                ltAgt      连结标记                ltADDRESSgt      地址标记斜体效果                ltAREAgt      连结区域标记设定各连结区域                alink      点击连结时的样式。例alinkFF0000                 align      水平方向摆放位置。例aligncenter                alternate      来回走动，例beh">
-  您的浏览器不支持 audio 元素。
-</audio>
 <span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
-
-    <script>
-        const audioPlayer = document.getElementById('audioPlayer');
-        const audioFiles = [
-            'https://dict.youdao.com/dictvoice?le=zh&audio=常用HTML代码速查表。   A                  标记或参数      定 义                ltAgt      连结标记                ltADDRESSgt      地址标记斜体效果                ltAREAgt      连结区域标记设定各连结区域                alink      点击连结时的样式。例alinkFF0000                 align      水平方向摆放位置。例aligncenter                alternate      来回走动，例beh','https://dict.youdao.com/dictvoice?le=zh&audio=avioralternate                alt      在连结中插入文字说明。例alt绿叶园                autostart      媒体文件传输完后是否自动播放。例autostarttrue                auto      自动，视情况                    B                   ltBgt      字体加粗标记产生字体加粗的效果                ltBODYgt      正文标记设计文件格式及内文所在                ltBRgt      换行标记令文字，图片等显','https://dict.youdao.com/dictvoice?le=zh&audio=示在下一行                ltBIGgt      字体加大标记令字体稍为加大                ltBLINKgt      闪烁文字标记令文字产生闪烁效果                ltBGSOUNDgt      背景声音标记于背景播放声音或音乐                ltBASEgt      连结基准标记可将网页中所有的相对路径转换成绝对路径                ltBASEFONTgt      基准字形标记设定所有字的字形，大小，颜色                ltBLOCKQUOTEgt      引述文字区块，令文字在表格','https://dict.youdao.com/dictvoice?le=zh&audio=的上下左右留有一定的空间                background      背景墙纸。例background01JPG                bgcolor      背景颜色。例bgcolorff0000                bgproperties      固定背景墙纸。例bgpropertiesfixed                border      边框。例border10                bordercolor      边框颜色。例bordercolor000080                bordercolorlight','https://dict.youdao.com/dictvoice?le=zh&audio=      边框向光部分的颜色。例bordercolorlight000000                bordercolordark      边框背光部分的颜色。例bordercolordarkffffff                bottom      置于底端。例valignbottom                behavior      卷动方式。例behavioralternate                blank      表示连结的目标地址在新建窗口中打开。例targetblank                     C              ','https://dict.youdao.com/dictvoice?le=zh&audio=    ltCENTERgt      居中标记令文字，图片，表格等显示于中间                ltCAPTIONgt      表格标题做成一打通列以填入表格标题                ltCODEgt      程式码字体稍为加宽如                ltCITEgt      引述斜体效果                colspan      该单元格向右打通。例colspan5                color      颜色。例color00FF00                cellspacing      单元格间距。例cellsp','https://dict.youdao.com/dictvoice?le=zh&audio=acing5                cellpadding      单元格衬距。例cellpadding10                     D                  ltDIVgt      区域标记                ltDFNgt      述语定义标记斜体效果                ltDIRgt      目录清单标记清单项目将以圆点排列，如ltULgt                ltDLgt      定义清单标记清单分两层出现                ltDTgt      定义条目标记标示该项定义的标题        ','https://dict.youdao.com/dictvoice?le=zh&audio=        ltDDgt      定义内容标记标示定义内容                direction      方向。例directionup                     E                  ltEMgt      强调标记字体出现斜体效果                ltEMBEDgt      多媒体标记                     F                  ltFONTgt      字形标记                ltFORMgt      表单标记决定单一表单的运作模式                ltF','https://dict.youdao.com/dictvoice?le=zh&audio=RAMEgt      框窗属性标记设定框窗内的参数属性                ltFRAMESETgt      框架标记设定框架，宣告HTML文件为框架模式                frameborder      框架的边框厚度。例frameborder0                framespacing      框架与框架之间保留空白的距离。例framespacing0                face      字体。例face黑体                fixed      固定。例bgpropertiesfixed               ','https://dict.youdao.com/dictvoice?le=zh&audio= false      否。例loopfalse                     H                  ltHTMLgt      声明这是 HTML 文件，让浏览器认出并正确处理此 HTML 文件。                ltHEADgt      开头标记提供文件整体资讯                ltHRgt      水平线插入一条水平线                ltH1gt      一级标题标记变粗变大加宽，程度与级数反比                ltH2gt      二级标题标记将字体变粗变大加宽                l','https://dict.youdao.com/dictvoice?le=zh&audio=tH3gt      三级标题标记将字体变粗变大加宽                ltH4gt      四级标题标记将字体变粗变大加宽                ltH5gt      五级标题标记将字体变粗变大加宽                ltH6gt      六级标题标记将字体变粗变大加宽                height      高度。例height100                hspace      图片左右的空间。例hspace10                href      连结。例href01htm                    ','https://dict.youdao.com/dictvoice?le=zh&audio= I                  ltIgt      斜体标记字体出现斜体效果                ltIMGgt      图形标记用以插入图形及设定图形属性                ltIFRAMEgt      框架标记于网页中插入框架                ltINPUTgt      输入标记决定输入形式                ltISINDEXgt      页内寻找器可输入关键字寻找于该一页                infinite      重复播放。例loopinfinite                      K     ','https://dict.youdao.com/dictvoice?le=zh&audio=             ltKBDgt      键盘字字体稍为加宽，单一空白                     L                  ltLIgt      清单项目标记每一标记标示一项清单项目                ltLINKgt      关系定义标记将目前文件与其它 URL 作连结                link      一般情况下的连结样式。例linkFF0000                leftmargin      网页的左边距大小。例leftmargin0                lowsrc      预载图片先显示低解','https://dict.youdao.com/dictvoice?le=zh&audio=像图片。例ltIMG LOWSRCgt                left      左边。例alignleft                loop      反覆播放。例loopinfinite                     M                  ltMENUgt      选单清单标记清单项目将以圆点排列，如ltULgt                ltMETAgt      开头定义标记                ltMAPgt      影像地图名称标记设定影像地图名称                ltMARQUEEgt      走动标记  ','https://dict.youdao.com/dictvoice?le=zh&audio=              middle      居中。例alignmiddle                marginwidth      框架左右边缘与框架内的文件保留的空间。例marginwidth0                marginhight      框架上下边缘与框架内的文件保留的空间。例marginheight0                     N                  ltNOBRgt      不换行标记强制文字不自动换行                ltNOFRAMESgt      不支持框架标记当旧式浏览器不支援框架时显示提示   ','https://dict.youdao.com/dictvoice?le=zh&audio=             name      参考点锚点。例lta name123gtltagt                no      否。例scrollingno                noshade      平面显示。例lthr noshadegt                noresize      锁住框架窗口的大小                     O                  ltOLgt      顺序清单标记清单项目将以数字，字母顺序排列                ltOPTIONgt      选项标记每一标记标示一个选项       ','https://dict.youdao.com/dictvoice?le=zh&audio=                             ltPgt      段落标记为字，画，表格等之间留一空白行                ltPREgt      预设格式标记令文件按照原始码的排列方式显示                parent      父窗口连结的目标网页在本窗口中打开。例targetparent                playbutton      在媒体播放面板中显示播放按钮                pausecutton      在媒体播放面板中显示暂停按钮                     R                 ','https://dict.youdao.com/dictvoice?le=zh&audio= right      居右。例alignright                rows      横向分割的宽度。例rows30,70                rowspan      向下单元格向下打通。例rowspan2                     S                  ltSTRONGgt      加重语气标记产生字体加粗 Bold 的效果                ltSMALLgt      字体缩细标记令字体稍为缩细                ltSTRIKEgt      划删除线标记为字体加一删除线               ','https://dict.youdao.com/dictvoice?le=zh&audio= ltSAMPgt      范例标记字体稍为加宽如                ltSUBgt      下标字标记                ltSUPgt      上标字标记                ltSTYLEgt      样式表标记                ltSPANgt      自订标记独立使用或与样式表同用                ltSELECTgt      选择标记建立 popup 走动清单                ltSCRIPTgt      引用脚本标记                size      大小。例size7   ','https://dict.youdao.com/dictvoice?le=zh&audio=             src      来源。例srclogogif                self      相同窗口在相同的框架中显示连结的内容。例targetselfgt                starttime      开始播放的时间。例starttime0010                smallconsole      显示较小的面板。例controlssmallconsole                stopbutton      显示停止按钮。例controlsstopbutton                scrolling      滚','https://dict.youdao.com/dictvoice?le=zh&audio=动条。例scrollingno                scroll      走动。例behaviorscroll                scrollamount      走动的速度。例scrollAmount25                scrolldelay      走动的停顿时间。例scrolldelay1000                slide      逐格走动幻灯式。例behaviorslide                           U                  ltUgt      下划线标记给文本加上底线         ','https://dict.youdao.com/dictvoice?le=zh&audio=       ltULgt      无序清单清单项目将以圆点排列                     V                  ltVARgt      变数标记斜体效果                valign      摆放位置垂直方向。例valigntop                vlink      被访问后超链接文字的样式。例vlink0000FF                vspace      图片上下的空间。例vspace20                volume      音量设定音量大小。例volume100               ','https://dict.youdao.com/dictvoice?le=zh&audio= volumelever      显示音量调整钮。例controlsvolumelever                   nbsp                       W                                        ltWBRgt      建议换行标记预设换行部位                width      宽度，长度。例 width100              ',        ];
-        let currentTrack = 0;
-
-        // 点击播放按钮时开始播放
-        function playAudio() {
-            if (currentTrack < audioFiles.length) {
-                audioPlayer.src = audioFiles[currentTrack];
-                audioPlayer.play();
-            } else {
-                audioPlayer.pause();
-            }
-        }
-
-        // 绑定播放按钮的点击事件
-        audioPlayer.addEventListener('click', playAudio);
-
-        // 监听播放结束事件
-        audioPlayer.addEventListener('ended', () => {
-            currentTrack++;
-            if (currentTrack < audioFiles.length) {
-                playAudio(); // 自动播放下一首
-            }
-        });
-    </script>
 
 <style type="text/css">
 	span#translate select {
@@ -1334,11 +1302,7 @@ document.body.addEventListener('input', POWERMODE);
     </tbody>
    </table>
   </div></div>
-<div class="readall_box">
-          <div class="read_more_mask"></div>
-          <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
-      </div>
-<p class="time clb">信息科技 2009-01-06 01:46:37 通过 网页 <i class="iconfont icon-view"></i> 浏览(3848) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">信息科技 2009-01-06 01:46:37 通过 网页 <i class="iconfont icon-view"></i> 浏览(3959) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->

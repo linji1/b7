@@ -61,7 +61,6 @@
 <script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
 <link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
 <link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
 <script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
@@ -585,38 +584,7 @@ document.body.addEventListener('input', POWERMODE);
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b7/list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
-<audio id="audioPlayer" controls preload style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=轻博客程序目录结构。轻博客程序目录结构，帮助大家修改二次开发及模板制作。nbsp indexphp 程序入口文件app 动态文件目录nbsp class 功能目录nbsp nbspnbspnbspnbspnbsp apiphp ajax管理操作文件nbsp nbspnbspnbspnbspnbsp codesphp 验证码nbsp nbspnbspnbspnbspnbsp configphp 配置密码公用函数类nbsp nbspnbspnbspnbspnbsp pagephp 分页类nbsp nbspnbspnbspnbspnbsp uploadphp 上传类nbsp nbspnbspnbsp">
-  您的浏览器不支持 audio 元素。
-</audio>
 <span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
-
-    <script>
-        const audioPlayer = document.getElementById('audioPlayer');
-        const audioFiles = [
-            'https://dict.youdao.com/dictvoice?le=zh&audio=轻博客程序目录结构。轻博客程序目录结构，帮助大家修改二次开发及模板制作。nbsp indexphp 程序入口文件app 动态文件目录nbsp class 功能目录nbsp nbspnbspnbspnbspnbsp apiphp ajax管理操作文件nbsp nbspnbspnbspnbspnbsp codesphp 验证码nbsp nbspnbspnbspnbspnbsp configphp 配置密码公用函数类nbsp nbspnbspnbspnbspnbsp pagephp 分页类nbsp nbspnbspnbspnbspnbsp uploadphp 上传类nbsp nbspnbspnbsp','https://dict.youdao.com/dictvoice?le=zh&audio=nbsp nbspnbsp db 数据库nbspnbspnbspnbspnbspnbspnbspnbspnbsp logdbnbspnbspnbspnbspnbspnbspnbspnbsp nbspassets 静态文件目录nbspnbspnbsp file 图片上传目录nbspnbspnbsp jsnbspnbsp js目录nbspnbspnbsp nbsp nbsp ajaxjsnbsp ajax操作js文件nbspnbspnbsp nbsp nbsp jqueryminjs jquery库nbspnbspnbsp nbsp  nbspnbspnbspnbsp nbsp edit 编辑器目','https://dict.youdao.com/dictvoice?le=zh&audio=录nbspnbspnbsp nbsp nbspnbspnbspnbspnbsp nicEditjsnbspnbspnbsp nbsp nbspnbspnbspnbspnbsp nicEditorIconsgifnbspnbspnbsp nbsp nbspnbspnbspnbsp nbspnbspnbspnbsp nbsp laydate 日期插件目录nbspnbspnbsp nbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbsp nbspnbspnbspnbsp qblognbsp 模板目','https://dict.youdao.com/dictvoice?le=zh&audio=录nbspnbspnbspnbspnbspnbspnbsp nbsp footphpnbsp 底部nbspnbspnbspnbspnbspnbspnbsp nbsp headphp 头部nbspnbspnbspnbspnbspnbspnbsp nbsp indexphp 首页nbspnbspnbspnbspnbspnbspnbsp nbsp loginphpnbsp 登陆nbspnbspnbspnbspnbspnbspnbsp nbsp plistphpnbsp 评论列表nbspnbspnbspnbspnbspnbspnbsp nbsp postphpnbsp 发布编辑nbspnbspnbsp','https://dict.youdao.com/dictvoice?le=zh&audio=nbspnbspnbspnbsp nbsp rightphpnbsp 右侧边栏nbspnbspnbspnbspnbspnbspnbsp nbsp settingphp 设置nbspnbspnbspnbspnbspnbspnbsp nbsp stylecssnbsp 样式文件nbspnbspnbspnbspnbspnbspnbsp nbsp themephp 模板配置文件nbspnbspnbspnbspnbspnbspnbsp nbsp viewphp 文章页nbspnbspnbspnbspnbspnbspnbsp nbsp widgetphp 边栏设置nbspnbspnbspnbspnbspn','https://dict.youdao.com/dictvoice?le=zh&audio=bspnbsp  nbspnbspnbspnbspnbspnbspnbspnbsp imagesnbspnbsp 字体图标目录nbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbsp iconfonteotnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbsp iconfontsvgnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbspnbsp iconfontttfnbspnbspnbspnbspnbspn','https://dict.youdao.com/dictvoice?le=zh&audio=bspnbspnbspnbspnbspnbspnbspnbspnbspnbsp iconfontwoffnbspnbspnbspnbspnbspnbspnbspnbspnbsp nbsp',        ];
-        let currentTrack = 0;
-
-        // 点击播放按钮时开始播放
-        function playAudio() {
-            if (currentTrack < audioFiles.length) {
-                audioPlayer.src = audioFiles[currentTrack];
-                audioPlayer.play();
-            } else {
-                audioPlayer.pause();
-            }
-        }
-
-        // 绑定播放按钮的点击事件
-        audioPlayer.addEventListener('click', playAudio);
-
-        // 监听播放结束事件
-        audioPlayer.addEventListener('ended', () => {
-            currentTrack++;
-            if (currentTrack < audioFiles.length) {
-                playAudio(); // 自动播放下一首
-            }
-        });
-    </script>
 
 <style type="text/css">
 	span#translate select {
@@ -634,11 +602,7 @@ document.body.addEventListener('input', POWERMODE);
 <div  id="printview">
 <h1>轻博客程序目录结构</h1><div class="text">
 轻博客程序目录结构，帮助大家修改二次开发及模板制作。<br><p>│&nbsp; index.php 程序入口文件</p>├─app 动态文件目录<br>│&nbsp; ├─class 功能目录<br>│&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; api.php ajax管理操作文件<br>│&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; codes.php 验证码<br>│&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; config.php 配置/密码公用函数类<br>│&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; page.php 分页类<br>│&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; upload.php 上传类<br>│&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>│&nbsp; └─db 数据库<br>│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; log.db<br>│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>└─assets 静态文件目录<br>&nbsp;&nbsp;&nbsp; ├─file 图片上传目录<br>&nbsp;&nbsp;&nbsp; ├─js&nbsp;&nbsp; js目录<br>&nbsp;&nbsp;&nbsp; │&nbsp; │&nbsp; ajax.js&nbsp; ajax操作js文件<br>&nbsp;&nbsp;&nbsp; │&nbsp; │&nbsp; jquery.min.js jquery库<br>&nbsp;&nbsp;&nbsp; │&nbsp; │ &nbsp;<br>&nbsp;&nbsp;&nbsp; │&nbsp; ├─edit 编辑器目录<br>&nbsp;&nbsp;&nbsp; │&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nicEdit.js<br>&nbsp;&nbsp;&nbsp; │&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nicEditorIcons.gif<br>&nbsp;&nbsp;&nbsp; │&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp; │&nbsp; └─laydate 日期插件目录<br>&nbsp;&nbsp;&nbsp; │&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br>&nbsp;&nbsp;&nbsp; └─qblog&nbsp; 模板目录<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; foot.php&nbsp; 底部<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; head.php 头部<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; index.php 首页<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; login.php&nbsp; 登陆<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; plist.php&nbsp; 评论列表<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; post.php&nbsp; 发布/编辑<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; right.php&nbsp; 右侧边栏<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; setting.php 设置<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; style.css&nbsp; 样式文件<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; theme.php 模板配置文件<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; view.php 文章页<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │&nbsp; widget.php 边栏设置<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; │ &nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; └─images&nbsp;&nbsp; 字体图标目录<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iconfont.eot<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iconfont.svg<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iconfont.ttf<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iconfont.woff&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</div>
-<div class="readall_box">
-          <div class="read_more_mask"></div>
-          <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
-      </div>
-<p class="time clb">信息科技 2020-03-20 15:33:39 通过 网页 <i class="iconfont icon-view"></i> 浏览(3945) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">信息科技 2020-03-20 15:33:39 通过 网页 <i class="iconfont icon-view"></i> 浏览(4054) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->

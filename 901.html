@@ -61,7 +61,6 @@
 <script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
 <link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
 <link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
 <script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
@@ -585,38 +584,7 @@ document.body.addEventListener('input', POWERMODE);
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b7/list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
-<audio id="audioPlayer" controls preload style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=htmldom获取元素笔记。获取元素的方式 非常规方式在 HTML 中，有三个特殊的元素lthtmlgt，ltheadgt和ltbodygt可以使用以下方式直接获取它们documentdocumentElement  获取lthtmlgt元素documenthead  获取ltheadgt元素documentbody  获取ltbodygt元素consolelogdocumentdocumentElementconsolelogdocumentheadconsolelogdocumentbody通过上述方式可以直接获取到这些特殊元素。 常规方式对于一般的元素，无法直接获取到，但可以使用以下方法">
-  您的浏览器不支持 audio 元素。
-</audio>
 <span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
-
-    <script>
-        const audioPlayer = document.getElementById('audioPlayer');
-        const audioFiles = [
-            'https://dict.youdao.com/dictvoice?le=zh&audio=htmldom获取元素笔记。获取元素的方式 非常规方式在 HTML 中，有三个特殊的元素lthtmlgt，ltheadgt和ltbodygt可以使用以下方式直接获取它们documentdocumentElement  获取lthtmlgt元素documenthead  获取ltheadgt元素documentbody  获取ltbodygt元素consolelogdocumentdocumentElementconsolelogdocumentheadconsolelogdocumentbody通过上述方式可以直接获取到这些特殊元素。 常规方式对于一般的元素，无法直接获取到，但可以使用以下方法','https://dict.youdao.com/dictvoice?le=zh&audio=通过 id 属性获取元素documentgetElementByIdid通过 name 属性获取元素documentgetElementsByNamename通过 class 属性获取元素documentgetElementsByClassNameclass通过标签名获取元素documentgetElementsByTagNamediv以此类推，可以根据元素的属性来获取相应的元素。 特殊方式还可以使用 querySelector 和 querySelectorAll 方法通过选择器获取元素1，标签选择器可以使用标签名称来选择元素，例如1，documentquerySelectordiv选择第一','https://dict.youdao.com/dictvoice?le=zh&audio=个 ltdivgt 元素。2，documentquerySelectorp选择第一个 ltpgt 元素。2，类选择器可以使用类名来选择具有特定类的元素，类名以  开头，例如documentquerySelectormyclass选择具有 myclass 类的第一个元素。3，ID选择器可以使用元素的ID来选择元素，ID以  开头，例如documentquerySelectormyid选择具有  myid ID的元素。4，属性选择器可以使用元素的属性来选择元素，例如documentquerySelectornamemyname选择具有 name 属性值为 myname 的元素。5，后代选择器可以选','https://dict.youdao.com/dictvoice?le=zh&audio=择某个元素的后代元素，例如documentquerySelectordiv p选择第一个 ltdivgt 元素内的第一个 ltpgt 元素。6，伪类选择器可以选择元素的特定状态或位置，例如documentquerySelectorahover选择第一个被鼠标悬停的 ltagt 元素。当然这只是例子,使用选择器时，可以使用 CSS 选择器的语法来指定元素。伪数组当使用以下方法获取一组元素时，它们会返回一个类似数组的对象伪数组1，documentquerySelectorAll通过选择器获取一组元素。2，documentgetElementsByClassName通过类名获取一组元素。3，docu','https://dict.youdao.com/dictvoice?le=zh&audio=mentgetElementsByTagName通过标签名获取一组元素。这些方法返回的伪数组对象NodeList具有类似数组的特性，但不是真正的数组。它们通常具有 length 属性和可以通过索引访问元素的能力，但不具备数组的方法例如 forEach，map 等。如果你需要在伪数组上使用数组方法，可以使用以下方法将其转换为真正的数组Arrayfrom 将伪数组转换为真正的数组。Arrayprototypeslicecall 使用 call  方法将伪数组转换为真正的数组。以下是示例，展示了如何使用这些方法 使用 documentquerySelectorAll 获取一组元素var elemen','https://dict.youdao.com/dictvoice?le=zh&audio=ts  documentquerySelectorAllexample 使用 documentgetElementsByClassName 获取一组元素var elements  documentgetElementsByClassNameexample  使用 documentgetElementsByTagName 获取一组元素var elements  documentgetElementsByTagNamediv使用常规方法循环输出元素伪数组可以使用length 属性获取长度for var i  0 i lt elementslength i   var element  elemen','https://dict.youdao.com/dictvoice?le=zh&audio=tsi  consolelogelement将伪数组转换为真正的数组的方法 使用 Arrayfrom 方法将伪数组转换为真正的数组var arrayElements  Arrayfromelements 或者使用 Arrayprototypeslicecall 方法var arrayElements  ArrayprototypeslicecallelementsforEach 方法循环输出元素arrayElementsforEachfunctionelement   consolelogelement或者根据元素的索引consolelogelements0consolelogelements','https://dict.youdao.com/dictvoice?le=zh&audio=1consolelogelements2一些小例子准备html结构ltdiv classexamplegtltulgt      ltligt列表项1ltligt    ltligt列表项2ltligt     ltligt列表项3ltligtltulgtltdivgt获取元素修改列表的第一项方法一使用 querySelector  方法var firstItem  documentquerySelectorexample lifirstchildfirstIteminnerHTML  修改后的列表项1在这个方法中，我们使用 querySelector   方法选择具有类名为 example ','https://dict.youdao.com/dictvoice?le=zh&audio=的父级容器元素，并使用 CSS 选择器 lifirstchild 选择第一个列表项元素。然后，我们使用 innerHTML 属性修改列表项的内容。方法二使用 getElementsByClassName 方法和索引var parentElement  documentgetElementsByClassNameexample0var items  parentElementgetElementsByTagNameliitems0innerHTML  修改后的列表项1这个方法与之前提供的代码示例相同，首先通过 getElementsByClassName 方法获取父级容器元素，然后使用 getE','https://dict.youdao.com/dictvoice?le=zh&audio=lementsByTagName 方法获取一组列表项元素，并通过索引 0 选择第一个列表项元素，最后使用 innerHTML 属性修改列表项的内容。方法三使用 querySelectorAll 方法和索引var items  documentquerySelectorAllexample liitems0innerHTML  修改后的列表项1在这个方法中，我们使用 querySelectorAll 方法选择具有类名为 example 的父级容器元素下的所有列表项元素。然后，我们通过索引 0 选择第一个列表项元素，并使用 innerHTML 属性修改其内容。以上是常用的获取元素的方式，根据具体的','https://dict.youdao.com/dictvoice?le=zh&audio=需求选择合适的方法来获取元素。文章来自httpsxtbbbcomdefault11html',        ];
-        let currentTrack = 0;
-
-        // 点击播放按钮时开始播放
-        function playAudio() {
-            if (currentTrack < audioFiles.length) {
-                audioPlayer.src = audioFiles[currentTrack];
-                audioPlayer.play();
-            } else {
-                audioPlayer.pause();
-            }
-        }
-
-        // 绑定播放按钮的点击事件
-        audioPlayer.addEventListener('click', playAudio);
-
-        // 监听播放结束事件
-        audioPlayer.addEventListener('ended', () => {
-            currentTrack++;
-            if (currentTrack < audioFiles.length) {
-                playAudio(); // 自动播放下一首
-            }
-        });
-    </script>
 
 <style type="text/css">
 	span#translate select {
@@ -775,11 +743,7 @@ items[<span class="hljs-number">0</span>].innerHTML = <span class="hljs-string">
 以上是常用的获取元素的方式，根据具体的需求选择合适的方法来获取元素。<br>
 
 文章来自：https://xtbbb.com/default/11.html</div>
-<div class="readall_box">
-          <div class="read_more_mask"></div>
-          <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
-      </div>
-<p class="time clb">信息科技 2024-02-13 02:34:12 通过 网页 <i class="iconfont icon-view"></i> 浏览(1464) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">信息科技 2024-02-13 02:34:12 通过 网页 <i class="iconfont icon-view"></i> 浏览(1625) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->

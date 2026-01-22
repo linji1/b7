@@ -61,7 +61,6 @@
 <script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
 <link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
 <link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
 <script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
@@ -585,38 +584,7 @@ document.body.addEventListener('input', POWERMODE);
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b7/list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
-<audio id="audioPlayer" controls preload style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=鸿蒙系统，有你不知道的小秘密。1，隔空手势打开设置gt辅助功能gt智慧感知，开启隔空滑动屏幕和隔空截屏，实现不用触碰屏幕就可以翻页，截屏2，分屏模式打开设置gt辅助功能gt智慧多窗，从屏幕边缘向内滑动并停顿即可快速分屏或打开悬浮窗。3，滚动截长图打开设置gt智能辅助gt快捷启动及手势gt截屏，在屏幕上用指关节画S就能滚动长截屏，要停止只需要点击屏幕4，图片转文字打开gt设置gt智慧助手gt智慧识屏，任何图片上如相册微信网页等双指长按即可快速提取文字5，双指抠图打开gt设置gt智慧助手gt智慧识屏，也是在任何图片上双指长按，点下面的抠图即可一键抠人像或物件6，聊天隐私打码聊天界面双指长按gt隐藏">
-  您的浏览器不支持 audio 元素。
-</audio>
 <span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
-
-    <script>
-        const audioPlayer = document.getElementById('audioPlayer');
-        const audioFiles = [
-            'https://dict.youdao.com/dictvoice?le=zh&audio=鸿蒙系统，有你不知道的小秘密。1，隔空手势打开设置gt辅助功能gt智慧感知，开启隔空滑动屏幕和隔空截屏，实现不用触碰屏幕就可以翻页，截屏2，分屏模式打开设置gt辅助功能gt智慧多窗，从屏幕边缘向内滑动并停顿即可快速分屏或打开悬浮窗。3，滚动截长图打开设置gt智能辅助gt快捷启动及手势gt截屏，在屏幕上用指关节画S就能滚动长截屏，要停止只需要点击屏幕4，图片转文字打开gt设置gt智慧助手gt智慧识屏，任何图片上如相册微信网页等双指长按即可快速提取文字5，双指抠图打开gt设置gt智慧助手gt智慧识屏，也是在任何图片上双指长按，点下面的抠图即可一键抠人像或物件6，聊天隐私打码聊天界面双指长按gt隐藏','https://dict.youdao.com/dictvoice?le=zh&audio=头像昵称，即可快速打码保存7，无水印保存图片确认已开启智慧识屏，比如小红书看到喜欢的壁纸，双指长按图片gt右下角提取图片即可无水印保存原图8，实时字幕翻译在屏幕任意界面下滑拉出控制中心，下滑点击开启AI字幕，看外语片或音频可以实现实时翻译在屏幕上9，拍照翻译打开相机gt右下角智慧视觉的图标，左滑下方点翻译即可让你实现多语言拍照翻译10，文档扫描表格提取打开相机gt右下角智慧视觉的图标，点下面的文档扫描，拍摄文档即可一键保存为PDF文档或Excel表格11，识文搜题打开相机gt右下角智慧视觉的图标，左滑下方点识文，拍摄文档或题目，并支持一键搜题及划词翻译12，试卷去手写同样在相机打开智慧视觉，拍','https://dict.youdao.com/dictvoice?le=zh&audio=试卷可轻松去除试卷手写字',        ];
-        let currentTrack = 0;
-
-        // 点击播放按钮时开始播放
-        function playAudio() {
-            if (currentTrack < audioFiles.length) {
-                audioPlayer.src = audioFiles[currentTrack];
-                audioPlayer.play();
-            } else {
-                audioPlayer.pause();
-            }
-        }
-
-        // 绑定播放按钮的点击事件
-        audioPlayer.addEventListener('click', playAudio);
-
-        // 监听播放结束事件
-        audioPlayer.addEventListener('ended', () => {
-            currentTrack++;
-            if (currentTrack < audioFiles.length) {
-                playAudio(); // 自动播放下一首
-            }
-        });
-    </script>
 
 <style type="text/css">
 	span#translate select {
@@ -667,11 +635,7 @@ document.body.addEventListener('input', POWERMODE);
 
 <p>12、试卷去手写</p>
 <p>同样在相机打开智慧视觉，拍试卷可轻松去除试卷手写字!</p></div>
-<div class="readall_box">
-          <div class="read_more_mask"></div>
-          <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
-      </div>
-<p class="time clb">信息科技 2024-12-25 08:04:29 通过 网页 <i class="iconfont icon-view"></i> 浏览(1587) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">信息科技 2024-12-25 08:04:29 通过 网页 <i class="iconfont icon-view"></i> 浏览(1768) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->

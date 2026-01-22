@@ -61,7 +61,6 @@
 <script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
 <link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
 <link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
 <script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
@@ -585,38 +584,7 @@ document.body.addEventListener('input', POWERMODE);
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b7/list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
-<audio id="audioPlayer" controls preload style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=Ubuntu 系统如何使用 root 用户登录实例。Ubuntu 系统的默认用户名是 ubuntu，并在安装过程中默认不设置 root 帐户和密码。您如有需要，可在设置中开启允许 root 用户登录。具体操作步骤如下1使用 ubuntu 帐户登录轻量应用服务器。2执行以下命令，设置 root 密码。sudo passwd root3输入 root 的密码，按 Enter。4重复输入 root 的密码，按 Enter。返回如下信息，即表示 root 密码设置成功。passwd password updated successfully5执行以下命令，打开 sshdconfig 配置文件。sudo">
-  您的浏览器不支持 audio 元素。
-</audio>
 <span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
-
-    <script>
-        const audioPlayer = document.getElementById('audioPlayer');
-        const audioFiles = [
-            'https://dict.youdao.com/dictvoice?le=zh&audio=Ubuntu 系统如何使用 root 用户登录实例。Ubuntu 系统的默认用户名是 ubuntu，并在安装过程中默认不设置 root 帐户和密码。您如有需要，可在设置中开启允许 root 用户登录。具体操作步骤如下1使用 ubuntu 帐户登录轻量应用服务器。2执行以下命令，设置 root 密码。sudo passwd root3输入 root 的密码，按 Enter。4重复输入 root 的密码，按 Enter。返回如下信息，即表示 root 密码设置成功。passwd password updated successfully5执行以下命令，打开 sshdconfig 配置文件。sudo','https://dict.youdao.com/dictvoice?le=zh&audio= vi etcsshsshdconfig 6按 i 切换至编辑模式，找到 Authentication，将 PermitRootLogin 参数修改为 yes。如果 PermitRootLogin 参数被注释，请去掉首行的注释符号。7找到 Authentication，将 PasswordAuthentication 参数修改为 yes。说明若 sshdconfig 配置文件中无此配置项，则添加 PasswordAuthentication yes 项即可。8按 Esc，输入 wq，保存文件并返回。9执行以下命令，重启 ssh 服务。sudo service ssh restart10使用以下','https://dict.youdao.com/dictvoice?le=zh&audio=信息登录 Ubuntu 轻量应用服务器用户名root登录密码在 步骤2 中已设置的密码',        ];
-        let currentTrack = 0;
-
-        // 点击播放按钮时开始播放
-        function playAudio() {
-            if (currentTrack < audioFiles.length) {
-                audioPlayer.src = audioFiles[currentTrack];
-                audioPlayer.play();
-            } else {
-                audioPlayer.pause();
-            }
-        }
-
-        // 绑定播放按钮的点击事件
-        audioPlayer.addEventListener('click', playAudio);
-
-        // 监听播放结束事件
-        audioPlayer.addEventListener('ended', () => {
-            currentTrack++;
-            if (currentTrack < audioFiles.length) {
-                playAudio(); // 自动播放下一首
-            }
-        });
-    </script>
 
 <style type="text/css">
 	span#translate select {
@@ -663,11 +631,7 @@ Ubuntu 系统的默认用户名是 ubuntu，并在安装过程中默认不设置
 10.使用以下信息登录 Ubuntu 轻量应用服务器：<br>
 用户名：root<br>
 登录密码：在 步骤2 中已设置的密码</div>
-<div class="readall_box">
-          <div class="read_more_mask"></div>
-          <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
-      </div>
-<p class="time clb">信息科技 2022-11-01 22:02:50 通过 网页 <i class="iconfont icon-view"></i> 浏览(1877) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">信息科技 2022-11-01 22:02:50 通过 网页 <i class="iconfont icon-view"></i> 浏览(2002) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->

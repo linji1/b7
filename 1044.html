@@ -61,7 +61,6 @@
 <script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
 <link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
 <link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
 <script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
@@ -585,38 +584,7 @@ document.body.addEventListener('input', POWERMODE);
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b7/list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
-<audio id="audioPlayer" controls preload style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=DockerCompose配置文件结构详解及命令。yaml文件结构在项目名目录下创建dockercomposeyaml文件，文件结构如下version 3  版本号services  服务类web  web服务build   在本文件的上级目录下构建映像restart unlessstopped  重启策略ports  60005000  将容器上的暴露端口5000映射到主机上的端口 6000volumes  srcoptsrc  通过volums动态挂载，容器和物理host共享数据卷redis  redis服务image redis307  映像名 volumes 路径设置volumes  ">
-  您的浏览器不支持 audio 元素。
-</audio>
 <span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
-
-    <script>
-        const audioPlayer = document.getElementById('audioPlayer');
-        const audioFiles = [
-            'https://dict.youdao.com/dictvoice?le=zh&audio=DockerCompose配置文件结构详解及命令。yaml文件结构在项目名目录下创建dockercomposeyaml文件，文件结构如下version 3  版本号services  服务类web  web服务build   在本文件的上级目录下构建映像restart unlessstopped  重启策略ports  60005000  将容器上的暴露端口5000映射到主机上的端口 6000volumes  srcoptsrc  通过volums动态挂载，容器和物理host共享数据卷redis  redis服务image redis307  映像名 volumes 路径设置volumes  ','https://dict.youdao.com/dictvoice?le=zh&audio=只需指定一个路径，让引擎创建一个卷 varlibmysql  指定绝对路径映射 optdatavarlibmysql  相对于当前compose文件的相对路径 cachetmpcache  用户家目录相对路径 configsetcconfigsro  命名卷 datavolumevarlibmysql如果要跨多个服务并重用挂载卷，请在顶级volumes关键字中命名挂在卷。不提倡重用挂载卷。DockerCompose命令dockercompose h  查看帮助dockercompose up  启动所有dockercompose服务dockercompose up d  启动所有dockerc','https://dict.youdao.com/dictvoice?le=zh&audio=ompose服务并后台运行dockercompose down  停止并删除容器，网络，卷，镜像。dockercompose exec yml里面的服务id  进入容器实例内部dockercompose exec dockercomposeyml文件中写的服务id binbashdockercompose ps  展示当前dockercompose编排过的运行的所有容器dockercompose top  展示当前dockercompose编排过的容器进程dockercompose logs yml里面的服务id  查看容器输出日志dockercompose config  检查配置docke','https://dict.youdao.com/dictvoice?le=zh&audio=rcompose config q  检查配置，有问题才有输出dockercompose restart  重启服务dockercompose start  启动服务dockercompose stop  停止服务',        ];
-        let currentTrack = 0;
-
-        // 点击播放按钮时开始播放
-        function playAudio() {
-            if (currentTrack < audioFiles.length) {
-                audioPlayer.src = audioFiles[currentTrack];
-                audioPlayer.play();
-            } else {
-                audioPlayer.pause();
-            }
-        }
-
-        // 绑定播放按钮的点击事件
-        audioPlayer.addEventListener('click', playAudio);
-
-        // 监听播放结束事件
-        audioPlayer.addEventListener('ended', () => {
-            currentTrack++;
-            if (currentTrack < audioFiles.length) {
-                playAudio(); // 自动播放下一首
-            }
-        });
-    </script>
 
 <style type="text/css">
 	span#translate select {
@@ -668,11 +636,7 @@ document.body.addEventListener('input', POWERMODE);
 <p>docker-compose restart # 重启服务</p>
 <p>docker-compose start # 启动服务</p>
 <p>docker-compose stop # 停止服务</p></div>
-<div class="readall_box">
-          <div class="read_more_mask"></div>
-          <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
-      </div>
-<p class="time clb">信息科技 2025-01-11 15:39:54 通过 网页 <i class="iconfont icon-view"></i> 浏览(1447) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">信息科技 2025-01-11 15:39:54 通过 网页 <i class="iconfont icon-view"></i> 浏览(1577) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->

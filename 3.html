@@ -61,7 +61,6 @@
 <script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
 <link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
 <link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
 <script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
@@ -585,38 +584,7 @@ document.body.addEventListener('input', POWERMODE);
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b7/list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
-<audio id="audioPlayer" controls preload style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=关于SQl添加，删除，修改语句。SQL语句的添加，删除，修改虽然有如下很多种方法，但在使用过程中还是不够用，不知是否有高手把更多灵活的使用方法贡献出来添加，删除，修改使用dbExecuteSql命令执行操作 数据记录筛选 注意单双引号的用法可能有误没有测式Sql  Select Distinct 字段名 From 数据表Distinct函数，查询数据库存表内不重复的记录Sql  Select Count From 数据表 where 字段名1gt1800 and 字段名1lt 1900 count函数,查询数库表内有多少条记录，字段名1是指同一字段例set rsconnexecuteselec">
-  您的浏览器不支持 audio 元素。
-</audio>
 <span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
-
-    <script>
-        const audioPlayer = document.getElementById('audioPlayer');
-        const audioFiles = [
-            'https://dict.youdao.com/dictvoice?le=zh&audio=关于SQl添加，删除，修改语句。SQL语句的添加，删除，修改虽然有如下很多种方法，但在使用过程中还是不够用，不知是否有高手把更多灵活的使用方法贡献出来添加，删除，修改使用dbExecuteSql命令执行操作 数据记录筛选 注意单双引号的用法可能有误没有测式Sql  Select Distinct 字段名 From 数据表Distinct函数，查询数据库存表内不重复的记录Sql  Select Count From 数据表 where 字段名1gt1800 and 字段名1lt 1900 count函数,查询数库表内有多少条记录，字段名1是指同一字段例set rsconnexecuteselec','https://dict.youdao.com/dictvoice?le=zh&audio=t countid as idnum from newsresponsewrite rsidnumsqlselect  from 数据表 where 字段名 between 值1 and 值2 Sqlselect  from 数据表 where 字段名 between 2003810 and 2003812在日期类数值为2003810 195508 的字段里查找2003810至2003812的所有记录，而不管是几点几分。select  from tbname where datetime between 2003810 and 2003812字段里面的数据格式为2003810 195508，通','https://dict.youdao.com/dictvoice?le=zh&audio=过sql查出2003810至2003812的所有纪录，而不管是几点几分。Sqlselect  from 数据表 where 字段名字段值 order by 字段名 desc Sqlselect  from 数据表 where 字段名 like 字段值 order by 字段名 desc 模糊查询Sqlselect top 10  from 数据表 where 字段名 order by 字段名 desc 查找数据库中前10记录Sqlselect top n  form 数据表 order by newid随机取出数据库中的若干条记录的方法top n，n就是要取出的记录数Sqlselect  fr','https://dict.youdao.com/dictvoice?le=zh&audio=om 数据表 where 字段名 in 值1,值2,值3 添加数据记录 sqlinsert into 数据表 字段1,字段2,字段3  valuess 值1,值2,值3  sqlinsert into 数据表 valuess 值1,值2,值3  不指定具体字段名表示将按照数据表中字段的顺序，依次添加sqlinsert into 目标数据表 select  from 源数据表 把源数据表的记录添加到目标数据表 更新数据记录 Sqlupdate 数据表 set 字段名字段值 where 条件表达式 Sqlupdate 数据表 set 字段1值1,字段2值2  字段n值n where 条件表达式 S','https://dict.youdao.com/dictvoice?le=zh&audio=qlupdate 数据表 set 字段1值1,字段2值2  字段n值n  没有条件则更新整个数据表中的指定字段值 删除数据记录 Sqldelete from 数据表 where 条件表达式 Sqldelete from 数据表 没有条件将删除数据表中所有记录 数据记录统计函数 AVG字段名 得出一个表格栏平均值 COUNTampline字段名 对数据行数的统计或对某一栏有值的数据行数统计 MAX字段名 取得一个表格栏最大的值 MIN字段名 取得一个表格栏最小的值 SUM字段名 把数据栏的值相加 引用以上函数的方法 sqlselect sum字段名 as 别名 from 数据表 where 条件','https://dict.youdao.com/dictvoice?le=zh&audio=表达式 set rsconnexcutesql 用 rs别名 获取统的计值，其它函数运用同上。  数据表的建立和删除 CREATE TABLE 数据表名称字段1 类型1长度,字段2 类型2长度   例CREATE TABLE tab01name varchar50,datetime default now DROP TABLE 数据表名称 永久性删除一个数据表  记录集对象的方法 rsmovenext 将记录指针从当前的位置向下移一行 rsmoveprevious 将记录指针从当前的位置向上移一行 rsmovefirst 将记录指针移到数据表第一行 rsmovelast 将记录指针移到数据表最','https://dict.youdao.com/dictvoice?le=zh&audio=后一行 rsabsolutepositionN 将记录指针移到数据表第N行 rsabsolutepageN 将记录指针移到第N页的第一行 rspagesizeN 设置每页为N条记录 rspagecount 根据 pagesize 的设置返回总页数 rsrecordcount 返回记录总数 rsbof 返回记录指针是否超出数据表首端，true表示是，false为否 rseof 返回记录指针是否超出数据表末端，true表示是，false为否 rsdelete 删除当前记录，但记录指针不会向下移动 rsaddnew 添加记录到数据表末端 rsupdate 更新数据表记录',        ];
-        let currentTrack = 0;
-
-        // 点击播放按钮时开始播放
-        function playAudio() {
-            if (currentTrack < audioFiles.length) {
-                audioPlayer.src = audioFiles[currentTrack];
-                audioPlayer.play();
-            } else {
-                audioPlayer.pause();
-            }
-        }
-
-        // 绑定播放按钮的点击事件
-        audioPlayer.addEventListener('click', playAudio);
-
-        // 监听播放结束事件
-        audioPlayer.addEventListener('ended', () => {
-            currentTrack++;
-            if (currentTrack < audioFiles.length) {
-                playAudio(); // 自动播放下一首
-            }
-        });
-    </script>
 
 <style type="text/css">
 	span#translate select {
@@ -643,11 +611,7 @@ Sql = "Select Distinct 字段名 From 数据表"<br>
 Distinct函数，查询数据库存表内不重复的记录<br><br>
 Sql = "Select Count(*) From 数据表 where 字段名1&gt;#18:0:0# and 字段名1&lt; #19:00# "<br>
 count函数,查询数库表内有多少条记录，“字段名1”是指同一字段<br>例：<br>set rs=conn.execute("select count(id) as idnum from news")<br>response.write rs("idnum")<br><br>sql="select * from 数据表 where 字段名 between 值1 and 值2" <br>Sql="select * from 数据表 where 字段名 between #2003-8-10# and #2003-8-12#"<br>在日期类数值为2003-8-10 19:55:08 的字段里查找2003-8-10至2003-8-12的所有记录，而不管是几点几分。<br><br>select * from tb_name where datetime between #2003-8-10# and #2003-8-12#<br>字段里面的数据格式为：2003-8-10 19:55:08，通过sql查出2003-8-10至2003-8-12的所有纪录，而不管是几点几分。<br><br>Sql="select * from 数据表 where 字段名=字段值 order by 字段名 [desc]" <br><br>Sql="select * from 数据表 where 字段名 like '%字段值%' order by 字段名 [desc]" <br>模糊查询<br><br>Sql="select top 10 * from 数据表 where 字段名 order by 字段名 [desc]" <br>查找数据库中前10记录<br><br>Sql="select top n * form 数据表 order by newid()"<br>随机取出数据库中的若干条记录的方法<br>top n，n就是要取出的记录数<br><br>Sql="select * from 数据表 where 字段名 in ('值1','值2','值3')"<br><br>╔----------------╗<br>☆ 添加数据记录 ☆<br>╚----------------╝<br>sql="insert into 数据表 (字段1,字段2,字段3 …) valuess (值1,值2,值3 …)" <br><br>sql="insert into 数据表 valuess (值1,值2,值3 …)" <br>不指定具体字段名表示将按照数据表中字段的顺序，依次添加<br><br>sql="insert into 目标数据表 select * from 源数据表" <br>把源数据表的记录添加到目标数据表<br><br>╔----------------╗<br>☆ 更新数据记录 ☆<br>╚----------------╝<br>Sql="update 数据表 set 字段名=字段值 where 条件表达式" <br><br>Sql="update 数据表 set 字段1=值1,字段2=值2 …… 字段n=值n where 条件表达式" <br><br>Sql="update 数据表 set 字段1=值1,字段2=值2 …… 字段n=值n " <br>没有条件则更新整个数据表中的指定字段值<br><br>╔----------------╗<br>☆ 删除数据记录 ☆<br>╚----------------╝<br>Sql="delete from 数据表 where 条件表达式" <br><br>Sql="delete from 数据表" <br>没有条件将删除数据表中所有记录)<br><br>╔--------------------╗<br>☆ 数据记录统计函数 ☆<br>╚--------------------╝<br>AVG(字段名) 得出一个表格栏平均值 <br>COUNT(*&amp;line;字段名) 对数据行数的统计或对某一栏有值的数据行数统计 <br>MAX(字段名) 取得一个表格栏最大的值 <br>MIN(字段名) 取得一个表格栏最小的值 <br>SUM(字段名) 把数据栏的值相加 <br><br>引用以上函数的方法： <br>sql="select sum(字段名) as 别名 from 数据表 where 条件表达式" <br>set rs=conn.excute(sql) <br>用 rs("别名") 获取统的计值，其它函数运用同上。 <br><br>╔----------------------╗<br>☆ 数据表的建立和删除 ☆<br>╚----------------------╝<br>CREATE TABLE 数据表名称(字段1 类型1(长度),字段2 类型2(长度) …… ) <br>例：CREATE TABLE tab01(name varchar(50),datetime default now()) <br>DROP TABLE 数据表名称 (永久性删除一个数据表) <br><br>╔--------------------╗<br>☆ 记录集对象的方法 ☆<br>╚--------------------╝<br>rs.movenext 将记录指针从当前的位置向下移一行 <br>rs.moveprevious 将记录指针从当前的位置向上移一行 <br>rs.movefirst 将记录指针移到数据表第一行 <br>rs.movelast 将记录指针移到数据表最后一行 <br>rs.absoluteposition=N 将记录指针移到数据表第N行 <br>rs.absolutepage=N 将记录指针移到第N页的第一行 <br>rs.pagesize=N 设置每页为N条记录 <br>rs.pagecount 根据 pagesize 的设置返回总页数 <br>rs.recordcount 返回记录总数 <br>rs.bof 返回记录指针是否超出数据表首端，true表示是，false为否 <br>rs.eof 返回记录指针是否超出数据表末端，true表示是，false为否 <br>rs.delete 删除当前记录，但记录指针不会向下移动 <br>rs.addnew 添加记录到数据表末端 <br>rs.update 更新数据表记录</div>
-<div class="readall_box">
-          <div class="read_more_mask"></div>
-          <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
-      </div>
-<p class="time clb">信息科技 2005-03-11 09:26:21 通过 网页 <i class="iconfont icon-view"></i> 浏览(5205) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">信息科技 2005-03-11 09:26:21 通过 网页 <i class="iconfont icon-view"></i> 浏览(5335) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->

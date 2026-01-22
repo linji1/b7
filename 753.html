@@ -61,7 +61,6 @@
 <script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
 <link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
 <link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
 <script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
@@ -585,38 +584,7 @@ document.body.addEventListener('input', POWERMODE);
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b6/list-6.html" style="color: #7d8c8e;">相关通知</a><span>/</span>正文</div>
-<audio id="audioPlayer" controls preload style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=记录第五轮全员核酸检测在店前山尾当采样志愿者。第一轮8月5日，第二轮8月6日，第三轮8月7日，第四轮8月8日，第五轮8月13日通知根据市疫情防控工作的部署，明天8月13日，星期六上午8时我镇开展第五轮全员核酸检测，请各村委会连夜做好准备工作通知群众到位，物资准备到位二维码生成，场地设置，冰块，泡沫箱，并安排车辆明天上午7时30分钟前到卫生院接医务人员。请镇驻村干部，村两委干部务必在岗在位，全力做好我镇全员核酸检测工作，确保全员核酸检测应检尽检，不落一户，不漏一人。杨家镇党政综合办公室紧急通知各学校鉴于目前疫情严峻复杂，根据市委市政府，要求明天杨家镇继续第五轮全员核酸检测，请各校通知上表志愿者核">
-  您的浏览器不支持 audio 元素。
-</audio>
 <span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
-
-    <script>
-        const audioPlayer = document.getElementById('audioPlayer');
-        const audioFiles = [
-            'https://dict.youdao.com/dictvoice?le=zh&audio=记录第五轮全员核酸检测在店前山尾当采样志愿者。第一轮8月5日，第二轮8月6日，第三轮8月7日，第四轮8月8日，第五轮8月13日通知根据市疫情防控工作的部署，明天8月13日，星期六上午8时我镇开展第五轮全员核酸检测，请各村委会连夜做好准备工作通知群众到位，物资准备到位二维码生成，场地设置，冰块，泡沫箱，并安排车辆明天上午7时30分钟前到卫生院接医务人员。请镇驻村干部，村两委干部务必在岗在位，全力做好我镇全员核酸检测工作，确保全员核酸检测应检尽检，不落一户，不漏一人。杨家镇党政综合办公室紧急通知各学校鉴于目前疫情严峻复杂，根据市委市政府，要求明天杨家镇继续第五轮全员核酸检测，请各校通知上表志愿者核','https://dict.youdao.com/dictvoice?le=zh&audio=酸采样人员明天早上730分前到杨家卫生院集中。杨家镇中心管理组2022年8月12日晚gallery1 margin autogallery1 galleryitem float leftmargintop 10pxtextalign centerwidth 25gallery1 img border 2px solid cfcfcfgallery1 gallerycaption marginleft 0 see galleryshortcode in wpincludesmediaphp                                                      ','https://dict.youdao.com/dictvoice?le=zh&audio=                                                                                                                                                                                                                ',        ];
-        let currentTrack = 0;
-
-        // 点击播放按钮时开始播放
-        function playAudio() {
-            if (currentTrack < audioFiles.length) {
-                audioPlayer.src = audioFiles[currentTrack];
-                audioPlayer.play();
-            } else {
-                audioPlayer.pause();
-            }
-        }
-
-        // 绑定播放按钮的点击事件
-        audioPlayer.addEventListener('click', playAudio);
-
-        // 监听播放结束事件
-        audioPlayer.addEventListener('ended', () => {
-            currentTrack++;
-            if (currentTrack < audioFiles.length) {
-                playAudio(); // 自动播放下一首
-            }
-        });
-    </script>
 
 <style type="text/css">
 	span#translate select {
@@ -773,11 +741,7 @@ document.body.addEventListener('input', POWERMODE);
 </dt></dl>
 
 </div></div>
-<div class="readall_box">
-          <div class="read_more_mask"></div>
-          <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
-      </div>
-<p class="time clb">相关通知 2022-08-12 19:47:45 通过 网页 <i class="iconfont icon-view"></i> 浏览(9559) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">相关通知 2022-08-12 19:47:45 通过 网页 <i class="iconfont icon-view"></i> 浏览(10666) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->

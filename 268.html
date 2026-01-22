@@ -61,7 +61,6 @@
 <script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
 <link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
 <link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
 <script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
@@ -585,38 +584,7 @@ document.body.addEventListener('input', POWERMODE);
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b7/list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
-<audio id="audioPlayer" controls preload style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=网页打开错误码404等。1xx信息提示这些状态代码表示临时的响应。客户端在收到常规响应之前，应准备接收一个或多个1xx响应。100继续。101切换协议。2xx成功这类状态代码表明服务器成功地接受了客户端请求。200确定。客户端请求已成功。201已创建。202已接受。203非权威性信息。204无内容。205重置内容。206部分内容。3xx重定向客户端浏览器必须采取更多操作来实现请求。例如，浏览器可能不得不请求服务器上的不同的页面，或通过代理服务器重复该请求。301对象已永久移走，即永久重定向。302对象已临时移动。304未修改。307临时重定向。4xx客户端错误发生错误，客户端似乎有问题。例如，">
-  您的浏览器不支持 audio 元素。
-</audio>
 <span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
-
-    <script>
-        const audioPlayer = document.getElementById('audioPlayer');
-        const audioFiles = [
-            'https://dict.youdao.com/dictvoice?le=zh&audio=网页打开错误码404等。1xx信息提示这些状态代码表示临时的响应。客户端在收到常规响应之前，应准备接收一个或多个1xx响应。100继续。101切换协议。2xx成功这类状态代码表明服务器成功地接受了客户端请求。200确定。客户端请求已成功。201已创建。202已接受。203非权威性信息。204无内容。205重置内容。206部分内容。3xx重定向客户端浏览器必须采取更多操作来实现请求。例如，浏览器可能不得不请求服务器上的不同的页面，或通过代理服务器重复该请求。301对象已永久移走，即永久重定向。302对象已临时移动。304未修改。307临时重定向。4xx客户端错误发生错误，客户端似乎有问题。例如，','https://dict.youdao.com/dictvoice?le=zh&audio=客户端请求不存在的页面，客户端未提供有效的身份验证信息。400错误的请求。401访问被拒绝。IIS定义了许多不同的401错误，它们指明更为具体的错误原因。这些具体的错误代码在浏览器中显示，但不在IIS日志中显示4011登录失败。4012服务器配置导致登录失败。4013由于ACL对资源的限制而未获得授权。4014筛选器授权失败。4015ISAPICGI应用程序授权失败。4017访问被Web服务器上的URL授权策略拒绝。这个错误代码为IIS60所专用。403禁止访问IIS定义了许多不同的403错误，它们指明更为具体的错误原因4031执行访问被禁止。4032读访问被禁止。4033写访问被禁止。403','https://dict.youdao.com/dictvoice?le=zh&audio=4要求SSL。4035要求SSL128。4036IP地址被拒绝。4037要求客户端证书。4038站点访问被拒绝。4039用户数过多。40310配置无效。40311密码更改。40312拒绝访问映射表。40313客户端证书被吊销。40314拒绝目录列表。40315超出客户端访问许可。40316客户端证书不受信任或无效。40317客户端证书已过期或尚未生效。40318在当前的应用程序池中不能执行所请求的URL。这个错误代码为IIS60所专用。40319不能为这个应用程序池中的客户端执行CGI。这个错误代码为IIS60所专用。40320Passport登录失败。这个错误代码为IIS60所专用。404未','https://dict.youdao.com/dictvoice?le=zh&audio=找到。4040无没有找到文件或目录。4041无法在所请求的端口上访问Web站点。4042Web服务扩展锁定策略阻止本请求。4043MIME映射策略阻止本请求。405用来访问本页面的HTTP谓词不被允许方法不被允许406客户端浏览器不接受所请求页面的MIME类型。407要求进行代理身份验证。412前提条件失败。413请求实体太大。414请求URI太长。415不支持的媒体类型。416所请求的范围无法满足。417执行失败。423锁定的错误。5xx服务器错误服务器由于遇到错误而不能完成该请求。500内部服务器错误。50012应用程序正忙于在Web服务器上重新启动。50013Web服务器太忙。50015','https://dict.youdao.com/dictvoice?le=zh&audio=不允许直接请求Globalasa。50016UNC授权凭据不正确。这个错误代码为IIS60所专用。50018URL授权存储不能打开。这个错误代码为IIS60所专用。500100内部ASP错误。501页眉值指定了未实现的配置。502Web服务器用作网关或代理服务器时收到了无效响应。5021CGI应用程序超时。5022CGI应用程序出错。application503服务不可用。这个错误代码为IIS60所专用。504网关超时。505HTTP版本不受支持。FTP1xx肯定的初步答复这些状态代码指示一项操作已经成功开始，但客户端希望在继续操作新命令前得到另一个答复。110重新启动标记答复。120服务已就','https://dict.youdao.com/dictvoice?le=zh&audio=绪，在nnn分钟后开始。125数据连接已打开，正在开始传输。150文件状态正常，准备打开数据连接。2xx肯定的完成答复一项操作已经成功完成。客户端可以执行新命令。200命令确定。202未执行命令，站点上的命令过多。211系统状态，或系统帮助答复。212目录状态。213文件状态。214帮助消息。215NAME系统类型，其中，NAME是AssignedNumbers文档中所列的正式系统名称。220服务就绪，可以执行新用户的请求。221服务关闭控制连接。如果适当，请注销。225数据连接打开，没有进行中的传输。226关闭数据连接。请求的文件操作已成功例如，传输文件或放弃文件。227进入被动模式h1,h','https://dict.youdao.com/dictvoice?le=zh&audio=2,h3,h4,p1,p2。230用户已登录，继续进行。250请求的文件操作正确，已完成。257已创建PATHNAME。3xx肯定的中间答复该命令已成功，但服务器需要更多来自客户端的信息以完成对请求的处理。331用户名正确，需要密码。332需要登录帐户。350请求的文件操作正在等待进一步的信息。4xx瞬态否定的完成答复该命令不成功，但错误是暂时的。如果客户端重试命令，可能会执行成功。421服务不可用，正在关闭控制连接。如果服务确定它必须关闭，将向任何命令发送这一应答。425无法打开数据连接。426Connectionclosedtransferaborted450未执行请求的文件操作。文件不可','https://dict.youdao.com/dictvoice?le=zh&audio=用例如，文件繁忙。451请求的操作异常终止正在处理本地错误。452未执行请求的操作。系统存储空间不够。5xx永久性否定的完成答复该命令不成功，错误是永久性的。如果客户端重试命令，将再次出现同样的错误。500语法错误，命令无法识别。这可能包括诸如命令行太长之类的错误。501在参数中有语法错误。502未执行命令。503错误的命令序列。504未执行该参数的命令。530未登录。532存储文件需要帐户。550未执行请求的操作。文件不可用例如，未找到文件，没有访问权限。551请求的操作异常终止未知的页面类型。552请求的文件操作异常终止超出存储分配对于当前目录或数据集。553未执行请求的操作。不允许的文件','https://dict.youdao.com/dictvoice?le=zh&audio=名。常见的FTP状态代码及其原因150FTP使用两个端口21用于发送命令，20用于发送数据。状态代码150表示服务器准备在端口20上打开新连接，发送一些数据。226命令在端口20上打开数据连接以执行操作，如传输文件。该操作成功完成，数据连接已关闭。230客户端发送正确的密码后，显示该状态代码。它表示用户已成功登录。331客户端发送用户名后，显示该状态代码。无论所提供的用户名是否为系统中的有效帐户，都将显示该状态代码。426命令打开数据连接以执行操作，但该操作已被取消，数据连接已关闭。530该状态代码表示用户无法登录，因为用户名和密码组合无效。如果使用某个用户帐户登录，可能键入错误的用户名或密码','https://dict.youdao.com/dictvoice?le=zh&audio=，也可能选择只允许匿名访问。如果使用匿名帐户登录，IIS的配置可能拒绝匿名访问。550命令未被执行，因为指定的文件不可用。例如，要GET的文件并不存在，或试图将文件PUT到您没有写入权限的目录。',        ];
-        let currentTrack = 0;
-
-        // 点击播放按钮时开始播放
-        function playAudio() {
-            if (currentTrack < audioFiles.length) {
-                audioPlayer.src = audioFiles[currentTrack];
-                audioPlayer.play();
-            } else {
-                audioPlayer.pause();
-            }
-        }
-
-        // 绑定播放按钮的点击事件
-        audioPlayer.addEventListener('click', playAudio);
-
-        // 监听播放结束事件
-        audioPlayer.addEventListener('ended', () => {
-            currentTrack++;
-            if (currentTrack < audioFiles.length) {
-                playAudio(); // 自动播放下一首
-            }
-        });
-    </script>
 
 <style type="text/css">
 	span#translate select {
@@ -767,11 +735,7 @@ document.body.addEventListener('input', POWERMODE);
 </p><p>426-命令打开数据连接以执行操作，但该操作已被取消，数据连接已关闭。
 </p><p>530-该状态代码表示用户无法登录，因为用户名和密码组合无效。如果使用某个用户帐户登录，可能键入错误的用户名或密码，也可能选择只允许匿名访问。如果使用匿名帐户登录，IIS的配置可能拒绝匿名访问。
 </p><p>550-命令未被执行，因为指定的文件不可用。例如，要GET的文件并不存在，或试图将文件PUT到您没有写入权限的目录。</p></div>
-<div class="readall_box">
-          <div class="read_more_mask"></div>
-          <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
-      </div>
-<p class="time clb">信息科技 2011-06-09 19:04:55 通过 网页 <i class="iconfont icon-view"></i> 浏览(3575) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">信息科技 2011-06-09 19:04:55 通过 网页 <i class="iconfont icon-view"></i> 浏览(3714) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->

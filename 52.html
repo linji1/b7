@@ -61,7 +61,6 @@
 <script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
 <link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
 <link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
 <script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
@@ -585,38 +584,7 @@ document.body.addEventListener('input', POWERMODE);
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b7/list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
-<audio id="audioPlayer" controls preload style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=间距和样式。我们在很多例子中都能看到背景对文字的影响。因此，页面中的间距也能成为一种有效的视觉工具。CSS中自然也提供了各类控制间距的属性。lineheight数世纪前，印刷师使用可延展的铅条控制两行文字间的距离，这也是行距leading这个专有名词的起源。CSS提供了简单易用的行距控制属性lineheight。该属性可被设置为绝对数值，相对大小，长度或者百分比，当然也可以设定为inherit。lineheight不需要单位。12和12m或者120是同义的也就是说未加单位的值表示基于当前文字大小的相对值。lineheight使用示例quickSummary plineheight 08lett">
-  您的浏览器不支持 audio 元素。
-</audio>
 <span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
-
-    <script>
-        const audioPlayer = document.getElementById('audioPlayer');
-        const audioFiles = [
-            'https://dict.youdao.com/dictvoice?le=zh&audio=间距和样式。我们在很多例子中都能看到背景对文字的影响。因此，页面中的间距也能成为一种有效的视觉工具。CSS中自然也提供了各类控制间距的属性。lineheight数世纪前，印刷师使用可延展的铅条控制两行文字间的距离，这也是行距leading这个专有名词的起源。CSS提供了简单易用的行距控制属性lineheight。该属性可被设置为绝对数值，相对大小，长度或者百分比，当然也可以设定为inherit。lineheight不需要单位。12和12m或者120是同义的也就是说未加单位的值表示基于当前文字大小的相对值。lineheight使用示例quickSummary plineheight 08lett','https://dict.youdao.com/dictvoice?le=zh&audio=erspacing字符间距可使用letterspacing来控制。我们可以将其设定为normal或者一个长度值，该长度值将作为默认值的补充，添加到正常的字符间距上。由于屏幕分辨率较低，所以我们不应该为大段文字设置字符间距，否则文字将显示很长。因此最好只在标题和小段文字中使用letterspacing。letterspacing使用示例quickSummary pletterspacing 01emwordspacing和letterspacing 类似，wordspacing 用于调整单词的间距。该属性可被设置normal，长度值，百分比或者inherit。需要注意的是诸如文字对齐使用text','https://dict.youdao.com/dictvoice?le=zh&audio=align和whitespace等设定均会影响到浏览器对wordspacing的处理。wordspacing的使用示例quickSummary pwordspacing 1emtextaligntextalign用于对齐文字。可选值为left，right，center和justify。传统的对齐技术一般使用添加边字符等方式避免拆行所造成的空隙，而浏览器中的调整则相当的不精确，其结果总是会使得字与字之间存在很大的空隙。考虑 到浏览器的不精确控制，我们更建议使用传统的rightalign和leftalign方式， 而居中对齐则只适合标题，引用等小块文字，不要将其应用到长段文字中。textalign','https://dict.youdao.com/dictvoice?le=zh&audio=使用示例quickSummary ptextalign right',        ];
-        let currentTrack = 0;
-
-        // 点击播放按钮时开始播放
-        function playAudio() {
-            if (currentTrack < audioFiles.length) {
-                audioPlayer.src = audioFiles[currentTrack];
-                audioPlayer.play();
-            } else {
-                audioPlayer.pause();
-            }
-        }
-
-        // 绑定播放按钮的点击事件
-        audioPlayer.addEventListener('click', playAudio);
-
-        // 监听播放结束事件
-        audioPlayer.addEventListener('ended', () => {
-            currentTrack++;
-            if (currentTrack < audioFiles.length) {
-                playAudio(); // 自动播放下一首
-            }
-        });
-    </script>
 
 <style type="text/css">
 	span#translate select {
@@ -642,11 +610,7 @@ document.body.addEventListener('input', POWERMODE);
 }</span></code></pre></li></ol><p>text-align</p><p>text-align用于对齐文字。可选值为left、right、center和justify。</p><p>传统的对齐技术一般使用添加边字符等方式避免拆行所造成的空隙，而浏览器中的调整则相当的不精确，其结果总是会使得字与字之间存在很大的空隙。考虑 到浏览器的不精确控制，我们更建议使用传统的right-align和left-align方式， 而居中对齐则只适合标题、引用等小块文字，不要将其应用到长段文字中。</p><p>text-align使用示例：</p><ol><li><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="css hljs" codemark="1"><span class="hljs-id">#quickSummary</span> <span class="hljs-tag">p</span><span class="hljs-rules">{
 <span class="hljs-rule"><span class="hljs-attribute">text-align</span>:<span class="hljs-value"> right</span></span>;
 }</span></code></pre></li></ol></div>
-<div class="readall_box">
-          <div class="read_more_mask"></div>
-          <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
-      </div>
-<p class="time clb">信息科技 2008-07-27 15:38:38 通过 网页 <i class="iconfont icon-view"></i> 浏览(4307) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">信息科技 2008-07-27 15:38:38 通过 网页 <i class="iconfont icon-view"></i> 浏览(4418) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->

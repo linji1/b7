@@ -61,7 +61,6 @@
 <script type="text/javascript" language="javascript" src="/assets/js/jquery.min.js"></script>
 <link rel="stylesheet" href="/assets/qblog/fontawesome.min.css">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<script src="/assets/js/readmore.js" type="text/javascript"></script>
 <!-- fancyBox 5 -->
 <link rel="stylesheet" href="/assets/js/fancybox/fancybox.min.css" media="all" onload="this.media='all'" />
 <script src="/assets/js/fancybox/fancybox.umd.min.js"></script>
@@ -585,38 +584,7 @@ document.body.addEventListener('input', POWERMODE);
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b7/list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
-<audio id="audioPlayer" controls preload style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;" title="收听本文" src="https://dict.youdao.com/dictvoice?le=zh&audio=MySQL按年龄段查询。拿其中一句解释一下sumcase when xingbie男  and nianling gt0 and nianling lt30 then 1 else 0 end as 男30以下,先看sum的括号里面的部分case when xingbie男  and nianling gt0 and nianling lt30 then 1 else 0 end它表示的含义是如果性别为男，并且年龄在030岁之间成立为1，不成立为0case和end 是一个关键字你可以理解为语句的开始和结束。when相当于if做判断，then就是判断之后显示的结果。如果成立显示为1，不成立显示为">
-  您的浏览器不支持 audio 元素。
-</audio>
 <span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
-
-    <script>
-        const audioPlayer = document.getElementById('audioPlayer');
-        const audioFiles = [
-            'https://dict.youdao.com/dictvoice?le=zh&audio=MySQL按年龄段查询。拿其中一句解释一下sumcase when xingbie男  and nianling gt0 and nianling lt30 then 1 else 0 end as 男30以下,先看sum的括号里面的部分case when xingbie男  and nianling gt0 and nianling lt30 then 1 else 0 end它表示的含义是如果性别为男，并且年龄在030岁之间成立为1，不成立为0case和end 是一个关键字你可以理解为语句的开始和结束。when相当于if做判断，then就是判断之后显示的结果。如果成立显示为1，不成立显示为','https://dict.youdao.com/dictvoice?le=zh&audio=0sum就是将各个值相加。形如1101011011ltphp全镇教师年龄分布，1为男，0为女sqljs  select  sumcase when xingbie男 then 1 else 0 end as 男教师总人数,sumcase when xingbie女 then 1 else 0 end as 女教师总人数,sumcase when xingbie男  and nianling gt0 and nianling lt30 then 1 else 0 end as 男30以下,sumcase when xingbie女  and nianling gt0 and nianling l','https://dict.youdao.com/dictvoice?le=zh&audio=t30 then 1 else 0 end as 女30以下,sumcase when xingbie男  and nianling gt30 and nianling lt40 then 1 else 0 end as 男3040,sumcase when xingbie女  and nianling gt30 and nianling lt40 then 1 else 0 end as 女3040,sumcase when xingbie男  and nianling gt40 and nianling lt50 then 1 else 0 end as 男4050,sumcase whe','https://dict.youdao.com/dictvoice?le=zh&audio=n xingbie女  and nianling gt40 and nianling lt50 then 1 else 0 end as 女4050,sumcase when xingbie男  and nianling gt50 then 1 else 0 end as 男50以上,sumcase when xingbie女  and nianling gt50 then 1 else 0 end as 女50以上from  teacher  where zaizhi是resultjs  mysqliqueryconn, sqljsrowsjs  mysqlifetchrowresultjs','https://dict.youdao.com/dictvoice?le=zh&audio= 释放结果集mysqlifreeresultresultjs教师男女年龄分布    6关闭数据库资源    mysqlicloseconngt',        ];
-        let currentTrack = 0;
-
-        // 点击播放按钮时开始播放
-        function playAudio() {
-            if (currentTrack < audioFiles.length) {
-                audioPlayer.src = audioFiles[currentTrack];
-                audioPlayer.play();
-            } else {
-                audioPlayer.pause();
-            }
-        }
-
-        // 绑定播放按钮的点击事件
-        audioPlayer.addEventListener('click', playAudio);
-
-        // 监听播放结束事件
-        audioPlayer.addEventListener('ended', () => {
-            currentTrack++;
-            if (currentTrack < audioFiles.length) {
-                playAudio(); // 自动播放下一首
-            }
-        });
-    </script>
 
 <style type="text/css">
 	span#translate select {
@@ -672,11 +640,7 @@ mysqli_free_result(<span class="hljs-variable">$resultjs</span>);<span class="hl
     mysqli_close(<span class="hljs-variable">$conn</span>);
 
 <span class="hljs-preprocessor">?&gt;</span></span></code></pre></div></div>
-<div class="readall_box">
-          <div class="read_more_mask"></div>
-          <a class="read_more_btn" target="_self">阅读全文 <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 18px; color: #ca0c16;vertical-align:middle;"></i></a>
-      </div>
-<p class="time clb">信息科技 2020-04-12 21:33:39 通过 网页 <i class="iconfont icon-view"></i> 浏览(3923) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">信息科技 2020-04-12 21:33:39 通过 网页 <i class="iconfont icon-view"></i> 浏览(4058) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->
