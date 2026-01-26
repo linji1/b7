@@ -174,7 +174,7 @@ $(document).ready(function() {
     <div class="dialog-mask1" onclick="closeLogin1()"></div>
     <div class="dialog-plane1">
         <h2>管理员登陆</h2>
-        <form class="search-form1" action="/index.php?act=dologin" method="post">
+        <form class="search-form1" action="https://linji.cn/index.php?act=dologin" method="post">
             <div class="search-form-input-plane1">
                 <input type="password" class="search-keyword1" name="pass" autocomplete="on" placeholder="输入密码..." required="required" value="">
 	   <input name="l" value="" type="hidden">
@@ -194,7 +194,7 @@ $(document).ready(function() {
     <div class="dialog-mask" onclick="closeSearch()"></div>
     <div class="dialog-plane">
         <h2>搜索内容</h2>
-        <form class="search-form" action="/index.php" method="get" role="search">
+        <form class="search-form" action="https://linji.cn/index.php" method="get" role="search">
             <div class="search-form-input-plane">
                 <input type="text" class="search-keyword" name="s" autocomplete="on" placeholder="搜索内容" required="required" value="">
             </div>
@@ -358,7 +358,7 @@ document.body.addEventListener('input', POWERMODE);
     margin-left: 0px;
 }
 </style></div>
-	   <form method="get" class="search-form" action="/index.php"> <input class="search-text" name="s" autocomplete="on" placeholder="输入关键词搜索..." required="required" type="text" value=""> <button class="search-submit" alt="搜索" type="submit">搜索</button></form>
+	   <form method="get" class="search-form" action="https://linji.cn/index.php"> <input class="search-text" name="s" autocomplete="on" placeholder="输入关键词搜索..." required="required" type="text" value=""> <button class="search-submit" alt="搜索" type="submit">搜索</button></form>
 	   </div>   
 </div>
 </div>
@@ -602,7 +602,7 @@ document.body.addEventListener('input', POWERMODE);
 <div  id="printview">
 <h1>安全传输文件：SCP命令用法示例</h1><div class="text">
 <p><b>1、拷贝本地的档案到远程的机器上</b></p><ol><li><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="nginx hljs" codemark="1"><span class="hljs-title">scp</span> /etc/lilo.conf k<span class="hljs-variable">@net67</span>.ee.oit.edu.<span class="hljs-url">tw:/home/k</span></code></pre></li></ol><p>会将本地的 /etc/lilo.conf 这个档案拷贝到 net67.ee.oit.edu.tw，使用者 k 的家目录下。</p><p><b>2、拷贝远程机器上的档案到本地来</b></p><ol><li><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="nginx hljs" codemark="1"><span class="hljs-title">scp</span> k<span class="hljs-variable">@net67</span>.ee.oit.edu.<span class="hljs-url">tw:/etc/lilo.conf</span> /etc</code></pre></li></ol><p>会将 net67.ee.oitdu.tw 中 /etc/lilo.conf 档案 copy 到本地的 /etc 目录下。</p><p><b>3、保持从来源 host 档案的属性</b></p><ol><li><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="nginx hljs" codemark="1"><span class="hljs-title">scp</span> –p k<span class="hljs-variable">@net67</span>.ee.<span class="hljs-url">tw:/etc/lilo.conf</span> /etc</code></pre></li></ol><p><b>4、如果想使用特定端口 使用 scp –P（大写） 如</b></p><ol><li><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="nginx hljs" codemark="1"><span class="hljs-title">scp</span> –P <span class="hljs-number">1234</span> k<span class="hljs-variable">@net67</span>.ee.<span class="hljs-url">tw:/etc/lilo.conf</span> /etc</code></pre></li></ol><p><b>5、免密码拷贝</b></p><p>必须注意使用者的权限是否可读取远程上的档案，若想知道更多关于 scp 的使用方法，可去看看 scp 的使用手册。</p><ol><li>ssh-keygen</li></ol><p>产生公开钥 (pulib key) 和私人钥 (private key)，以保障 ssh 联机的安性， 当 ssh 连 shd 服务器，会交换公开钥上，系统会检查 /etc/ssh_know_hosts 内储存的 key，如果找到客户端就用这个 key 产生一个随机产生的session key 传给服务器，两端都用这个 key 来继续完成 ssh 剩下来的阶段。</p><p>它会产生 identity.pub、identity 两个档案，私人钥存放于identity，公开钥 存放于 identity.pub 中，接下来使用 scp 将 identity.pub copy 到远程机器的家目录下.ssh下的authorized_keys。 .ssh/authorized_keys(这个 authorized_keys 档案相当于协议的 rhosts 档案)， 之后使用者能够不用密码去登入。RSA的认证绝对是比 rhosts 认证更来的安全可靠。执行：</p><ol><li><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="nginx hljs" codemark="1"><span class="hljs-title">scp</span> identity.pub k<span class="hljs-variable">@linux1</span>.ee.oit.edu.tw:.ssh/authorized_keys</code></pre></li></ol><p>若在使用 ssh-keygen 产生钥匙对时没有输入密码，则如上所示不需输入密码即可从 net67.ee.oit.edu.tw 去登入 linux1.ee.oit.edu.tw。在此，这里输入的密码可以跟帐号的密码不同，也可以不输入密码。</p></div>
-<p class="time clb">信息科技 2012-07-16 16:27:38 通过 网页 <i class="iconfont icon-view"></i> 浏览(3463) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">信息科技 2012-07-16 16:27:38 通过 网页 <i class="iconfont icon-view"></i> 浏览(3470) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->
