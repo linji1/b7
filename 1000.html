@@ -246,9 +246,9 @@ document.body.addEventListener('input', POWERMODE);
    
         <!-- 距离 63 岁 -->
 <span style="float: right;" title="2042-9-8" alt="2042-9-8">
-<center>
+<a href="/assets/file/2026/01/2026012201.webp" data-fancybox="gallery" style="color: black;"><center>
 <div id="life60" style="text-align: left;border: 0px;margin-right: 21px;"></div>
-</center>
+</center></a>
 </span>   
         <script language="javascript">
             startclock2()
@@ -601,11 +601,11 @@ document.body.addEventListener('input', POWERMODE);
 <div id="article">
 <div  id="printview">
 <h1>简洁的目录浏览程序 Files Gallery 去弹窗方法</h1><div class="text">
-<center><a href="https://www.files.gallery/" target="_blank">官方网址</a> | <a href="https://cdn.jsdelivr.net/npm/files.photo.gallery/index.php" target="_blank" style="">下载网址</a> | <a href="https://demo.files.gallery/" target="_blank">演示网址</a></center>
+<center><a href="https://www.files.gallery/" target="_blank">官方网址</a> | <a href="https://cdn.jsdelivr.net/npm/files.photo.gallery/index.php" target="_blank" style="">下载网址</a> | <a href="https://demo.files.gallery/" target="_blank">演示网址</a></center><p>
 
-一款非常不错的图片管理php源码，单文件index.php，未授权每次打开会弹出授权窗口。
-
-<pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="javascript hljs" codemark="1">&lt;script&gt;
+一款非常不错的图片管理php源码，单文件index.php，未授权每次打开会弹出授权窗口。</p><p><font color="#ff0000">搜索&nbsp;</font><span style="font-size: 0.8em; white-space: pre-wrap;"><b style=""><font color="#008080">var CodeMirror = {}; </font></b></span><font color="#ff0000">，</font>复制下方代码<font color="#000000">将其</font><b style=""><font color="#ff0000">替换</font></b><font color="#000000">掉即可，这段代码作用：</font></p><p><font color="#000000">1、</font>解决不能使用中文文件名或中文目录；</p><p>2、去掉弹窗。</p><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;" title="双击复制代码"><code class="javascript hljs" codemark="1">localStorage.setItem(<span class="hljs-string">'files:qrx'</span>, <span class="hljs-string">'&lt;?php echo base64_encode($_SERVER['</span>SERVER_NAME<span class="hljs-string">']); ?&gt;'</span>);<span class="hljs-comment">//加入这一行解决不能使用中文文件名或中文目录</span>
+<span class="hljs-keyword">var</span> CodeMirror = {};
+!<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-keyword">const</span> t=<span class="hljs-built_in">window</span>.XMLHttpRequest;<span class="hljs-built_in">window</span>.XMLHttpRequest=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{<span class="hljs-keyword">const</span> e=<span class="hljs-keyword">new</span> t;<span class="hljs-keyword">return</span> e.open=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">n,o,s,p,l</span>)</span>{<span class="hljs-string">"GET"</span>===n&amp;&amp;o.startsWith(<span class="hljs-string">"&lt;?php echo config::$version ?&gt;files.photo.gallery@"</span>)&amp;&amp;o.endsWith(<span class="hljs-string">"/lang/zh.json"</span>)&amp;&amp;(<span class="hljs-built_in">arguments</span>[<span class="hljs-number">1</span>]=<span class="hljs-built_in">arguments</span>[<span class="hljs-number">1</span>].replace(<span class="hljs-regexp">/@[0-9\.]+\/lang/</span>,<span class="hljs-string">"@latest/lang"</span>)),<span class="hljs-string">"POST"</span>===n&amp;&amp;o.includes(<span class="hljs-string">"auth.photo.gallery"</span>)&amp;&amp;(e.send=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>)</span>{t.prototype.send.apply(<span class="hljs-keyword">this</span>,[<span class="hljs-string">"app=2&amp;host=demo.files.gallery"</span>])}),t.prototype.open.apply(<span class="hljs-keyword">this</span>,<span class="hljs-built_in">arguments</span>)},e}}();<span class="hljs-comment">//加入这一行去掉弹窗</span><br></code></pre><p>&nbsp;<strike>下面代码已经失效。</strike></p><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="javascript hljs" codemark="1">&lt;script&gt;
   <span class="hljs-comment">// 将当前页面的主机名(hostname)转换为Base64编码字符串</span>
   <span class="hljs-keyword">const</span> encodedHostname = btoa(location.hostname);
   
@@ -615,7 +615,7 @@ document.body.addEventListener('input', POWERMODE);
 <span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span></span></code></pre>
 
 <a href="/assets/file/2024/12/2024122001.webp" data-fancybox="gallery" data-caption="" style=""><img src="/assets/file/2024/12/2024122001.webp"></a></div>
-<p class="time clb">信息科技 2024-12-20 02:07:24 通过 网页 <i class="iconfont icon-view"></i> 浏览(1529) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+<p class="time clb">信息科技 2024-12-20 02:07:24 通过 网页 <i class="iconfont icon-view"></i> 浏览(1535) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
 <!-- 上一篇 下一篇开始 -->
