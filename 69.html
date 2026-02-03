@@ -581,10 +581,42 @@ document.body.addEventListener('input', POWERMODE);
 </style>
 <script src="/assets/js/translate.js"></script>
   <div id="content" style="position: relative;">
+    <!-- <head>中添加听读功能样式 -->
+<style>
+  /* 句子高亮样式 */
+.sentence.current {
+  background-color: #fffacd; /* 淡黄色高亮 */
+  border-radius: 3px;
+}
+.sentence {
+  cursor: pointer;
+}
+</style>
+<!-- 听读控制面板（插入到printview容器前） -->
+<div class="reader-panel" style="margin: 20px 0;display: none;">
+  <div class="controls">
+    <button id="playBtn" class="btn" onclick="handlePlayAction('play')">开始</button>
+    <button id="pauseBtn" class="btn" disabled onclick="handlePlayAction('pause')">暂停</button>
+    <button id="resumeBtn" class="btn" disabled onclick="handlePlayAction('resume')">继续</button>
+    <button id="stopBtn" class="btn" disabled onclick="handlePlayAction('stop')">停止</button>
+  </div>
+  <div class="voice-control">
+    <label for="voiceSelect">选择语音</label>
+    <select id="voiceSelect" class="voice-select" aria-label="选择朗读语音"></select>
+  </div>
+  <div class="progress-container">
+    <div class="progress-info">
+      进度: <span id="progressText">0/0</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+  </div>
+</div>
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b7/list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
-<span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
+<button id="playBtn" class="btn" onclick="handlePlayAction('play')" style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;color: black;background: #f0f0f5;" title="收听本文"><i class="fa fa-headphones" aria-hidden="true"></i> 收听本文</button><span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
 
 <style type="text/css">
 	span#translate select {
@@ -602,9 +634,9 @@ document.body.addEventListener('input', POWERMODE);
 <div  id="printview">
 <h1>nofollow 是什么意思？</h1><div class="text">
 我们知道，反向链接是Google PR值的主要计算指标。为了添加反向链接，SEO作弊者在论坛和博客等大量发布带无关链接的内容。这些垃圾链接的存在给搜索引擎对网页质量的评估造成一定程度的麻烦。nofollow 正是Google、Yahoo、MSN 为了应对垃圾链接（Spam）引入的一个属性，此属性目前应该被广泛采用。<br><br>如果A网页上有一个链接指向B网页，但A网页给这个链接加上了 rel="nofollow" 标注，则搜索引擎不把A网页计算入B网页的反向链接。<br><br>nofollow 怎么用？<br><br>如某博客上有垃圾评论：<br><br>&lt;a href="http://www.example.com/"&gt;顶顶&lt;/a&gt;<br><br>以下操作，即进行了 nofollow：<br><br>&lt;a href="http://www.example.com/"&nbsp;&nbsp;rel="nofollow" &gt;顶顶&lt;/a&gt;<br><br>搜索引擎在计算PR值时，不会把这个链接计算在内。<!--more--><br><br>关于 nofollow：<br><br>目前绝大多数的博客和建站系统都加上了nofollow 属性。也就是说，在其他人的博客上留链接以获得PR值的做法是徒劳的。（特别是名人的博客，基本都用了nofollow）<br>如果你担心网站被垃圾链接侵扰，nofollow是一个非常好的“拉圾链接防火墙”。<br>nofollow 并不代表搜索引擎不收录那个链接，只是不计入反向链接而已。<br><br>以下这一点对 SEOer非常重要。<br><br>你可以为站点的内部链接添加 nofollow。比如：联系我们、关于我们、隐私保护、公司简介、网站后台等的链接可以把它们nofollow 掉，这样做，首页的PR值就不会传输给他们。因为，他们有太多的PR值显然没用。</div>
-<p class="time clb">信息科技 2008-12-28 17:16:48 通过 网页 <i class="iconfont icon-view"></i> 浏览(4128) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+</div><p class="time clb">信息科技 2008-12-28 17:16:48 通过 网页 <i class="iconfont icon-view"></i> 浏览(4150) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
-	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
+	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div>  
 <!-- 上一篇 下一篇开始 -->
 <div style="overflow: hidden;margin-bottom: 10px;">
 
@@ -965,5 +997,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 <!-- 为代码块加上双击复制功能 -->
+<!-- </body>前插入听读核心JS -->
+<script src="/assets/js/playBtn.js"></script>
 </body>
 </html>

@@ -581,10 +581,42 @@ document.body.addEventListener('input', POWERMODE);
 </style>
 <script src="/assets/js/translate.js"></script>
   <div id="content" style="position: relative;">
+    <!-- <head>中添加听读功能样式 -->
+<style>
+  /* 句子高亮样式 */
+.sentence.current {
+  background-color: #fffacd; /* 淡黄色高亮 */
+  border-radius: 3px;
+}
+.sentence {
+  cursor: pointer;
+}
+</style>
+<!-- 听读控制面板（插入到printview容器前） -->
+<div class="reader-panel" style="margin: 20px 0;display: none;">
+  <div class="controls">
+    <button id="playBtn" class="btn" onclick="handlePlayAction('play')">开始</button>
+    <button id="pauseBtn" class="btn" disabled onclick="handlePlayAction('pause')">暂停</button>
+    <button id="resumeBtn" class="btn" disabled onclick="handlePlayAction('resume')">继续</button>
+    <button id="stopBtn" class="btn" disabled onclick="handlePlayAction('stop')">停止</button>
+  </div>
+  <div class="voice-control">
+    <label for="voiceSelect">选择语音</label>
+    <select id="voiceSelect" class="voice-select" aria-label="选择朗读语音"></select>
+  </div>
+  <div class="progress-container">
+    <div class="progress-info">
+      进度: <span id="progressText">0/0</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+  </div>
+</div>
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b7/list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
-<span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
+<button id="playBtn" class="btn" onclick="handlePlayAction('play')" style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;color: black;background: #f0f0f5;" title="收听本文"><i class="fa fa-headphones" aria-hidden="true"></i> 收听本文</button><span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
 
 <style type="text/css">
 	span#translate select {
@@ -604,9 +636,9 @@ document.body.addEventListener('input', POWERMODE);
 这是一个找了很久的方法，当你拥有很多mp3、电影和动画片，想把列表分享或记录出来的时候，就用得着了..<br><br>windows-&gt;开始-&gt;运行-&gt;键入cmd，跳出个dos窗口<br><br>显示目录树：tree c:\ /f<br><br>将目录树存储成文本：tree &gt;c:\abc.txt /f <br><br>要弄哪个目录的目录树，就先到那个目录里去，可以用最基本的cd和..命令<br><br>使用/F参数时显示所有目录及目录下的所有文件，省略时，只显示目录，不显示目录下的文件<br><br>
 
 <div style="clear: both; border-left: 0pt solid rgb(214, 192, 148); width: 100%;"><div style="background-color: rgb(230, 238, 247); border-bottom: 1px dashed rgb(64, 138, 183) ! important; color: rgb(63, 103, 165); font-weight: bold; padding: 5px;"><i class="fas fa-download"></i> 下载文件 </div><div style="border-color: -moz-use-text-color rgb(230, 238, 247) rgb(230, 238, 247); border-style: none solid solid; border-width: 0pt 1px 1px; color: #E6EEF7; padding: 10px;"><a target="_blank" href="/assets3/file/2020/03/1227451836_541923ac.rar" style="">TreeView.exe</a></div></div></div>
-<p class="time clb">信息科技 2008-11-21 01:36:30 通过 网页 <i class="iconfont icon-view"></i> 浏览(4184) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+</div><p class="time clb">信息科技 2008-11-21 01:36:30 通过 网页 <i class="iconfont icon-view"></i> 浏览(4202) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
-	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
+	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div>  
 <!-- 上一篇 下一篇开始 -->
 <div style="overflow: hidden;margin-bottom: 10px;">
 
@@ -967,5 +999,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 <!-- 为代码块加上双击复制功能 -->
+<!-- </body>前插入听读核心JS -->
+<script src="/assets/js/playBtn.js"></script>
 </body>
 </html>

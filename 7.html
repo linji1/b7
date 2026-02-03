@@ -581,10 +581,42 @@ document.body.addEventListener('input', POWERMODE);
 </style>
 <script src="/assets/js/translate.js"></script>
   <div id="content" style="position: relative;">
+    <!-- <head>中添加听读功能样式 -->
+<style>
+  /* 句子高亮样式 */
+.sentence.current {
+  background-color: #fffacd; /* 淡黄色高亮 */
+  border-radius: 3px;
+}
+.sentence {
+  cursor: pointer;
+}
+</style>
+<!-- 听读控制面板（插入到printview容器前） -->
+<div class="reader-panel" style="margin: 20px 0;display: none;">
+  <div class="controls">
+    <button id="playBtn" class="btn" onclick="handlePlayAction('play')">开始</button>
+    <button id="pauseBtn" class="btn" disabled onclick="handlePlayAction('pause')">暂停</button>
+    <button id="resumeBtn" class="btn" disabled onclick="handlePlayAction('resume')">继续</button>
+    <button id="stopBtn" class="btn" disabled onclick="handlePlayAction('stop')">停止</button>
+  </div>
+  <div class="voice-control">
+    <label for="voiceSelect">选择语音</label>
+    <select id="voiceSelect" class="voice-select" aria-label="选择朗读语音"></select>
+  </div>
+  <div class="progress-container">
+    <div class="progress-info">
+      进度: <span id="progressText">0/0</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+  </div>
+</div>
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b7/list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
-<span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
+<button id="playBtn" class="btn" onclick="handlePlayAction('play')" style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;color: black;background: #f0f0f5;" title="收听本文"><i class="fa fa-headphones" aria-hidden="true"></i> 收听本文</button><span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
 
 <style type="text/css">
 	span#translate select {
@@ -602,9 +634,9 @@ document.body.addEventListener('input', POWERMODE);
 <div  id="printview">
 <h1>网线的做法</h1><div class="text">
 <p>在制作双绞网线的时候，有两种标准：T568A和T568B，在实际应用中，大多数都使用T568B的标准，通常认为该标准对电磁干扰的屏蔽更好，这种接法也称为100M接法，是指它能满足100Mb/s带宽的通信速率。</p><p>网线1至8脚的定义如下：拿着RJ-45接头，有卡子的一面向下，要插入网线的端口对着自己，然后上面的金属触点从左到右依次为1-8，8种不同颜色的网线应该按下面的顺序依次排列：</p><p>第一脚－－橙白、第二脚－－橙、第三脚－－绿白、第四脚－－蓝、第五脚－－蓝白、第六脚－－绿、第七脚－－棕白、第八脚－－棕。</p><p>它的接法虽然也是一一对应，但每一脚的颜色石固定的。<!--more--></p><p>而标准T568A更多时候称为反线接法，也叫直连接法，与两端线序一样的正线（标准T568B）不同的是，直连法的一段为正线的线序，另一端的线序则需要将1和3，2和6这两组线对调。即另一端的线序是：</p><p>第一脚－－绿白、第二脚－－绿、第三脚－－橙白、第四脚－－蓝、第五脚－－蓝白、第六脚－－橙、第七脚－－棕白、第八脚－－棕。</p><p>下面是正反线应用的不同地方：</p><p>（1）反线</p><p>PC-PC （网卡直连）</p><p>HUB-HUB（集线器普通口至普通口）</p><p>HUB-HUB（集线器级联口至级联口）</p><p>HUB-Switch&nbsp;&nbsp; （集线器至交换机）</p><p>Switch-Switch（交换机至交换机）</p><p>Router-Router（路由器至路由器）</p><p>（2）正线</p><p>PC-HUB （网卡至集线器）</p><p>HUB-HUB（集线器普通口至级联口）</p><p>HUB-Switch（集线器级联口至交换机）</p><p>Switch-Router（交换机至路由器）</p></div>
-<p class="time clb">信息科技 2005-10-18 21:51:38 通过 网页 <i class="iconfont icon-view"></i> 浏览(4461) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+</div><p class="time clb">信息科技 2005-10-18 21:51:38 通过 网页 <i class="iconfont icon-view"></i> 浏览(4480) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
-	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
+	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div>  
 <!-- 上一篇 下一篇开始 -->
 <div style="overflow: hidden;margin-bottom: 10px;">
 
@@ -965,5 +997,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 <!-- 为代码块加上双击复制功能 -->
+<!-- </body>前插入听读核心JS -->
+<script src="/assets/js/playBtn.js"></script>
 </body>
 </html>

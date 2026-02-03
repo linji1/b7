@@ -581,10 +581,42 @@ document.body.addEventListener('input', POWERMODE);
 </style>
 <script src="/assets/js/translate.js"></script>
   <div id="content" style="position: relative;">
+    <!-- <head>中添加听读功能样式 -->
+<style>
+  /* 句子高亮样式 */
+.sentence.current {
+  background-color: #fffacd; /* 淡黄色高亮 */
+  border-radius: 3px;
+}
+.sentence {
+  cursor: pointer;
+}
+</style>
+<!-- 听读控制面板（插入到printview容器前） -->
+<div class="reader-panel" style="margin: 20px 0;display: none;">
+  <div class="controls">
+    <button id="playBtn" class="btn" onclick="handlePlayAction('play')">开始</button>
+    <button id="pauseBtn" class="btn" disabled onclick="handlePlayAction('pause')">暂停</button>
+    <button id="resumeBtn" class="btn" disabled onclick="handlePlayAction('resume')">继续</button>
+    <button id="stopBtn" class="btn" disabled onclick="handlePlayAction('stop')">停止</button>
+  </div>
+  <div class="voice-control">
+    <label for="voiceSelect">选择语音</label>
+    <select id="voiceSelect" class="voice-select" aria-label="选择朗读语音"></select>
+  </div>
+  <div class="progress-container">
+    <div class="progress-info">
+      进度: <span id="progressText">0/0</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+  </div>
+</div>
   <div class="breadcrumb" style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home" style="width: 10px;   width: 14px;height: 14px;vertical-align: -2px;
 "><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg><a href="/" style="padding-left: 5px;color: #7d8c8e;">首页</a>
 <span>/</span><a href="/b7/list-7.html" style="color: #7d8c8e;">信息科技</a><span>/</span>正文</div>
-<span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
+<button id="playBtn" class="btn" onclick="handlePlayAction('play')" style="max-width: 50%;opacity: .4;float: right;height: 24px;margin-top: -6px;color: black;background: #f0f0f5;" title="收听本文"><i class="fa fa-headphones" aria-hidden="true"></i> 收听本文</button><span id="translate" style="border: 0px;cursor: pointer;float: right;color: #7d8c8e;font-size: 12px;margin-top: -5px;"></span>
 
 <style type="text/css">
 	span#translate select {
@@ -610,9 +642,9 @@ document.body.addEventListener('input', POWERMODE);
 }</span></code></pre></li></ol><p>text-align</p><p>text-align用于对齐文字。可选值为left、right、center和justify。</p><p>传统的对齐技术一般使用添加边字符等方式避免拆行所造成的空隙，而浏览器中的调整则相当的不精确，其结果总是会使得字与字之间存在很大的空隙。考虑 到浏览器的不精确控制，我们更建议使用传统的right-align和left-align方式， 而居中对齐则只适合标题、引用等小块文字，不要将其应用到长段文字中。</p><p>text-align使用示例：</p><ol><li><pre style="max-width:100%;overflow-x:auto;white-space: pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap: break-word;line-height: 1.8em;"><code class="css hljs" codemark="1"><span class="hljs-id">#quickSummary</span> <span class="hljs-tag">p</span><span class="hljs-rules">{
 <span class="hljs-rule"><span class="hljs-attribute">text-align</span>:<span class="hljs-value"> right</span></span>;
 }</span></code></pre></li></ol></div>
-<p class="time clb">信息科技 2008-07-27 15:38:38 通过 网页 <i class="iconfont icon-view"></i> 浏览(4454) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+</div><p class="time clb">信息科技 2008-07-27 15:38:38 通过 网页 <i class="iconfont icon-view"></i> 浏览(4475) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
-	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div></div>  
+	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div>  
 <!-- 上一篇 下一篇开始 -->
 <div style="overflow: hidden;margin-bottom: 10px;">
 
@@ -973,5 +1005,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 <!-- 为代码块加上双击复制功能 -->
+<!-- </body>前插入听读核心JS -->
+<script src="/assets/js/playBtn.js"></script>
 </body>
 </html>
