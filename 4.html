@@ -583,13 +583,16 @@ document.body.addEventListener('input', POWERMODE);
   <div id="content" style="position: relative;">
     <!-- <head>中添加听读功能样式 -->
 <style>
-  /* 句子高亮样式 */
-.sentence.current {
-  background-color: #fffacd; /* 淡黄色高亮 */
-  border-radius: 3px;
-}
 .sentence {
   cursor: pointer;
+  /* 默认 inline，不破坏排版 */
+}
+.sentence:hover {
+  background-color: #f0f0f0;
+}
+.sentence.current {
+  background-color: #ffeb3b; /* 黄色高亮 */
+  border-radius: 2px;
 }
 </style>
 <!-- 听读控制面板（插入到printview容器前） -->
@@ -634,7 +637,7 @@ document.body.addEventListener('input', POWERMODE);
 <div  id="printview">
 <h1>phpMyadmin的有关配置</h1><div class="text">
 是不是在刚装phpMyadmin时有如下的问题：管理页面的下方出现这样的红色文字：“<font color="#ff0000">必须在您的配置文件中设定 $cfg['PmaAbsoluteUri'] 指令！您配置文件中的设定与 MySQL 默认权限账户对应(没有密码的 root)</font>”等等。<!--more--><br><br>解决方法：如果用root登陆的话，为您的mysql数据库的root设置密码，例如：123。然后到phpMyadmin所在的目录下找到“config.inc.php”文件。修改$cfg['Servers'][$i]['password'] ='123';<br>继续修改“$cfg['PmaAbsoluteUri'] = '你的phpmyadmin所在的目录（例如：localhost/phpmyadmin）';”<br>应该好了吧。反正我好了</div>
-</div><p class="time clb">信息科技 2005-03-22 09:01:24 通过 网页 <i class="iconfont icon-view"></i> 浏览(4657) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+</div><p class="time clb">信息科技 2005-03-22 09:01:24 通过 网页 <i class="iconfont icon-view"></i> 浏览(4658) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div>  
 <!-- 上一篇 下一篇开始 -->

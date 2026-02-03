@@ -583,13 +583,16 @@ document.body.addEventListener('input', POWERMODE);
   <div id="content" style="position: relative;">
     <!-- <head>中添加听读功能样式 -->
 <style>
-  /* 句子高亮样式 */
-.sentence.current {
-  background-color: #fffacd; /* 淡黄色高亮 */
-  border-radius: 3px;
-}
 .sentence {
   cursor: pointer;
+  /* 默认 inline，不破坏排版 */
+}
+.sentence:hover {
+  background-color: #f0f0f0;
+}
+.sentence.current {
+  background-color: #ffeb3b; /* 黄色高亮 */
+  border-radius: 2px;
 }
 </style>
 <!-- 听读控制面板（插入到printview容器前） -->
@@ -634,7 +637,7 @@ document.body.addEventListener('input', POWERMODE);
 <div  id="printview">
 <h1>linux解压 tar命令</h1><div class="text">
 tar命令 <br>tar [-cxtzjvfpPN] 文件与目录 .... <br>参数： <br>-c ：建立一个压缩文件的参数指令(create 的意思)； <br>-x ：解开一个压缩文件的参数指令！ <br>-t ：查看 tarfile 里面的文件！ <br>特别注意，在参数的下达中， c/x/t 仅能存在一个！不可同时存在！ <br>因为不可能同时压缩与解压缩。 <br>-z ：是否同时具有 gzip 的属性？亦即是否需要用 gzip 压缩？ <br>-j ：是否同时具有 bzip2 的属性？亦即是否需要用 bzip2 压缩？ <br>-v ：压缩的过程中显示文件！这个常用，但不建议用在背景执行过程！ <br>-f ：使用档名，请留意，在 f 之后要立即接档名喔！不要再加参数！ <br>　　　例如使用『 tar -zcvfP tfile sfile』就是错误的写法，要写成 <br>　　　『 tar -zcvPf tfile sfile』才对喔！ <br>-p ：使用原文件的原来属性（属性不会依据使用者而变） <br>-P ：可以使用绝对路径来压缩！ <br>-N ：比后面接的日期(yyyy/mm/dd)还要新的才会被打包进新建的文件中！ <br>--exclude FILE：在压缩的过程中，不要将 FILE 打包！ <!--more--><br>范例： <br>范例一：将整个 /etc 目录下的文件全部打包成为 /tmp/etc.tar <br>[root@linux ~]# tar -cvf /tmp/etc.tar /etc&lt;==仅打包，不压缩！ <br>[root@linux ~]# tar -zcvf /tmp/etc.tar.gz /etc&lt;==打包后，以 gzip 压缩 <br>[root@linux ~]# tar -jcvf /tmp/etc.tar.bz2 /etc&lt;==打包后，以 bzip2 压缩 <br># 特别注意，在参数 f 之后的文件档名是自己取的，我们习惯上都用 .tar 来作为辨识。 <br># 如果加 z 参数，则以 .tar.gz 或 .tgz 来代表 gzip 压缩过的 tar file ～ <br># 如果加 j 参数，则以 .tar.bz2 来作为附档名啊～ <br># 上述指令在执行的时候，会显示一个警告讯息： <br># 『tar: Removing leading `/" from member names』那是关於绝对路径的特殊设定。<br><br>范例二：查阅上述 /tmp/etc.tar.gz 文件内有哪些文件？ <br>[root@linux ~]# tar -ztvf /tmp/etc.tar.gz <br># 由於我们使用 gzip 压缩，所以要查阅该 tar file 内的文件时， <br># 就得要加上 z 这个参数了！这很重要的！<br><br>范例三：将 /tmp/etc.tar.gz 文件解压缩在 /usr/local/src 底下 <br>[root@linux ~]# cd /usr/local/src <br>[root@linux src]# tar -zxvf /tmp/etc.tar.gz <br># 在预设的情况下，我们可以将压缩档在任何地方解开的！以这个范例来说， <br># 我先将工作目录变换到 /usr/local/src 底下，并且解开 /tmp/etc.tar.gz ， <br># 则解开的目录会在 /usr/local/src/etc 呢！另外，如果您进入 /usr/local/src/etc <br># 则会发现，该目录下的文件属性与 /etc/ 可能会有所不同喔！<br><br>范例四：在 /tmp 底下，我只想要将 /tmp/etc.tar.gz 内的 etc/passwd 解开而已 <br>[root@linux ~]# cd /tmp <br>[root@linux tmp]# tar -zxvf /tmp/etc.tar.gz etc/passwd <br># 我可以透过 tar -ztvf 来查阅 tarfile 内的文件名称，如果单只要一个文件， <br># 就可以透过这个方式来下达！注意到！ etc.tar.gz 内的根目录 / 是被拿掉了！<br><br>范例五：将 /etc/ 内的所有文件备份下来，并且保存其权限！ <br>[root@linux ~]# tar -zxvpf /tmp/etc.tar.gz /etc <br># 这个 -p 的属性是很重要的，尤其是当您要保留原本文件的属性时！<br><br>范例六：在 /home 当中，比 2005/06/01 新的文件才备份 <br>[root@linux ~]# tar -N "2005/06/01" -zcvf home.tar.gz /home<br><br>范例七：我要备份 /home, /etc ，但不要 /home/dmtsai <br>[root@linux ~]# tar --exclude /home/dmtsai -zcvf myfile.tar.gz /home/* /etc<br><br>范例八：将 /etc/ 打包后直接解开在 /tmp 底下，而不产生文件！ <br>[root@linux ~]# cd /tmp <br>[root@linux tmp]# tar -cvf - /etc | tar -xvf - <br># 这个动作有点像是 cp -r /etc /tmp 啦～依旧是有其有用途的！ <br># 要注意的地方在於输出档变成 - 而输入档也变成 - ，又有一个 | 存在～ <br># 这分别代表 standard output, standard input 与管线命令啦！ <br># 这部分我们会在 Bash shell 时，再次提到这个指令跟大家再解释啰！</div>
-</div><p class="time clb">信息科技 2008-09-05 08:26:32 通过 网页 <i class="iconfont icon-view"></i> 浏览(4411) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+</div><p class="time clb">信息科技 2008-09-05 08:26:32 通过 网页 <i class="iconfont icon-view"></i> 浏览(4413) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div>  
 <!-- 上一篇 下一篇开始 -->

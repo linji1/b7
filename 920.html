@@ -583,13 +583,16 @@ document.body.addEventListener('input', POWERMODE);
   <div id="content" style="position: relative;">
     <!-- <head>中添加听读功能样式 -->
 <style>
-  /* 句子高亮样式 */
-.sentence.current {
-  background-color: #fffacd; /* 淡黄色高亮 */
-  border-radius: 3px;
-}
 .sentence {
   cursor: pointer;
+  /* 默认 inline，不破坏排版 */
+}
+.sentence:hover {
+  background-color: #f0f0f0;
+}
+.sentence.current {
+  background-color: #ffeb3b; /* 黄色高亮 */
+  border-radius: 2px;
 }
 </style>
 <!-- 听读控制面板（插入到printview容器前） -->
@@ -643,7 +646,7 @@ document.body.addEventListener('input', POWERMODE);
 </p><p>判断&nbsp;如果session_id&nbsp;不存在,说明没有储存,&nbsp;打开session，否则。。。。不多说了，下面代码替换吧
 </p><p><b>if&nbsp;(!session_id())&nbsp;session_start();
 </b></p><p>怎么样简单吧！快去试试吧！</p></div>
-</div><p class="time clb">信息科技 2024-03-22 23:20:58 通过 网页 <i class="iconfont icon-view"></i> 浏览(1886) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+</div><p class="time clb">信息科技 2024-03-22 23:20:58 通过 网页 <i class="iconfont icon-view"></i> 浏览(1887) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div>  
 <!-- 上一篇 下一篇开始 -->

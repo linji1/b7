@@ -583,13 +583,16 @@ document.body.addEventListener('input', POWERMODE);
   <div id="content" style="position: relative;">
     <!-- <head>中添加听读功能样式 -->
 <style>
-  /* 句子高亮样式 */
-.sentence.current {
-  background-color: #fffacd; /* 淡黄色高亮 */
-  border-radius: 3px;
-}
 .sentence {
   cursor: pointer;
+  /* 默认 inline，不破坏排版 */
+}
+.sentence:hover {
+  background-color: #f0f0f0;
+}
+.sentence.current {
+  background-color: #ffeb3b; /* 黄色高亮 */
+  border-radius: 2px;
 }
 </style>
 <!-- 听读控制面板（插入到printview容器前） -->
@@ -634,7 +637,7 @@ document.body.addEventListener('input', POWERMODE);
 <div  id="printview">
 <h1>tar排除指定目录</h1><div class="text">
 今天解决了这个问题,备忘一下<br>假设 test目录下有 1 2 3 4 5 这5个目录<br>现在要将 3 4 5目录tar打包,1和2目录不要<br>命令如下<br><br>tar -zcvf test.tar.gz --exclude=1 --exclude=2 test<br>或<br><br>tar -zcvf test.tar.gz --exclude=test/1 --exclude=test/2 test<br>看man tar帮助,--exclude后面跟的好像是正则<br><br>注意: 要打包的test必须在命令最后,不然没有效果.刚才郁闷了半天<br><br></div>
-</div><p class="time clb">信息科技 2008-09-08 08:49:12 通过 网页 <i class="iconfont icon-view"></i> 浏览(4256) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+</div><p class="time clb">信息科技 2008-09-08 08:49:12 通过 网页 <i class="iconfont icon-view"></i> 浏览(4257) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div>  
 <!-- 上一篇 下一篇开始 -->

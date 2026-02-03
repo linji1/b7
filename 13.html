@@ -583,13 +583,16 @@ document.body.addEventListener('input', POWERMODE);
   <div id="content" style="position: relative;">
     <!-- <head>中添加听读功能样式 -->
 <style>
-  /* 句子高亮样式 */
-.sentence.current {
-  background-color: #fffacd; /* 淡黄色高亮 */
-  border-radius: 3px;
-}
 .sentence {
   cursor: pointer;
+  /* 默认 inline，不破坏排版 */
+}
+.sentence:hover {
+  background-color: #f0f0f0;
+}
+.sentence.current {
+  background-color: #ffeb3b; /* 黄色高亮 */
+  border-radius: 2px;
 }
 </style>
 <!-- 听读控制面板（插入到printview容器前） -->
@@ -651,7 +654,7 @@ printf (<span class="hljs-string">"[页面执行时间: %.2f毫秒]\n\n"</span>,
 <span class="hljs-variable">$total</span>=<span class="hljs-variable">$etime</span>-<span class="hljs-variable">$stime</span>;   <span class="hljs-comment">//计算差值 </span>
 <span class="hljs-keyword">echo</span> <span class="hljs-string">"&lt;br /&gt;{$total} times"</span>; 
 <span class="hljs-preprocessor">?&gt;</span> </code></pre></div>
-</div><p class="time clb">信息科技 2006-09-12 09:23:49 通过 网页 <i class="iconfont icon-view"></i> 浏览(4219) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
+</div><p class="time clb">信息科技 2006-09-12 09:23:49 通过 网页 <i class="iconfont icon-view"></i> 浏览(4222) <span> <a href="javascript:printme()" target="_self" style="color: #999;"><i class="fa fa-print"></i> 打印</a></span></p>
 <p class="navPost">  
 	<a href="JavaScript:history.back();">返回</a>&nbsp; <a href="JavaScript:DotRoll('#formpl')">我要评论</a></p></div>  
 <!-- 上一篇 下一篇开始 -->
